@@ -1,0 +1,149 @@
+@use 'variables' as *;
+
+// ESTRUTURA GLOBAL DO FOOTER
+.site-footer {
+  background-color: $gray-900; // bg-gray-900
+  color: white;
+  padding: 4rem 0; // py-16
+}
+
+.container {
+  max-width: 80rem; // max-w-7xl
+  margin: 0 auto;
+  padding: 0 1rem; // px-4
+
+  @media (min-width: 640px) { padding: 0 1.5rem; } // sm:px-6
+  @media (min-width: 1024px) { padding: 0 2rem; } // lg:px-8
+}
+
+// SISTEMA DE GRID
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; // gap-8
+
+  // Lógica: Em telas médias, divide em 4 colunas.
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr); // md:grid-cols-4
+  }
+}
+
+// COLUNA 1: INFORMAÇÕES DA EMPRESA
+.company-info {
+  // Lógica: Faz esta coluna ocupar o espaço de 2 colunas normais (md:col-span-2)
+  @media (min-width: 768px) {
+    grid-column: span 2;
+  }
+
+  .brand-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; // space-x-2
+    margin-bottom: 1rem; // mb-4
+
+    .brand-logo-circle {
+      width: 2.5rem; // w-10
+      height: 2.5rem; // h-10
+      border-radius: 50%;
+      // Cria o degradê do Tailwind (bg-gradient-to-br from-green-600 to-green-800)
+      background: linear-gradient(to bottom right, $green-600, #166534);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        color: white;
+        font-weight: bold;
+        font-size: 1.125rem; // text-lg
+      }
+    }
+
+    .brand-name {
+      font-size: 1.5rem; // text-2xl
+      font-weight: bold;
+    }
+  }
+
+  .brand-description {
+    color: $gray-300;
+    margin-bottom: 1.5rem;
+    max-width: 28rem; // max-w-md
+    line-height: 1.5;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem; // space-x-4
+
+    .social-btn {
+      color: $gray-300;
+      transition: color 0.2s ease;
+
+      .icon-md {
+        width: 24px;
+        height: 24px;
+      }
+
+      &:hover { color: white; }
+    }
+  }
+}
+
+// TÍTULOS E LISTAS (Colunas 2 e 3)
+.footer-heading {
+  font-size: 1.125rem; // text-lg
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; // space-y-2
+
+  .footer-link {
+    color: $gray-300;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover { color: white; }
+  }
+}
+
+.contact-info .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; // space-y-3
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; // space-x-3
+    color: $gray-300;
+
+    .icon-sm {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0; // Impede que o ícone amasse se o texto for longo
+    }
+  }
+}
+
+// BARRA DE DIREITOS AUTORAIS
+.copyright-bar {
+  border-top: 1px solid $gray-700; // border-t border-gray-700
+  margin-top: 3rem; // mt-12
+  padding-top: 2rem; // pt-8
+  text-align: center;
+
+  p {
+    color: $gray-300;
+    margin: 0;
+  }
+}

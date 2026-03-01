@@ -1,0 +1,161 @@
+@use 'variables.scss' as *;
+
+// Variáveis locais para cores de marcas (caso não existam em _variables.scss)
+$whatsapp: #25d366;
+$instagram: #e1306c;
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+// CABEÇALHO
+.contact-header {
+  background-color: white;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+
+    .logo { height: 80px; }
+    h1 { font-size: 2rem; color: #111827; margin: 0; }
+  }
+
+  .subtitle {
+    color: $gray-500;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+// CORPO DA PÁGINA
+.contact-main {
+  background-color: #1a3a2a;
+  min-height: calc(100vh - 176px); // Lógica: Preenche a tela subtraindo a altura do header
+  padding: 3rem 1rem;
+}
+
+.contact-container {
+  max-width: 56rem; // 896px
+  margin: 0 auto;
+}
+
+// CARDS DE CONTATO (Grid e Estilo Base)
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  // Lógica: Em telas maiores que 768px, o grid se divide em 2 colunas.
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.mt-1rem { margin-top: 1rem; }
+.mt-2rem { margin-top: 2rem; }
+
+.contact-card {
+  background-color: white;
+  border: 1px solid $gray-100;
+  border-radius: $radius-xl;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 300ms ease;
+
+  &:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); // shadow-md
+
+    // Lógica: Ao passar o mouse no card, o fundo do ícone ganha destaque.
+    .whatsapp-circle { background-color: rgba($whatsapp, 0.25); }
+    .phone-circle { background-color: $gray-200; }
+    .instagram-circle { background-color: #fbcfe8; }
+    .email-circle { background-color: #bfdbfe; }
+    .address-circle { background-color: #fed7aa; }
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  // ÍCONES
+  .icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; // Impede que o círculo seja esmagado se o texto for longo
+    transition: background-color 300ms ease;
+
+    svg { width: 32px; height: 32px; }
+
+    // Cores específicas ligadas aos requerimentos
+    &.whatsapp-circle { background-color: rgba(37, 211, 102, 0.15); color: $whatsapp; }
+    &.phone-circle { background-color: $gray-100; color: $gray-500; }
+    &.instagram-circle { background-color: #fce7f3; color: $instagram; }
+    &.email-circle { background-color: #dbeafe; color: #2563eb; }
+    &.address-circle { background-color: #ffedd5; color: #ea580c; }
+  }
+
+  // TEXTOS DO CARD
+  .card-info {
+    display: flex;
+    flex-direction: column;
+
+    .label { font-size: 0.875rem; color: $gray-500; margin-bottom: 0.25rem; }
+    .text { font-weight: bold; color: #111827; }
+
+    .link {
+      font-weight: bold;
+      text-decoration: none;
+      transition: opacity 200ms ease;
+
+      &:hover { opacity: 0.8; text-decoration: underline; }
+
+      &.whatsapp-text { color: $whatsapp; }
+      &.instagram-text { color: $instagram; }
+      &.email-text { color: #2563eb; }
+    }
+  }
+}
+
+// SEÇÃO DO MAPA
+.map-section {
+  background-color: white;
+  border: 1px solid $gray-100;
+  border-radius: $radius-xl;
+  padding: 1.5rem;
+  overflow: hidden;
+
+  .map-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+
+    .icon-md { width: 24px; height: 24px; color: #ea580c; }
+    h3 { margin: 0; font-size: 1.25rem; color: #111827; }
+  }
+
+  iframe {
+    border-radius: $radius-lg;
+    background-color: $gray-100; // Fundo de fallback enquanto o mapa carrega
+  }
+}

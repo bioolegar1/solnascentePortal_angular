@@ -1,0 +1,232 @@
+@use 'variables' as *;
+
+// ESTRUTURA GERAL
+.public-catalog-wrapper {
+  background-color: $gray-50;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// BANNER
+.catalog-banner {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) { height: 320px; }
+
+  .banner-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+  .banner-overlay { position: absolute; inset: 0; background-color: #111827; opacity: 0.7; }
+  .banner-content { position: relative; color: white; z-index: 1; text-align: center; }
+  h1 { font-size: 2.5rem; font-weight: bold; margin: 0; }
+}
+
+// BARRA DE FILTROS STICKY
+// Lógica: position: sticky gruda a barra no topo da tela quando o usuário rola para baixo.
+// O backdrop-filter borra o conteúdo que passa por trás da barra (estilo semelhante ao iOS).
+.filters-bar-wrapper {
+  position: sticky;
+  top: 68px; // Lógica: Valor que compensa a altura do cabeçalho de navegação principal (ajuste conforme seu navbar)
+  z-index: 30;
+  background-color: rgba(249, 250, 251, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid $gray-200;
+  padding: 1rem 0;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .search-input-group {
+    flex: 1;
+    min-width: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .icon-search {
+      position: absolute; left: 1rem; width: 18px; height: 18px; color: $gray-500;
+    }
+
+    .input-control {
+      width: 100%; padding: 0.75rem 1rem 0.75rem 2.5rem; border: 1px solid $gray-300; border-radius: 0.5rem; outline: none; transition: border-color 0.2s;
+      &:focus { border-color: $green-600; box-shadow: 0 0 0 3px rgba($green-600, 0.1); }
+    }
+  }
+
+  .select-control {
+    width: 100%;
+    min-width: 200px; padding: 0.75rem 1rem; border: 1px solid $gray-300; border-radius: 0.5rem; outline: none; background-color: white; cursor: pointer;
+    @media (min-width: 768px) { width: 16rem; }
+    &:focus { border-color: $green-600; box-shadow: 0 0 0 3px rgba($green-600, 0.1); }
+  }
+}
+
+// CONTEÚDO PRINCIPAL
+.main-content { padding: 3rem 1rem 5rem; }
+
+// ESTADOS
+.loading-state, .empty-state {
+  text-align: center; padding: 4rem 1rem; color: $gray-500; display: flex; flex-direction: column; align-items: center; gap: 1rem;
+}
+.animate-spin { animation: spin 1s linear infinite; width: 32px; height: 32px; color: $green-600; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+.btn-clear-filters {
+  background-color: white; border: 1px solid $gray-300; padding: 0.5rem 1rem; border-radius: 0.5rem; cursor: pointer; color: #111827; font-weight: 500;
+  &:hover { background-color: $gray-100; }
+}
+
+// GRID DE PRODUTOS RESPONSIVA (1 -> 2 -> 3 -> 4)
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 640px) { grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 900px) { grid-template-columns: repeat(3, 1fr); }
+  @media (min-width: 1200px) { grid-template-columns: repeat(4, 1fr); }
+}
+
+// CARDS INTERATIVOS
+.product-card {
+  background-color: white; border-radius: $radius-xl; overflow: hidden; box-shadow: $shadow-sm; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  // Feedback tátil: flutua levemente ao cruzar o mouse.
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+
+    .card-image { transform: scale(1.1); } // Animação da foto interna
+  }
+
+  .card-image-wrapper {
+    position: relative; height: 256px; overflow: hidden;
+
+    .card-image { width: 100%; height: 100%; object-fit: cover; transition: transform 700ms ease; }
+
+    .card-badge { position: absolute; top: 1rem; left: 1rem; background-color: rgba(0,0,0,0.7); color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: bold; backdrop-filter: blur(4px); }
+  }
+
+  .card-body {
+    padding: 1.5rem;
+
+    .product-title { font-size: 1.25rem; font-weight: bold; color: #111827; margin: 0 0 0.5rem 0; }
+
+    .product-badges { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .info-badge { background-color: $gray-100; color: #4b5563; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: 500; }
+
+    // Lógica CSS Nativa: Trunca o texto em exatas 3 linhas inserindo '...' automaticamente no final.
+    .product-desc {
+      color: $gray-500; font-size: 0.875rem; margin-bottom: 1.5rem; line-height: 1.5;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    .read-more { color: $green-600; font-weight: bold; font-size: 0.875rem; }
+  }
+}
+
+// MODAL / POPUP
+.modal-backdrop {
+  position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center; padding: 1rem;
+
+  .modal-overlay { position: absolute; inset: 0; background-color: rgba(0,0,0,0.8); backdrop-filter: blur(4px); cursor: pointer; }
+}
+
+.modal-container {
+  position: relative; width: 100%; max-width: 1152px; background-color: white; border-radius: $radius-3xl; overflow: hidden; max-height: 95vh; display: flex; flex-direction: column; overflow-y: auto; z-index: 61;
+}
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in-up { animation: fadeInUp 0.4s ease-out forwards; }
+
+.btn-close-modal {
+  position: absolute; top: 1rem; right: 1rem; z-index: 10; background: white; border: none; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: $shadow-md; color: #374151; transition: background-color 0.2s;
+  svg { width: 24px; height: 24px; }
+  &:hover { background-color: $gray-100; color: #dc2626; }
+}
+
+// CONTEÚDO DO MODAL
+.modal-grid {
+  display: grid; grid-template-columns: 1fr;
+  @media (min-width: 900px) { grid-template-columns: 1fr 1fr; }
+}
+
+.modal-gallery {
+  padding: 1.5rem; background-color: $gray-50; display: flex; flex-direction: column; gap: 1rem; align-items: center;
+
+  .main-modal-image { width: 100%; height: 400px; object-fit: cover; border-radius: $radius-xl; @media (min-width: 900px) { height: 500px; } }
+
+  .gallery-thumbs {
+    display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.5rem; width: 100%; justify-content: center;
+
+    .thumb-btn {
+      width: 80px; height: 80px; flex-shrink: 0; border: 2px solid transparent; border-radius: 0.5rem; overflow: hidden; cursor: pointer; padding: 0; transition: border-color 0.2s;
+      img { width: 100%; height: 100%; object-fit: cover; }
+
+      &.active-thumb { border-color: $green-600; }
+    }
+  }
+}
+
+.modal-details {
+  padding: 2rem; display: flex; flex-direction: column;
+
+  .modal-category { display: inline-block; background-color: $green-50; color: $green-700; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: bold; align-self: flex-start; margin-bottom: 1rem; }
+  .modal-title { font-size: 2rem; font-weight: bold; color: #111827; margin: 0 0 0.5rem 0; line-height: 1.1; }
+  .modal-barcode { font-family: monospace; color: $gray-500; font-size: 0.875rem; margin-bottom: 2rem; display: block; }
+
+  .modal-badges-grid {
+    display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;
+    .spec-badge { background-color: $gray-50; border: 1px solid $gray-200; padding: 1rem; border-radius: 0.75rem; display: flex; flex-direction: column; min-width: 120px; }
+    .spec-label { font-size: 0.75rem; color: $gray-500; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+    .spec-value { font-size: 1.25rem; font-weight: bold; color: #111827; }
+  }
+
+  .modal-description-area {
+    margin-bottom: 3rem; flex: 1;
+    h3 { font-size: 1.125rem; font-weight: bold; color: #374151; margin: 0 0 0.5rem 0; }
+    p { color: #4b5563; line-height: 1.6; white-space: pre-wrap; }
+  }
+
+  // BOTÃO WHATSAPP
+  .btn-whatsapp-quote {
+    background-color: #25d366; color: white; border: none; width: 100%; padding: 1.25rem; border-radius: $radius-xl; font-size: 1.125rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.75rem; transition: background-color 0.2s; box-shadow: 0 4px 14px 0 rgba(37, 211, 102, 0.39);
+    .icon-whatsapp { width: 24px; height: 24px; }
+    &:hover { background-color: #128c7e; }
+  }
+}
+
+// PRODUTOS RELACIONADOS
+.related-products-section {
+  background-color: $gray-50; border-top: 1px solid $gray-200; padding: 2rem;
+
+  .section-title-wrapper {
+    display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; color: #374151;
+    .icon-sm { width: 20px; height: 20px; color: $green-600; }
+    h3 { font-size: 1.125rem; margin: 0; font-weight: bold; }
+  }
+
+  .related-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+    @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
+
+    .related-card {
+      background-color: white; border: 1px solid $gray-200; border-radius: 0.5rem; padding: 0.5rem; display: flex; align-items: center; gap: 1rem; cursor: pointer; transition: background-color 0.2s, border-color 0.2s;
+      img { width: 48px; height: 48px; object-fit: cover; border-radius: 0.25rem; flex-shrink: 0; }
+      h4 { font-size: 0.875rem; margin: 0; color: #111827; font-weight: 600; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+      &:hover { background-color: $gray-100; border-color: $gray-300; }
+    }
+  }
+}

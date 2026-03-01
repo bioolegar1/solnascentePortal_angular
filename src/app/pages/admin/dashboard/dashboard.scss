@@ -1,0 +1,249 @@
+@use 'variables' as *;
+
+// ESTRUTURA GLOBAL DO DASHBOARD
+.dashboard-wrapper {
+  padding: 2rem 1rem;
+  background-color: $gray-50;
+  min-height: 100vh;
+}
+
+.dashboard-card {
+  background-color: white;
+  border: 1px solid $gray-200;
+  border-radius: $radius-xl;
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-shadow: $shadow-md;
+}
+
+// CABEÇALHO
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; // Lógica: Se a tela encolher, os botões descem de linha, mantendo o layout organizado.
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  .title-area {
+    h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #111827;
+      margin: 0 0 0.25rem 0;
+    }
+    .subtitle {
+      font-size: 0.875rem;
+      color: $gray-500;
+      margin: 0;
+    }
+  }
+
+  .actions-area {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+// BOTÕES PADRÃO DO CABEÇALHO
+.btn-logout {
+  background-color: transparent;
+  color: #dc2626; // Vermelho
+  border: 1px solid #dc2626;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #fef2f2;
+  }
+}
+
+.btn-new-product {
+  background-color: $green-600;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #16a34a; // Tom escuro do verde
+  }
+}
+
+// BARRA DE FILTROS
+.filters-bar {
+  background-color: $gray-50;
+  border: 1px solid $gray-200;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; // Proteção para telas de celular
+
+  .flex-1 { flex: 1; min-width: 200px; } // Lógica: O input ocupa todo o espaço que sobrar da div.
+  .w-16rem { width: 16rem; min-width: 200px; } // Lógica: O Select tem largura fixa base, mas não encolhe demais no celular.
+
+  input, select {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    outline: none;
+
+    &:focus {
+      border-color: $green-600;
+      box-shadow: 0 0 0 3px rgba($green-600, 0.1);
+    }
+  }
+}
+
+// ESTADOS DE TELA (LOADING / EMPTY)
+.loading-state {
+  text-align: center;
+  padding: 3rem;
+  color: $gray-500;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: $gray-50;
+  border: 2px dashed #d1d5db;
+  border-radius: 0.5rem;
+
+  h3 { margin-bottom: 0.5rem; color: #374151; }
+  p { margin-bottom: 1.5rem; color: $gray-500; font-size: 0.875rem; }
+
+  .btn-clear {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #374151;
+
+    &:hover { background-color: $gray-100; }
+  }
+}
+
+// TABELA
+// Lógica Vital: O overflow-x-auto na div container permite fazer "scroll" horizontal na tabela
+// caso ela seja aberta num celular estreito, sem esticar e quebrar o resto do layout da página inteira.
+.table-container.overflow-x-auto {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 800px; // Força o scroll horizontal em telas menores que 800px
+
+  thead {
+    background-color: $gray-50;
+
+    th {
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #374151;
+      border-bottom: 1px solid $gray-200;
+      font-weight: 600;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $gray-200;
+      transition: background-color 0.2s ease;
+
+      // Feedback visual ao cruzar o mouse pela linha
+      &:hover {
+        background-color: $gray-50;
+      }
+    }
+
+    td {
+      padding: 1rem;
+      vertical-align: middle;
+    }
+  }
+
+  // CÉLULAS ESPECÍFICAS
+  .product-thumb {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+  }
+
+  .no-photo-badge {
+    width: 48px;
+    height: 48px;
+    background-color: $gray-100;
+    color: $gray-500;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .col-product {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    .product-name { font-weight: bold; color: #111827; }
+    .product-ean { font-family: monospace; font-size: 0.75rem; color: $gray-500; }
+  }
+
+  .category-badge {
+    display: inline-block;
+    background-color: $green-50;
+    color: $green-700;
+    border: 1px solid $green-100;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px; // border-radius-full para formato de pílula
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  .col-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    .detail-text { font-size: 0.875rem; color: #4b5563; }
+  }
+
+  .col-actions {
+    button {
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 0.875rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+
+      &.btn-edit { color: #2563eb; } // Azul
+      &.btn-edit:hover { text-decoration: underline; }
+
+      &.btn-delete { color: #dc2626; } // Vermelho
+      &.btn-delete:hover { text-decoration: underline; }
+    }
+  }
+}

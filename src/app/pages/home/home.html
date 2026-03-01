@@ -1,0 +1,61 @@
+<section class="slider">
+  <div
+    class="slider__track"
+    [style.transform]="trackTransform"
+  >
+    @for (banner of banners; track banner.title) {
+      <div class="slider__slide">
+        <img [src]="banner.image" [alt]="banner.title" class="slider__bg" />
+        <div class="slider__overlay"></div>
+        <div class="slider__content animate-fade-in-up">
+          <span class="slider__icon">{{ banner.icon }}</span>
+          <h2>{{ banner.title }}</h2>
+          <p>{{ banner.subtitle }}</p>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="slider__dots">
+    @for (banner of banners; track banner.title; let i = $index) {
+      <button
+        class="slider__dot"
+        [class.slider__dot--active]="currentBanner() === i"
+        (click)="setBanner(i)"
+        [attr.aria-label]="'Ir para slide ' + (i + 1)"
+      ></button>
+    }
+  </div>
+</section>
+
+<section class="features">
+  <div class="features__header">
+    <span class="badge">Desde 1998</span>
+    <h2>Uma Viagem pelos Sabores</h2>
+    <p>
+      Na Sol Nascente, transformamos colheitas selecionadas em experiências sensoriais únicas.
+      Nossa tradição une o respeito à terra com o rigor para entregar o melhor tempero do Brasil.
+    </p>
+  </div>
+
+  <div class="features__grid">
+    @for (item of features; track item.title) {
+      <article class="feature-card">
+        <div class="feature-card__image">
+          <img [src]="item.image" [alt]="item.alt" />
+        </div>
+        <div class="feature-card__body">
+          <h3>{{ item.icon }} {{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </div>
+      </article>
+    }
+  </div>
+
+  <div class="features__footer">
+    <p class="features__quote">A essência da natureza capturada em cada embalagem.</p>
+    <a [routerLink]="'/produtos'" class="btn-cta">
+      📜 Conferir Nosso Catálogo Completo
+    </a>
+  </div>
+</section>

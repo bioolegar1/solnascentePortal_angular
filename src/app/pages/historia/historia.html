@@ -1,0 +1,121 @@
+<section class="banner">
+  <img src="assets/imagem01.jpg" alt="Campo de temperos Sol Nascente" class="banner__bg" />
+  <div class="banner__overlay"></div>
+  <div class="banner__content">
+    <span class="banner__eyebrow">Nossa Trajetória</span>
+    <h1 class="banner__title">Nossa História</h1>
+    <p class="banner__subtitle">Tradição e qualidade desde a origem até a sua mesa.</p>
+    <div class="banner__scroll-hint">
+      <span>Conheça nossa história</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </div>
+</section>
+
+<section class="origins">
+  <div class="container">
+    <div class="origins__grid">
+      <div class="origins__text">
+        <span class="badge">Desde 1998</span>
+        <h2 class="section-title">Tudo começou com uma semente</h2>
+        <p>Em 1998, iniciamos nosso cultivo com a crença de que o verdadeiro sabor vem da natureza. Com muito trabalho, plantamos nossas primeiras sementes e construímos relações com os melhores produtores de Goiás.</p>
+        <p>Hoje, mantemos a mesma paixão de sempre — entregando produtos de alta qualidade, respeitando o tempo de cada colheita e valorizando cada etapa do processo.</p>
+        <div class="origins__stats">
+          <div class="stat">
+            <strong>+25</strong>
+            <span>Anos de mercado</span>
+          </div>
+          <div class="stat">
+            <strong>+50</strong>
+            <span>Produtos no catálogo</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Natural</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="origins__image-wrapper">
+        <img src="assets/temperos.png" alt="Nossos primeiros temperos" />
+        <div class="origins__caption">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Nossas origens em Goiás</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="container">
+    <div class="pillars__header">
+      <span class="badge">Por que nos escolher</span>
+      <h2 class="section-title">Nossos Pilares</h2>
+      <p class="section-subtitle">A base sólida que construímos ao longo de mais de duas décadas.</p>
+    </div>
+
+    <div class="pillars__grid">
+      <div class="pillar-card pillar-card--green">
+        <div class="pillar-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M12 22V12m0 0C12 7 7 4 3 6c4 2 9 5 9 12m0-12c0-5 5-8 9-6-4 2-9 5-9 12"/></svg>
+        </div>
+        <div class="pillar-card__number">01</div>
+        <h3>100% Natural</h3>
+        <p>Cultivo focado na preservação do solo e na qualidade genuína de cada produto.</p>
+      </div>
+
+      <div class="pillar-card pillar-card--orange">
+        <div class="pillar-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="pillar-card__number">02</div>
+        <h3>Parceria Forte</h3>
+        <p>Relação de confiança com produtores locais que compartilham os nossos valores e exigências.</p>
+      </div>
+
+      <div class="pillar-card pillar-card--blue">
+        <div class="pillar-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div class="pillar-card__number">03</div>
+        <h3>Logística Ágil</h3>
+        <p>Entrega rápida e eficiente para garantir o frescor e a integridade de cada embalagem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="field">
+  <div class="container">
+    <div class="field__grid">
+      <div class="field__images">
+        <img src="assets/pimentadoreino.jpg" alt="Pimenta do Reino" class="field__img field__img--up" />
+        <img src="assets/temperosvarios.jpg" alt="Vários Temperos" class="field__img field__img--down" />
+      </div>
+
+      <div class="field__text">
+        <span class="badge">Processo artesanal</span>
+        <h2 class="section-title">Do campo para a sua mesa</h2>
+        <p>Nosso processo garante que nada se perca no caminho. Desde a seleção manual até o empacotamento final, cada etapa é conduzida com rigor e carinho.</p>
+        <p>Queremos que a sua experiência na cozinha seja elevada pelo aroma e qualidade inconfundíveis da Sol Nascente.</p>
+        <a [routerLink]="'/contato'" class="field__cta">
+          Quer ser nosso parceiro?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="quote__content">
+    <div class="quote__sun">☀️</div>
+    <blockquote>
+      "Nosso maior orgulho é estar presente nas receitas da sua família."
+    </blockquote>
+    <div class="quote__divider"></div>
+    <img src="assets/logo-solnascente.svg" alt="Logo Sol Nascente" class="quote__logo" />
+    <p class="quote__sub">Sol Nascente — Temperos e Especiarias desde 1998</p>
+  </div>
+</section>

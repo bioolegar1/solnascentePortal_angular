@@ -1,0 +1,208 @@
+@use 'variables' as *;
+
+// Herda a estrutura padrão
+.page-wrapper {
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background-color: $gray-50;
+}
+
+.page-header {
+  max-width: 56rem;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 { font-size: 1.5rem; font-weight: bold; color: #111827; margin: 0; }
+
+  .btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $gray-500;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    .icon-sm { width: 16px; height: 16px; }
+    &:hover { color: #111827; }
+  }
+}
+
+// ESTADO DE CARREGAMENTO INICIAL
+.loading-state {
+  max-width: 56rem;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: $radius-xl;
+  border: 1px dashed $gray-300;
+
+  .pulse-text {
+    color: $gray-500;
+    font-weight: 500;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+.form-container {
+  max-width: 56rem;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid $gray-200;
+  border-radius: $radius-xl;
+  padding: 1.5rem;
+  box-shadow: $shadow-sm;
+}
+
+// SEÇÃO IMAGENS
+.image-section {
+  background-color: $gray-50;
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    .section-title { font-weight: bold; color: #374151; margin: 0; }
+  }
+
+  .upload-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .upload-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: white;
+      border: 1px solid $gray-300;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: #374151;
+      transition: background-color 0.2s;
+      .icon-sm { width: 16px; height: 16px; }
+      &:hover:not(.disabled) { background-color: $gray-100; }
+      &.disabled { opacity: 0.6; cursor: not-allowed; }
+    }
+
+    .status-text {
+      font-size: 0.875rem;
+      &.limit-info { color: $gray-500; }
+      &.uploading { color: $green-600; font-weight: bold; animation: pulse 2s infinite; }
+    }
+  }
+
+  .image-list { display: flex; flex-direction: column; gap: 0.75rem; }
+
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid $gray-200;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+
+    &.is-main-row { border-color: $green-600; border-width: 2px; }
+
+    .image-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .thumb-preview { width: 40px; height: 40px; object-fit: cover; border-radius: 0.25rem; }
+      .btn-set-main {
+        background: none; border: none; padding: 0; cursor: pointer; font-size: 0.875rem;
+        .main-active { color: $green-700; font-weight: bold; display: flex; align-items: center; gap: 0.25rem; .icon-xs { width: 14px; height: 14px; } }
+        .main-inactive { color: $gray-500; }
+        .main-inactive:hover { color: #111827; text-decoration: underline; }
+      }
+    }
+    .btn-delete-img { background: none; border: none; color: #dc2626; font-size: 0.875rem; font-weight: 500; cursor: pointer; &:hover { text-decoration: underline; } }
+  }
+}
+
+// SEÇÃO DADOS
+.data-section {
+  border-top: 1px solid $gray-200;
+  padding-top: 2rem;
+
+  .section-title-wrapper {
+    display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; color: #111827;
+    .icon-md { width: 24px; height: 24px; color: $green-600; }
+    h3 { font-size: 1.25rem; margin: 0; }
+  }
+
+  .form-group {
+    display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;
+    label { font-size: 0.875rem; font-weight: 600; color: #374151; }
+
+    .form-control {
+      width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.5rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+      &:focus { border-color: $green-600; box-shadow: 0 0 0 3px rgba($green-600, 0.1); }
+      &.is-invalid { border-color: #dc2626; }
+      &.new-cat-input { background-color: #eff6ff; border-color: #3b82f6; &:focus { box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); } }
+    }
+
+    .label-with-action {
+      display: flex; justify-content: space-between; align-items: center;
+      .btn-toggle-cat { background: none; border: none; color: #2563eb; font-size: 0.75rem; font-weight: 600; cursor: pointer; padding: 0; &:hover { text-decoration: underline; } }
+    }
+  }
+
+  .grid-2-col { display: grid; grid-template-columns: 1fr; gap: 0 1.5rem; @media (min-width: 768px) { grid-template-columns: repeat(2, 1fr); } }
+  .grid-4-col { display: grid; grid-template-columns: 1fr; gap: 0 1.5rem; @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); .col-span-2 { grid-column: span 2; } } }
+}
+
+// RODAPÉ E BOTÃO DE EDIÇÃO
+.form-footer {
+  border-top: 1px solid $gray-200;
+  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+
+  .btn-cancel {
+    background-color: $gray-100; color: #374151; text-decoration: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; transition: background-color 0.2s;
+    &:hover { background-color: $gray-200; }
+  }
+
+  // Lógica: Este botão usa a paleta azul (#2563eb) exigida pelos requisitos para diferenciar visualmente "Atualizar" de "Criar" (Verde).
+  .btn-submit-edit {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+
+    &:hover:not(:disabled) {
+      background-color: #1d4ed8; // Tom azul escuro ao passar o mouse
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}

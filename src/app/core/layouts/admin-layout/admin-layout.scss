@@ -1,0 +1,51 @@
+@use 'variables.scss' as *;
+
+// Contêiner principal com altura mínima da tela
+.admin-wrapper {
+  background-color: $gray-50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Cabeçalho com borda sutil e sombra
+.admin-header {
+  background-color: white;
+  border-bottom: 1px solid $gray-200;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+// Utilitário de centralização e largura máxima
+.admin-container {
+  max-width: 80rem; // Equivalente a 1280px (7xl)
+  margin: 0 auto;
+  width: 100%;
+}
+
+// Alinhamento dos itens no cabeçalho
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+// Estilização dos textos do Header
+.admin-title {
+  color: $green-600;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.admin-subtitle {
+  color: $gray-500;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+// Espaçamento do conteúdo principal
+.admin-main {
+  padding: 2rem 1rem;
+}
