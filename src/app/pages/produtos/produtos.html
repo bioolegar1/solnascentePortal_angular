@@ -12,7 +12,10 @@
     <div class="container filters-bar">
 
       <div class="search-input-group">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-search">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
         <input
           type="text"
           [ngModel]="search()"
@@ -40,7 +43,16 @@
 
     @if (loading()) {
       <div class="loading-state">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-spinner animate-spin"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="animate-spin">
+          <line x1="12" y1="2" x2="12" y2="6"></line>
+          <line x1="12" y1="18" x2="12" y2="22"></line>
+          <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+          <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+          <line x1="2" y1="12" x2="6" y2="12"></line>
+          <line x1="18" y1="12" x2="22" y2="12"></line>
+          <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+          <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+        </svg>
         <p>Carregando catálogo...</p>
       </div>
     }
@@ -57,7 +69,7 @@
         @for (item of filteredProducts(); track item.id) {
           <article class="product-card" (click)="openProduct(item)">
             <div class="card-image-wrapper">
-              <img [src]="item.image_url" [alt]="item.name" class="card-image" />
+              <img [src]="getMainImage(item)" [alt]="item.name" class="card-image" />
               <span class="card-badge">{{ item.category }}</span>
             </div>
 
@@ -65,11 +77,11 @@
               <h3 class="product-title">{{ item.name }}</h3>
 
               <div class="product-badges">
-                <span class="info-badge">Peso: {{ item.weight }}</span>
+                <span class="info-badge">{{ formatMeasure(item) }}</span>
                 <span class="info-badge">Caixa c/ {{ item.package_qty }} un</span>
               </div>
 
-              <p class="product-desc line-clamp-3">{{ item.description }}</p>
+              <p class="product-desc">{{ item.description }}</p>
 
               <span class="read-more">Ver Detalhes &rarr;</span>
             </div>
@@ -79,45 +91,42 @@
     }
   </main>
 
+  <!-- MODAL DE DETALHES -->
   @if (selectedProduct(); as product) {
     <div class="modal-backdrop">
       <div class="modal-overlay" (click)="closeProduct()"></div>
 
       <div class="modal-container animate-fade-in-up">
         <button class="btn-close-modal" (click)="closeProduct()" aria-label="Fechar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </button>
 
         <div class="modal-grid">
 
+          <!-- GALERIA DE IMAGENS -->
           <div class="modal-gallery">
             <img [src]="activeImage()" [alt]="product.name" class="main-modal-image" />
 
-            @if (product.gallery && product.gallery.length > 0) {
+            @if (product.images && product.images.length > 1) {
               <div class="gallery-thumbs">
-                <button
-                  type="button"
-                  class="thumb-btn"
-                  [class.active-thumb]="activeImage() === product.image_url"
-                  (click)="activeImage.set(product.image_url)"
-                >
-                  <img [src]="product.image_url" alt="Principal" />
-                </button>
-
-                @for (imgUrl of product.gallery; track imgUrl) {
+                @for (imgUrl of product.images; track imgUrl) {
                   <button
                     type="button"
                     class="thumb-btn"
                     [class.active-thumb]="activeImage() === imgUrl"
                     (click)="activeImage.set(imgUrl)"
                   >
-                    <img [src]="imgUrl" alt="Galeria" />
+                    <img [src]="imgUrl" alt="Imagem do produto" />
                   </button>
                 }
               </div>
             }
           </div>
 
+          <!-- DETALHES -->
           <div class="modal-details">
             <span class="modal-category">{{ product.category }}</span>
             <h2 class="modal-title">{{ product.name }}</h2>
@@ -128,8 +137,8 @@
 
             <div class="modal-badges-grid">
               <div class="spec-badge">
-                <span class="spec-label">Peso Líquido</span>
-                <span class="spec-value">{{ product.weight }}</span>
+                <span class="spec-label">{{ product.measure.unit === 'g' ? 'Peso' : 'Volume' }}</span>
+                <span class="spec-value">{{ formatMeasure(product) }}</span>
               </div>
               <div class="spec-badge">
                 <span class="spec-label">Na Caixa</span>
@@ -137,29 +146,46 @@
               </div>
             </div>
 
+            <!-- ALÉRGENOS -->
+            @if (product.allergens && product.allergens.length > 0) {
+              <div class="allergens-area">
+                <span class="allergens-label">⚠️ Contém:</span>
+                <div class="allergens-tags">
+                  @for (al of product.allergens; track al) {
+                    <span class="allergen-tag">{{ allergenLabels[al] }}</span>
+                  }
+                </div>
+              </div>
+            }
+
             <div class="modal-description-area">
               <h3>Sobre o Produto</h3>
               <p>{{ product.description }}</p>
             </div>
 
             <button class="btn-whatsapp-quote" (click)="requestQuote(product)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-whatsapp"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-whatsapp">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
               Solicitar Orçamento no WhatsApp
             </button>
           </div>
         </div>
 
+        <!-- PRODUTOS RELACIONADOS -->
         @if (relatedProducts().length > 0) {
           <div class="related-products-section">
             <div class="section-title-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
               <h3>Veja também</h3>
             </div>
 
             <div class="related-grid">
               @for (rel of relatedProducts(); track rel.id) {
                 <div class="related-card" (click)="openProduct(rel)">
-                  <img [src]="rel.image_url" [alt]="rel.name" />
+                  <img [src]="getMainImage(rel)" [alt]="rel.name" />
                   <h4>{{ rel.name }}</h4>
                 </div>
               }

@@ -1,161 +1,579 @@
-@use 'variables.scss' as *;
+@use 'variables' as *;
+@use 'sass:color';
 
-// Variáveis locais para cores de marcas (caso não existam em _variables.scss)
-$whatsapp: #25d366;
-$instagram: #e1306c;
+// ─────────────────────────────────────────────────────────────────────────────
+// TOKENS LOCAIS
+// ─────────────────────────────────────────────────────────────────────────────
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+$whatsapp:   #25d366;
+$instagram:  #e1306c;
+$blue:       #2563eb;
+$phone-gray: #64748b;
+
+// ─────────────────────────────────────────────────────────────────────────────
+// WRAPPER GERAL
+// ─────────────────────────────────────────────────────────────────────────────
+
+.contato-wrapper {
+  background-color: $gray-50;
+  overflow-x: hidden;
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
-// CABEÇALHO
-.contact-header {
-  background-color: white;
-  padding: 3rem 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+// ─────────────────────────────────────────────────────────────────────────────
+// HERO
+// ─────────────────────────────────────────────────────────────────────────────
 
-  .header-title {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #0d3320 0%, #16a34a 60%, #166534 100%);
+  padding: 5rem 1.25rem 6rem;
+  text-align: center;
+  overflow: hidden;
 
-    .logo { height: 80px; }
-    h1 { font-size: 2rem; color: #111827; margin: 0; }
+  // ── Formas decorativas de fundo ──
+  &__bg-shapes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
   }
 
-  .subtitle {
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.08;
+    background: white;
+
+    &--1 {
+      width: 420px; height: 420px;
+      top: -120px; left: -100px;
+      animation: floatA 8s ease-in-out infinite;
+    }
+    &--2 {
+      width: 280px; height: 280px;
+      bottom: -80px; right: -60px;
+      animation: floatB 10s ease-in-out infinite;
+    }
+    &--3 {
+      width: 160px; height: 160px;
+      top: 30%; right: 10%;
+      opacity: 0.05;
+      animation: floatA 12s ease-in-out infinite reverse;
+    }
+  }
+
+  // ── Conteúdo ──
+  &__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__logo {
+    height: 64px;
+    width: auto;
+    opacity: 0.92;
+    margin-bottom: 0.5rem;
+  }
+
+  &__badge {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.9);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.3rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    backdrop-filter: blur(6px);
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+
+    strong { color: #bbf7d0; }
+
+    @media (min-width: 768px) { font-size: 3rem; }
+  }
+
+  &__sub {
+    color: rgba(255,255,255,0.78);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 500px;
+
+    @media (min-width: 768px) { font-size: 1.1rem; }
+  }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin-top: 0.5rem;
+    background-color: $whatsapp;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.55);
+      background-color: #1db954;
+    }
+
+    &:active { transform: translateY(0); }
+  }
+
+  // ── Wave divisória ──
+  &__wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+
+    svg { display: block; width: 100%; height: 60px; }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SEÇÃO DE CARDS
+// ─────────────────────────────────────────────────────────────────────────────
+
+.contacts-section {
+  padding: 4rem 0 3rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: $gray-900;
+    margin: 0 0 0.375rem;
+    letter-spacing: -0.02em;
+  }
+
+  p {
     color: $gray-500;
-    text-align: center;
+    font-size: 0.95rem;
     margin: 0;
   }
 }
 
-// CORPO DA PÁGINA
-.contact-main {
-  background-color: #1a3a2a;
-  min-height: calc(100vh - 176px); // Lógica: Preenche a tela subtraindo a altura do header
-  padding: 3rem 1rem;
-}
-
-.contact-container {
-  max-width: 56rem; // 896px
-  margin: 0 auto;
-}
-
-// CARDS DE CONTATO (Grid e Estilo Base)
-.contact-grid {
+// ── Grid dos cards ──
+.cards-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 1.25rem;
 
-  // Lógica: Em telas maiores que 768px, o grid se divide em 2 colunas.
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  @media (min-width: 580px)  { grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 1024px) { grid-template-columns: repeat(4, 1fr); }
 }
 
-.mt-1rem { margin-top: 1rem; }
-.mt-2rem { margin-top: 2rem; }
-
+// ── Card base ──
 .contact-card {
-  background-color: white;
-  border: 1px solid $gray-100;
-  border-radius: $radius-xl;
-  padding: 1.5rem;
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  transition: box-shadow 300ms ease;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.75rem 1.5rem;
+  background-color: white;
+  border-radius: $radius-2xl;
+  border: 1.5px solid $gray-100;
+  box-shadow: $shadow-sm;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.2s;
+
+  // Animação de entrada
+  opacity: 0;
+  transform: translateY(30px);
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+
+    // Delay escalonado por nth-child
+    &:nth-child(1) { transition-delay: 0.05s; }
+    &:nth-child(2) { transition-delay: 0.15s; }
+    &:nth-child(3) { transition-delay: 0.25s; }
+    &:nth-child(4) { transition-delay: 0.35s; }
+  }
+
+  transition: opacity 0.5s ease, transform 0.5s ease,
+  box-shadow 0.28s ease, border-color 0.2s;
 
   &:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); // shadow-md
+    transform: translateY(-6px);
+    box-shadow: $shadow-xl;
 
-    // Lógica: Ao passar o mouse no card, o fundo do ícone ganha destaque.
-    .whatsapp-circle { background-color: rgba($whatsapp, 0.25); }
-    .phone-circle { background-color: $gray-200; }
-    .instagram-circle { background-color: #fbcfe8; }
-    .email-circle { background-color: #bfdbfe; }
-    .address-circle { background-color: #fed7aa; }
+    .card__glow { opacity: 1; }
+    .card__action { gap: 0.5rem; }
   }
 
-  &.full-width {
-    width: 100%;
-  }
-
-  // ÍCONES
-  .icon-circle {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+  // ── Ícone ──
+  .card__icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: $radius-xl;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0; // Impede que o círculo seja esmagado se o texto for longo
-    transition: background-color 300ms ease;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
 
-    svg { width: 32px; height: 32px; }
-
-    // Cores específicas ligadas aos requerimentos
-    &.whatsapp-circle { background-color: rgba(37, 211, 102, 0.15); color: $whatsapp; }
-    &.phone-circle { background-color: $gray-100; color: $gray-500; }
-    &.instagram-circle { background-color: #fce7f3; color: $instagram; }
-    &.email-circle { background-color: #dbeafe; color: #2563eb; }
-    &.address-circle { background-color: #ffedd5; color: #ea580c; }
+    svg { width: 26px; height: 26px; }
   }
 
-  // TEXTOS DO CARD
-  .card-info {
+  &:hover .card__icon-wrap { transform: scale(1.1) rotate(-4deg); }
+
+  // ── Textos ──
+  .card__body {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+  }
 
-    .label { font-size: 0.875rem; color: $gray-500; margin-bottom: 0.25rem; }
-    .text { font-weight: bold; color: #111827; }
+  .card__label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: $gray-400;
+  }
 
-    .link {
-      font-weight: bold;
-      text-decoration: none;
-      transition: opacity 200ms ease;
+  .card__value {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: $gray-900;
+    line-height: 1.3;
+    word-break: break-word;
+  }
 
-      &:hover { opacity: 0.8; text-decoration: underline; }
+  .card__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.375rem;
+    transition: gap 0.2s;
+  }
 
-      &.whatsapp-text { color: $whatsapp; }
-      &.instagram-text { color: $instagram; }
-      &.email-text { color: #2563eb; }
+  // ── Glow de fundo no hover ──
+  .card__glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  // ─── Variações por canal ───
+
+  &--whatsapp {
+    .card__icon-wrap { background-color: rgba($whatsapp, 0.12); color: $whatsapp; }
+    .card__action    { color: color.adjust($whatsapp, $lightness: -8%); }
+    .card__glow      { background: radial-gradient(ellipse at 0% 100%, rgba($whatsapp, 0.08) 0%, transparent 70%); }
+    &:hover          { border-color: rgba($whatsapp, 0.35); }
+  }
+
+  &--phone {
+    .card__icon-wrap { background-color: rgba($phone-gray, 0.1); color: $phone-gray; }
+    .card__action    { color: $phone-gray; }
+    .card__glow      { background: radial-gradient(ellipse at 0% 100%, rgba($phone-gray, 0.07) 0%, transparent 70%); }
+    &:hover          { border-color: rgba($phone-gray, 0.3); }
+  }
+
+  &--email {
+    .card__icon-wrap { background-color: rgba($blue, 0.1); color: $blue; }
+    .card__action    { color: $blue; }
+    .card__glow      { background: radial-gradient(ellipse at 0% 100%, rgba($blue, 0.07) 0%, transparent 70%); }
+    &:hover          { border-color: rgba($blue, 0.3); }
+  }
+
+  &--instagram {
+    .card__icon-wrap { background-color: rgba($instagram, 0.1); color: $instagram; }
+    .card__action    { color: $instagram; }
+    .card__glow      { background: radial-gradient(ellipse at 0% 100%, rgba($instagram, 0.07) 0%, transparent 70%); }
+    &:hover          { border-color: rgba($instagram, 0.3); }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SEÇÃO LOCALIZAÇÃO
+// ─────────────────────────────────────────────────────────────────────────────
+
+.location-section {
+  padding: 3rem 0 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  background-color: white;
+  border-radius: $radius-3xl;
+  border: 1px solid $gray-200;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+
+  @media (min-width: 860px) {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+// ── Info lateral ──
+.location-info {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  @media (max-width: 860px) {
+    padding: 2rem 1.5rem 0;
+  }
+}
+
+.location-badge {
+  display: inline-block;
+  background-color: $green-50;
+  color: $green-700;
+  border: 1px solid $green-100;
+  padding: 0.3rem 0.875rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.location-info h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: $gray-900;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.location-address {
+  color: $gray-600;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.location-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: $gray-700;
+    font-size: 0.9rem;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      color: $green-600;
+      flex-shrink: 0;
     }
   }
 }
 
-// SEÇÃO DO MAPA
-.map-section {
-  background-color: white;
-  border: 1px solid $gray-100;
-  border-radius: $radius-xl;
-  padding: 1.5rem;
-  overflow: hidden;
+.btn-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  background-color: $green-600;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba($green-600, 0.3);
 
-  .map-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+  svg { width: 16px; height: 16px; }
 
-    .icon-md { width: 24px; height: 24px; color: #ea580c; }
-    h3 { margin: 0; font-size: 1.25rem; color: #111827; }
+  &:hover {
+    background-color: $green-700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba($green-600, 0.4);
   }
+}
+
+// ── Mapa ──
+.map-wrapper {
+  border-radius: 0;
+  overflow: hidden;
+  min-height: 340px;
+
+  @media (min-width: 860px) { min-height: 420px; }
 
   iframe {
-    border-radius: $radius-lg;
-    background-color: $gray-100; // Fundo de fallback enquanto o mapa carrega
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    border: 0;
+    filter: saturate(0.85);
+    transition: filter 0.3s;
+
+    &:hover { filter: saturate(1); }
   }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CTA FINAL
+// ─────────────────────────────────────────────────────────────────────────────
+
+.cta-section {
+  padding: 0 0 5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #0d3320 0%, #16a34a 100%);
+  border-radius: $radius-3xl;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  box-shadow: 0 8px 32px rgba(22, 163, 74, 0.25);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    text-align: left;
+    padding: 2.5rem 3rem;
+    justify-content: space-between;
+  }
+}
+
+.cta-text {
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.02em;
+
+    @media (min-width: 768px) { font-size: 1.6rem; }
+  }
+
+  p {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  white-space: nowrap;
+  background-color: white;
+  color: $green-700;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  svg { width: 20px; height: 20px; color: $whatsapp; }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  }
+}
+
+.icon-btn {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ANIMAÇÕES
+// ─────────────────────────────────────────────────────────────────────────────
+
+@keyframes floatA {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(20px, -20px) scale(1.04); }
+}
+
+@keyframes floatB {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(-15px, 15px) scale(1.03); }
 }

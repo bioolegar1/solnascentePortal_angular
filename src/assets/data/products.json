@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Pimenta do Reino Preta Moída",
+    "barcode": "7891234560001",
+    "description": "Pimenta do reino preta selecionada e moída na hora. Aroma intenso e sabor marcante, ideal para carnes, molhos e temperos em geral.",
+    "category": "especiarias",
+    "package_qty": 24,
+    "measure": {
+      "value": 500,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/pimenta-reino-preta-1.jpg",
+      "assets/images/products/pimenta-reino-preta-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "2",
+    "name": "Tempero Baiano Sol Nascente",
+    "barcode": "7891234560002",
+    "description": "Blend exclusivo com dendê, coentro, pimenta e ervas selecionadas. A essência da culinária baiana em um único frasco.",
+    "category": "temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 300,
+      "unit": "g"
+    },
+    "images": ["assets/images/products/tempero-baiano-1.jpg"],
+    "allergens": ["gluten", "soja"]
+  },
+  {
+    "id": "3",
+    "name": "Molho de Alho Defumado",
+    "barcode": "7891234560003",
+    "description": "Molho artesanal à base de alho defumado lentamente. Perfeito para churrasco, frango e legumes grelhados.",
+    "category": "molhos",
+    "package_qty": 6,
+    "measure": {
+      "value": 250,
+      "unit": "ml"
+    },
+    "images": [
+      "assets/images/products/molho-alho-defumado-1.jpg",
+      "assets/images/products/molho-alho-defumado-2.jpg",
+      "assets/images/products/molho-alho-defumado-3.jpg"
+    ],
+    "allergens": ["lactose"]
+  }
+]

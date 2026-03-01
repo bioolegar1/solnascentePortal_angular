@@ -1,0 +1,7 @@
+[
+  { "id": "1", "name": "Temperos", "slug": "temperos" },
+  { "id": "2", "name": "Especiarias", "slug": "especiarias" },
+  { "id": "3", "name": "Molhos", "slug": "molhos" },
+  { "id": "4", "name": "Grãos e Sementes", "slug": "graos-e-sementes" },
+  { "id": "5", "name": "Desidratados", "slug": "desidratados" }
+]

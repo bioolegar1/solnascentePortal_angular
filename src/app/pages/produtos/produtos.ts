@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { Products } from '../../shared/interfaces/product.interface';
+import { Product, ALLERGEN_LABELS } from '../../shared/interfaces/product.interface';
 import { ProductsService } from '../../core/services/products.service';
 
 @Component({
@@ -22,11 +22,14 @@ export default class Produtos implements OnInit {
   private productsService = inject(ProductsService);
   private destroyRef = inject(DestroyRef);
 
-  allProducts = signal<Products[]>([]);
+  // Expõe os labels de alérgenos para o template
+  readonly allergenLabels = ALLERGEN_LABELS;
+
+  allProducts = signal<Product[]>([]);
   loading = signal(true);
   search = signal('');
   selectedCategory = signal('');
-  selectedProduct = signal<Products | null>(null);
+  selectedProduct = signal<Product | null>(null);
   activeImage = signal('');
 
   categories = computed(() => [...new Set(this.allProducts().map((p) => p.category))].sort());
@@ -60,10 +63,11 @@ export default class Produtos implements OnInit {
       });
   }
 
-  openProduct(item: Products): void {
+  openProduct(item: Product): void {
     document.body.style.overflow = 'hidden';
     this.selectedProduct.set(item);
-    this.activeImage.set(item.image_url);
+    // Usa a primeira imagem do array como imagem ativa
+    this.activeImage.set(item.images?.[0] ?? '');
   }
 
   closeProduct(): void {
@@ -76,8 +80,18 @@ export default class Produtos implements OnInit {
     this.closeProduct();
   }
 
-  requestQuote(item: Products): void {
+  requestQuote(item: Product): void {
     const msg = `Olá! Gostaria de orçamento: *${item.name}* (Cód: ${item.barcode || 'N/A'}).`;
     window.open(`https://wa.me/5562991122981?text=${encodeURIComponent(msg)}`, '_blank');
+  }
+
+  // Retorna a imagem principal (primeira do array) ou string vazia
+  getMainImage(item: Product): string {
+    return item.images?.[0] ?? '';
+  }
+
+  // Formata a medida: ex "500 g" ou "250 ml"
+  formatMeasure(item: Product): string {
+    return `${item.measure.value} ${item.measure.unit}`;
   }
 }

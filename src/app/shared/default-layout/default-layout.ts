@@ -13,6 +13,7 @@ export default class DefaultLayout {
   isMenuOpen = signal(false);
 
   constructor() {
+    // Fecha o menu mobile automaticamente ao trocar de rota
     inject(Router)
       .events.pipe(
         filter((event) => event instanceof NavigationEnd),
