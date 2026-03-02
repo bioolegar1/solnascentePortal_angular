@@ -22,24 +22,39 @@ export default class Produtos implements OnInit {
   private productsService = inject(ProductsService);
   private destroyRef = inject(DestroyRef);
 
-  // Expõe os labels de alérgenos para o template
   readonly allergenLabels = ALLERGEN_LABELS;
 
   allProducts = signal<Product[]>([]);
   loading = signal(true);
   search = signal('');
-  selectedCategory = signal('');
   selectedProduct = signal<Product | null>(null);
   activeImage = signal('');
+
+  // VARIÁVEL DE ESTADO DE RECOLHIMENTO
+  collapsedCategories = signal<Set<string>>(new Set());
 
   categories = computed(() => [...new Set(this.allProducts().map((p) => p.category))].sort());
 
   filteredProducts = computed(() => {
     const term = this.search().toLowerCase();
-    const category = this.selectedCategory();
-    return this.allProducts().filter(
-      (p) => p.name.toLowerCase().includes(term) && (!category || p.category === category),
-    );
+    // A lógica de filtragem por categoria foi removida. Agora filtra apenas pela busca de texto.
+    return this.allProducts().filter((p) => p.name.toLowerCase().includes(term));
+  });
+
+  groupedProducts = computed(() => {
+    const products = this.filteredProducts();
+    const groups = new Map<string, Product[]>();
+
+    for (const p of products) {
+      if (!groups.has(p.category)) {
+        groups.set(p.category, []);
+      }
+      groups.get(p.category)!.push(p);
+    }
+
+    return Array.from(groups.entries())
+      .map(([category, items]) => ({ category, items }))
+      .sort((a, b) => a.category.localeCompare(b.category));
   });
 
   relatedProducts = computed(() => {
@@ -63,10 +78,48 @@ export default class Produtos implements OnInit {
       });
   }
 
+  // LÓGICA DE RECOLHER/EXPANDIR CATEGORIAS
+  toggleCategory(category: string): void {
+    const currentSet = new Set(this.collapsedCategories());
+    if (currentSet.has(category)) {
+      currentSet.delete(category); // Se está na lista, remove (expande)
+    } else {
+      currentSet.add(category); // Se não está, adiciona (recolhe)
+    }
+    this.collapsedCategories.set(currentSet);
+  }
+
+  isCategoryCollapsed(category: string): boolean {
+    return this.collapsedCategories().has(category);
+  }
+
+  // LÓGICA DE SCROLL SUAVE (ÂNCORA)
+  formatCategoryId(category: string): string {
+    return 'cat-' + category.toLowerCase().replace(/\s+/g, '-');
+  }
+
+  scrollToCategory(category: string): void {
+    if (!category) return;
+
+    const elementId = this.formatCategoryId(category);
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      // Calcula a posição do elemento subtraindo a altura da barra fixa de filtros
+      const headerOffset = 130;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  }
+
   openProduct(item: Product): void {
     document.body.style.overflow = 'hidden';
     this.selectedProduct.set(item);
-    // Usa a primeira imagem do array como imagem ativa
     this.activeImage.set(item.images?.[0] ?? '');
   }
 
@@ -85,12 +138,10 @@ export default class Produtos implements OnInit {
     window.open(`https://wa.me/5562991122981?text=${encodeURIComponent(msg)}`, '_blank');
   }
 
-  // Retorna a imagem principal (primeira do array) ou string vazia
   getMainImage(item: Product): string {
     return item.images?.[0] ?? '';
   }
 
-  // Formata a medida: ex "500 g" ou "250 ml"
   formatMeasure(item: Product): string {
     return `${item.measure.value} ${item.measure.unit}`;
   }

@@ -26,11 +26,11 @@
       </div>
 
       <select
-        [ngModel]="selectedCategory()"
-        (ngModelChange)="selectedCategory.set($event)"
+        #catSelect
+        (change)="scrollToCategory(catSelect.value); catSelect.value = ''"
         class="select-control"
       >
-        <option value="">Todas as Categorias</option>
+        <option value="">Ir para a categoria...</option>
         @for (cat of categories(); track cat) {
           <option [value]="cat">{{ cat }}</option>
         }
@@ -59,39 +59,59 @@
     @else if (filteredProducts().length === 0) {
       <div class="empty-state">
         <h3>Nenhum produto encontrado</h3>
-        <button (click)="search.set(''); selectedCategory.set('')" class="btn-clear-filters">
-          Limpar Filtros
+        <button (click)="search.set('')" class="btn-clear-filters">
+          Limpar Busca
         </button>
       </div>
     }
     @else {
-      <div class="products-grid">
-        @for (item of filteredProducts(); track item.id) {
-          <article class="product-card" (click)="openProduct(item)">
-            <div class="card-image-wrapper">
-              <img [src]="getMainImage(item)" [alt]="item.name" class="card-image" />
-              <span class="card-badge">{{ item.category }}</span>
-            </div>
+      <div class="catalog-sections">
+        @for (group of groupedProducts(); track group.category) {
 
-            <div class="card-body">
-              <h3 class="product-title">{{ item.name }}</h3>
+          <section class="category-section" [id]="formatCategoryId(group.category)">
 
-              <div class="product-badges">
-                <span class="info-badge">{{ formatMeasure(item) }}</span>
-                <span class="info-badge">Caixa c/ {{ item.package_qty }} un</span>
+            <header class="category-header" (click)="toggleCategory(group.category)">
+              <h2 class="category-title">{{ group.category }}</h2>
+
+              <div class="header-actions">
+                <span class="category-count">{{ group.items.length }} produto(s)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-chevron" [class.rotated]="isCategoryCollapsed(group.category)">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
               </div>
+            </header>
 
-              <p class="product-desc">{{ item.description }}</p>
+            @if (!isCategoryCollapsed(group.category)) {
+              <div class="products-grid">
+                @for (item of group.items; track item.id) {
+                  <article class="product-card" (click)="openProduct(item)">
+                    <div class="card-image-wrapper">
+                      <img [src]="getMainImage(item)" [alt]="item.name" class="card-image" />
+                    </div>
 
-              <span class="read-more">Ver Detalhes &rarr;</span>
-            </div>
-          </article>
+                    <div class="card-body">
+                      <h3 class="product-title">{{ item.name }}</h3>
+
+                      <div class="product-badges">
+                        <span class="info-badge">{{ formatMeasure(item) }}</span>
+                        <span class="info-badge">Caixa c/ {{ item.package_qty }} un</span>
+                      </div>
+
+                      <p class="product-desc">{{ item.description }}</p>
+
+                      <span class="read-more">Ver Detalhes &rarr;</span>
+                    </div>
+                  </article>
+                }
+              </div>
+            }
+
+          </section>
         }
       </div>
     }
   </main>
 
-  <!-- MODAL DE DETALHES -->
   @if (selectedProduct(); as product) {
     <div class="modal-backdrop">
       <div class="modal-overlay" (click)="closeProduct()"></div>
@@ -106,7 +126,6 @@
 
         <div class="modal-grid">
 
-          <!-- GALERIA DE IMAGENS -->
           <div class="modal-gallery">
             <img [src]="activeImage()" [alt]="product.name" class="main-modal-image" />
 
@@ -126,7 +145,6 @@
             }
           </div>
 
-          <!-- DETALHES -->
           <div class="modal-details">
             <span class="modal-category">{{ product.category }}</span>
             <h2 class="modal-title">{{ product.name }}</h2>
@@ -146,7 +164,6 @@
               </div>
             </div>
 
-            <!-- ALÉRGENOS -->
             @if (product.allergens && product.allergens.length > 0) {
               <div class="allergens-area">
                 <span class="allergens-label">⚠️ Contém:</span>
@@ -172,7 +189,6 @@
           </div>
         </div>
 
-        <!-- PRODUTOS RELACIONADOS -->
         @if (relatedProducts().length > 0) {
           <div class="related-products-section">
             <div class="section-title-wrapper">

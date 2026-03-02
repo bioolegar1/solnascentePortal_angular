@@ -209,6 +209,82 @@
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// SEÇÕES DE CATEGORIAS (ATUALIZADO PARA SUPORTAR O ACCORDION)
+// ─────────────────────────────────────────────────────────────────────────────
+
+.catalog-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  scroll-margin-top: 140px; // Cria um recuo interno ao usar a âncora de scroll
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Separa o título (esquerda) das ações (direita)
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid $gray-200;
+  cursor: pointer; // Indica ao usuário que a barra toda é clicável
+  user-select: none; // Evita selecionar o texto ao clicar rápido
+  transition: border-color 0.2s, opacity 0.2s;
+
+  &:hover {
+    border-color: $green-400;
+    opacity: 0.85;
+  }
+
+  .category-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: $gray-900;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: -0.02em;
+  }
+
+  // Novo container flexível para abrigar o contador e a seta lado a lado
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .category-count {
+    background-color: $green-50;
+    color: $green-700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid $green-100;
+
+    @media (max-width: 480px) {
+      display: none; // Oculta a contagem em celulares menores
+    }
+  }
+
+  // Estilização e animação de rotação da setinha (chevron)
+  .icon-chevron {
+    width: 24px;
+    height: 24px;
+    color: $gray-400;
+    transition: transform 0.3s ease; // Suaviza o giro da seta
+
+    // Classe engatilhada pelo Angular quando a categoria recolhe
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // GRID DE PRODUTOS
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -246,7 +322,6 @@
     .read-more   { gap: 0.5rem; }
   }
 
-  // ── IMAGEM DO CARD ──
   .card-image-wrapper {
     position: relative;
     height: 220px;
@@ -262,29 +337,11 @@
     object-fit: cover;
     transition: transform 0.5s ease;
 
-    // Placeholder quando não há imagem
     &[src=''] , &:not([src]) {
       display: none;
     }
   }
 
-  // Badge de categoria sobre a imagem
-  .card-badge {
-    position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
-    background-color: rgba(0, 0, 0, 0.55);
-    color: white;
-    padding: 0.2rem 0.65rem;
-    border-radius: 9999px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    backdrop-filter: blur(6px);
-  }
-
-  // ── CORPO DO CARD ──
   .card-body {
     padding: 1.25rem 1.25rem 1.5rem;
     display: flex;
@@ -299,8 +356,6 @@
     color: $gray-900;
     margin: 0;
     line-height: 1.3;
-
-    // Trunca em 2 linhas
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -330,7 +385,6 @@
     line-height: 1.55;
     flex: 1;
     margin: 0;
-    // Trunca em 3 linhas
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -402,14 +456,12 @@
   z-index: 61;
   animation: fadeInUp 0.35s ease-out forwards;
 
-  // Mobile: bottom sheet
   @media (max-width: 640px) {
     border-radius: $radius-3xl $radius-3xl 0 0;
     max-height: 94vh;
     animation: slideUp 0.35s ease-out forwards;
   }
 
-  // Scrollbar customizada
   scrollbar-width: thin;
   scrollbar-color: $gray-300 transparent;
 
@@ -445,7 +497,6 @@
   }
 }
 
-// ── GRID DO MODAL ──
 .modal-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -471,7 +522,8 @@
   .main-modal-image {
     width: 100%;
     height: 320px;
-    object-fit: cover;
+    object-fit: contain; // Garante a exibição completa sem cortes
+    background-color: white; // Fundo preenchido para sobras de proporção
     border-radius: $radius-xl;
     box-shadow: $shadow-md;
 

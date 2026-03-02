@@ -30,6 +30,9 @@
             },
             "assets": [
               "src/favicon.ico",
+              "src/assets/images/products",
+              "src/assets/data",
+              "src/assets/data/categories.json",
               "src/assets",
               {
                 "glob": "**/*",

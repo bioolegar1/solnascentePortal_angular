@@ -10,7 +10,7 @@ export class CategoriesService {
   private readonly http = inject(HttpClient);
 
   // Caminho do JSON estático dentro de src/assets/
-  private readonly DATA_URL = 'assets/data/categories.json';
+  private readonly DATA_URL = 'assets/data/categories.json.json';
 
   /**
    * Retorna todas as categorias do arquivo JSON.

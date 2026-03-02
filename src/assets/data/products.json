@@ -1,51 +1,706 @@
 [
   {
     "id": "1",
-    "name": "Pimenta do Reino Preta Moída",
-    "barcode": "7891234560001",
-    "description": "Pimenta do reino preta selecionada e moída na hora. Aroma intenso e sabor marcante, ideal para carnes, molhos e temperos em geral.",
-    "category": "especiarias",
+    "name": "Açafrão da Terra",
+    "barcode": "",
+    "description": "Açafrão da Terra 100% puro, rico em curcumina e sem aditivos. Aroma terroso e cor vibrante que garantem saúde e sabor às suas receitas. O poderoso anti-inflamatório natural que seu corpo merece.",
+    "category": "Especiarias",
     "package_qty": 24,
     "measure": {
-      "value": 500,
+      "value": 60,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/pimenta-reino-preta-1.jpg",
-      "assets/images/products/pimenta-reino-preta-2.jpg"
+      "assets/images/products/acafrao da tera 60 g (1).jpg",
+      "assets/images/products/acafrao da tera 60 g (2).jpg",
+      "assets/images/products/acafrao da tera 60 g (3).jpg"
     ],
     "allergens": []
   },
   {
     "id": "2",
-    "name": "Tempero Baiano Sol Nascente",
-    "barcode": "7891234560002",
-    "description": "Blend exclusivo com dendê, coentro, pimenta e ervas selecionadas. A essência da culinária baiana em um único frasco.",
-    "category": "temperos",
+    "name": "Alho e Sal Com Cheiro Verde",
+    "barcode": "",
+    "description": "Combinação clássica enriquecida com o frescor do cheiro verde. Ideal para refogados, carnes e arroz, garantindo sabor caseiro e praticidade no seu dia a dia.",
+    "category": "Temperos",
     "package_qty": 12,
     "measure": {
       "value": 300,
       "unit": "g"
     },
-    "images": ["assets/images/products/tempero-baiano-1.jpg"],
-    "allergens": ["gluten", "soja"]
+    "images": [
+      "assets/images/products/alho e sal com chero verde (1).jpg",
+      "assets/images/products/alho e sal com chero verde (2).jpg",
+      "assets/images/products/alho e sal com chero verde (3).jpg"
+    ],
+    "allergens": []
   },
   {
     "id": "3",
-    "name": "Molho de Alho Defumado",
-    "barcode": "7891234560003",
-    "description": "Molho artesanal à base de alho defumado lentamente. Perfeito para churrasco, frango e legumes grelhados.",
-    "category": "molhos",
-    "package_qty": 6,
+    "name": "Alho e Sal Com Ervas em Pasta",
+    "barcode": "",
+    "description": "Pasta prática que une alho, sal e um mix de ervas aromáticas. Rende muito e é perfeita para marinar carnes e aves, entregando sabor profundo e textura ideal.",
+    "category": "Temperos",
+    "package_qty": 12,
     "measure": {
-      "value": 250,
-      "unit": "ml"
+      "value": 800,
+      "unit": "g"
     },
     "images": [
-      "assets/images/products/molho-alho-defumado-1.jpg",
-      "assets/images/products/molho-alho-defumado-2.jpg",
-      "assets/images/products/molho-alho-defumado-3.jpg"
+      "assets/images/products/alho e sal com ervas em pasta 800 g (1).jpg",
+      "assets/images/products/alho e sal com ervas em pasta 800 g (2).jpg",
+      "assets/images/products/alho e sal com ervas em pasta 800 g (3).jpg"
     ],
-    "allergens": ["lactose"]
+    "allergens": []
+  },
+  {
+    "id": "4",
+    "name": "Alho e Sal em Pasta",
+    "barcode": "",
+    "description": "A base perfeita para qualquer receita. Pasta no tamanho ideal para o dia a dia. Facilita o preparo de arroz e feijão, economizando seu tempo na cozinha.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 300,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/alho e sal em pasta 300 g (2).jpg",
+      "assets/images/products/alho e sal em pasta 300 g (1).jpg",
+      "assets/images/products/alho e sal em pasta 300 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "5",
+    "name": "Alho e Sal em Pasta",
+    "barcode": "",
+    "description": "Economia e sabor na medida certa. Base tradicional e indispensável para cozinhar em maior volume, garantindo o tempero caseiro sem nenhum esforço.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 800,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/alho esal em pasta 800 g (2).jpg",
+      "assets/images/products/alho esal em pasta 800 g (1).jpg",
+      "assets/images/products/alho esal em pasta 800 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "6",
+    "name": "Alho Frito",
+    "barcode": "",
+    "description": "Crocância e sabor intenso em cada pitada. Alho pronto para uso, ideal para finalizar saladas, sopas ou dar aquele toque especial no arroz branco. Pura praticidade.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/alho frito 60 g (2).jpg",
+      "assets/images/products/alho frito 60 g (1).jpg",
+      "assets/images/products/alho frito 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "7",
+    "name": "Bicarbonato",
+    "barcode": "",
+    "description": "Versátil e indispensável. Ideal para uso culinário, como amaciar carnes, deixar bolos mais fofos ou reduzir a acidez de molhos. Pureza e eficiência garantidas.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 140,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/bicarbonato 140 g (2).jpg",
+      "assets/images/products/bicarbonato 140 g (1).jpg",
+      "assets/images/products/bicarbonato 140 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "8",
+    "name": "Canela",
+    "barcode": "",
+    "description": "Aroma quente e sabor adocicado irresistível. Perfeita para sobremesas e cafés. Rica em antioxidantes, traz um toque funcional e reconfortante para suas receitas.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/canela 60 g (2).jpg",
+      "assets/images/products/canela 60 g (1).jpg",
+      "assets/images/products/canela 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "9",
+    "name": "Cebola Granulada",
+    "barcode": "",
+    "description": "Praticidade sem lágrimas. Cebola desidratada que preserva o sabor original. Rehidrata facilmente, sendo perfeita para molhos, carnes e refogados com textura uniforme.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 40,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/cebola ranulada (2).jpg",
+      "assets/images/products/cebola ranulada (1).jpg",
+      "assets/images/products/cebola ranulada (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "10",
+    "name": "Chimichurri",
+    "barcode": "",
+    "description": "O clássico argentino na sua mesa. Mix de ervas e especiarias desidratadas ideal para carnes grelhadas e churrasco. Traz acidez equilibrada e frescor marcante.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 40,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/chimichurri 40g (2).jpg",
+      "assets/images/products/chimichurri 40g (1).jpg",
+      "assets/images/products/chimichurri 40g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "11",
+    "name": "Chimichurri Defumado",
+    "barcode": "",
+    "description": "A tradição do churrasco com um toque rústico de fumaça. Blend com notas defumadas intensas, ideal para elevar o sabor de carnes, aves e molhos para marinadas.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 40,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/chimichurri defumado (2).jpg",
+      "assets/images/products/chimichurri defumado (1).jpg",
+      "assets/images/products/chimichurri defumado (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "12",
+    "name": "Cominho",
+    "barcode": "",
+    "description": "Sabor marcante e aroma terroso essencial para a culinária regional. Potencializa o sabor de carnes de panela e feijão. Um toque rústico que transforma o prato.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/cominho 60 g (2).jpg",
+      "assets/images/products/cominho 60 g (1).jpg",
+      "assets/images/products/cominho 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "13",
+    "name": "Cravo da Índia",
+    "barcode": "",
+    "description": "Aroma intenso e propriedades digestivas. Especiaria essencial para doces em calda, chás e marinadas. Traz um toque exótico e funcional para as preparações.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 40,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/cravo da india 40g (2).jpg",
+      "assets/images/products/cravo da india 40g (1).jpg",
+      "assets/images/products/cravo da india 40g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "14",
+    "name": "Lemon Pepper",
+    "barcode": "",
+    "description": "Explosão cítrica com o leve calor da pimenta. O tempero queridinho para frangos e saladas. Substitui o sal comum, trazendo frescor, acidez e muito sabor.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 40,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/lemon pepper 40 g (2).jpg",
+      "assets/images/products/lemon pepper 40 g (1).jpg",
+      "assets/images/products/lemon pepper 40 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "15",
+    "name": "Lemon Pepper Defumado",
+    "barcode": "",
+    "description": "A acidez do limão e o toque da pimenta, agora com aroma de lenha. Ideal para trazer o sabor de grelha para peixes e aves feitos no fogão ou forno.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/lemon pepper defumado 60 g (2).jpg",
+      "assets/images/products/lemon pepper defumado 60 g (1).jpg",
+      "assets/images/products/lemon pepper defumado 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "16",
+    "name": "Mostarda Com Especiarias",
+    "barcode": "",
+    "description": "Acidez equilibrada com notas quentes. Uma combinação única para marinar carnes suínas, preparar molhos encorpados e dar um toque gourmet a assados.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/mostarda com especiarias (2).jpg",
+      "assets/images/products/mostarda com especiarias (1).jpg",
+      "assets/images/products/mostarda com especiarias (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "17",
+    "name": "Orégano",
+    "barcode": "",
+    "description": "Folhas secas ricas em óleos essenciais. O aroma clássico da pizza, indispensável em molhos de tomate e azeites. Traz o frescor mediterrâneo para sua casa.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 15,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/oregano 15 g (2).jpg",
+      "assets/images/products/oregano 15 g (1).jpg",
+      "assets/images/products/oregano 15 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "18",
+    "name": "Páprica Defumada",
+    "barcode": "",
+    "description": "Cor vibrante e sabor de defumação autêntico. Transforma carnes e batatas com um perfil que remete ao churrasco. Rica em antioxidantes e sem corantes artificiais.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/paprica defumada 60 g (1).jpg",
+      "assets/images/products/paprica defumada 60 g (2).jpg",
+      "assets/images/products/paprica defumada 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "19",
+    "name": "Páprica Doce",
+    "barcode": "",
+    "description": "Cor intensa sem ardência. Perfeita para colorir e dar um leve sabor frutado a ensopados e aves. Um corante natural que traz vida aos pratos e benefícios à saúde.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/paprica doce 60g (2).jpg",
+      "assets/images/products/paprica doce 60g (1).jpg",
+      "assets/images/products/paprica doce 60g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "20",
+    "name": "Páprica Picante",
+    "barcode": "",
+    "description": "Cor vermelha viva com um toque ardente na medida certa. Ideal para quem busca aquecer o paladar em pratos com carnes e caldos. Intensidade em um só produto.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/paprica picante 60 g (2).jpg",
+      "assets/images/products/paprica picante 60 g (1).jpg",
+      "assets/images/products/paprica picante 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "21",
+    "name": "Pimenta Calabresa",
+    "barcode": "",
+    "description": "Flocos desidratados com ardência marcante. Eleva o sabor de pizzas, caldos, carnes e molhos. Um toque rústico e picante para quem aprecia intensidade.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 50,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/pimenta calabresa 50 g (2).jpg",
+      "assets/images/products/pimenta calabresa 50 g (1).jpg",
+      "assets/images/products/pimenta calabresa 50 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "22",
+    "name": "Pimenta do Reino",
+    "barcode": "",
+    "description": "A rainha das especiarias. Moída na textura ideal para liberar seus óleos essenciais, traz calor e realça o sabor de qualquer prato salgado. Pura e sem misturas.",
+    "category": "Especiarias",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/pimenta do reino 60 g (2).jpg",
+      "assets/images/products/pimenta do reino 60 g (1).jpg",
+      "assets/images/products/pimenta do reino 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "23",
+    "name": "Sal Com Limao",
+    "barcode": "",
+    "description": "Praticidade cítrica. Sal enriquecido com o toque ácido do limão, perfeito para temperar peixes, frutos do mar e saladas de forma rápida. Refrescância garantida.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 140,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/sal com limao 140 g (2).jpg",
+      "assets/images/products/sal com limao 140 g (1).jpg",
+      "assets/images/products/sal com limao 140 g (3).jpg",
+      "assets/images/products/sal com limao 140 g (4).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "24",
+    "name": "Sal Grosso Com Chimichurri",
+    "barcode": "",
+    "description": "O sal perfeito para o churrasco. Cristais misturados ao frescor do chimichurri, garantindo que a carne asse absorvendo os aromas das ervas e especiarias.",
+    "category": "Sal Grosso",
+    "package_qty": 12,
+    "measure": {
+      "value": 500,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/sal grosso com chimichurri (2).jpg",
+      "assets/images/products/sal grosso com chimichurri (1).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "25",
+    "name": "Sal Grosso Completo",
+    "barcode": "",
+    "description": "A solução definitiva para grelhados. Sal grosso enriquecido com alho e especiarias. Dispensa outros temperos, criando uma crosta de sabor irresistível.",
+    "category": "Sal Grosso",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/sal grosso completo (2).jpg",
+      "assets/images/products/sal grosso completo (1).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "26",
+    "name": "Sal Grosso Iodado",
+    "barcode": "",
+    "description": "O clássico puro e cristalino. Cristais de tamanho ideal para salgar carnes de churrasco de forma uniforme. Pureza máxima para preservar o sabor dos cortes.",
+    "category": "Sal Grosso",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/sal grosso iodado (2).jpg",
+      "assets/images/products/sal grosso iodado (1).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "27",
+    "name": "Sal de Parrilla Com Alho Frito",
+    "barcode": "",
+    "description": "Granulometria uniforme que salga por igual, enriquecida com alho frito crocante. Penetra facilmente nas fibras da carne, entregando sabor profundo.",
+    "category": "Sal Parrilla",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/sal parrila com alho frito (2).jpg",
+      "assets/images/products/sal parrila com alho frito (1).jpg",
+      "assets/images/products/sal parrila com alho frito (3).jpg",
+      "assets/images/products/sal parrila com alho frito (4).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "28",
+    "name": "Sal de Parrilla Com Pimenta Calabresa",
+    "barcode": "",
+    "description": "A união da salga uniforme do sal entrefino com a ardência marcante da calabresa. Perfeito para cortes mais grossos, garantindo uma crosta picante no churrasco.",
+    "category": "Sal Parrilla",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/sal parrila com pimenta calabresa (2).jpg",
+      "assets/images/products/sal parrila com pimenta calabresa (1).jpg",
+      "assets/images/products/sal parrila com pimenta calabresa (3).jpg",
+      "assets/images/products/sal parrila com pimenta calabresa (4).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "29",
+    "name": "Sal de Parrilla Iodado",
+    "barcode": "",
+    "description": "O sal entrefino ideal para grelhados. Salga a carne rapidamente e de forma homogênea, sem reter líquidos excessivos. A escolha dos mestres churrasqueiros.",
+    "category": "Sal Parrilla",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/sal parrila iodado (2).jpg",
+      "assets/images/products/sal parrila iodado (1).jpg",
+      "assets/images/products/sal parrila iodado (3).jpg",
+      "assets/images/products/sal parrila iodado (4).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "30",
+    "name": "Sal Rosa Fino",
+    "barcode": "",
+    "description": "Sal colhido no Himalaia, rico em minerais e com menor teor de sódio. Textura fina ideal para o dia a dia, trazendo saúde e um leve toque crocante para as refeições.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/sal rosa fino (2).jpg",
+      "assets/images/products/sal rosa fino (1).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "31",
+    "name": "Tempero Alho e Sal",
+    "barcode": "",
+    "description": "A base tradicional da cozinha brasileira na proporção exata. Pronto para o uso diário em refogados e carnes, otimizando seu tempo sem perder o sabor caseiro.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 300,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/tempero alho e sal (2).jpg",
+      "assets/images/products/tempero alho e sal (1).jpg",
+      "assets/images/products/tempero alho e sal (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "32",
+    "name": "Tempero Alho Sal Com Pimenta em Pasta",
+    "barcode": "",
+    "description": "Uma pasta versátil com o toque extra de pimenta. Ideal para quem busca praticidade com um perfil levemente picante. Perfeita para marinar aves e suínos.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/tempero alho sal com pimenta em pasta (2).jpg",
+      "assets/images/products/tempero alho sal com pimenta em pasta (1).jpg",
+      "assets/images/products/tempero alho sal com pimenta em pasta (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "33",
+    "name": "Tempero Alho Sal em Pasta e Ervas",
+    "barcode": "",
+    "description": "Praticidade cremosa. A base clássica enriquecida com ervas finas que trazem um aroma sofisticado a molhos e assados. Pronto para facilitar sua vida.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/tempero alho sal em pasta e ervas (2).jpg",
+      "assets/images/products/tempero alho sal em pasta e ervas (1).jpg",
+      "assets/images/products/tempero alho sal em pasta e ervas (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "34",
+    "name": "Tempero Colorau",
+    "barcode": "",
+    "description": "Corante natural extraído do urucum, 100% puro. Dá um tom avermelhado apetitoso a molhos, arroz e carnes, sem alterar o sabor. Indispensável no visual do prato.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/tempero colorau 60 g (2).jpg",
+      "assets/images/products/tempero colorau 60 g (1).jpg",
+      "assets/images/products/tempero colorau 60 g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "35",
+    "name": "Tempero Completo",
+    "barcode": "",
+    "description": "A solução tudo-em-um para famílias grandes. Uma base rica e equilibrada de sal, alho e especiarias. Rende muito e serve para absolutamente qualquer receita.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 800,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/tempero completo 800 g (2).jpg",
+      "assets/images/products/tempero completo 800 g (1).jpg",
+      "assets/images/products/tempero completo 800 g (3).jpg",
+      "assets/images/products/tempero completo 800 g (4).jpg",
+      "assets/images/products/tempero completo 800 g (5).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "36",
+    "name": "Tempero Completo Com Pimenta",
+    "barcode": "",
+    "description": "Versão potente do tempero tradicional, acrescida de pimentas selecionadas. Entrega uma base pronta para cozinhar pratos que pedem mais calor no paladar.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/tempero completo com pimenta (1).jpg",
+      "assets/images/products/tempero completo com pimenta (2).jpg",
+      "assets/images/products/tempero completo com pimenta (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "37",
+    "name": "Tempero do Chef",
+    "barcode": "",
+    "description": "Blend sofisticado de ervas e especiarias para alta gastronomia em casa. Traz complexidade de sabor, perfeito para carnes nobres, risotos e preparos especiais.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/tempero do chef 60g (2).jpg",
+      "assets/images/products/tempero do chef 60g (1).jpg",
+      "assets/images/products/tempero do chef 60g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "38",
+    "name": "Tempero do Edu",
+    "barcode": "",
+    "description": "Mix popular e muito aromático, com notas de cenoura, cebola e pimentão. Incrível versatilidade para caldos e ensopados, trazendo um sabor rico e reconfortante.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/tempero do edu 60g (2).jpg",
+      "assets/images/products/tempero do edu 60g (1).jpg",
+      "assets/images/products/tempero do edu 60g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "39",
+    "name": "Tempero Tipo Baiano",
+    "barcode": "",
+    "description": "Uma viagem ao Nordeste. Mistura intensa de cominho, coentro, pimenta e especiarias.",
+    "category": "Temperos",
+    "package_qty": 12,
+    "measure": {
+      "value": 50,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/tempero tipo baiano 50 g (3).jpg",
+      "assets/images/products/tempero tipo baiano 50 g (1).jpg",
+      "assets/images/products/tempero tipo baiano 50 g (4).jpg"
+    ],
+    "allergens": []
   }
 ]
