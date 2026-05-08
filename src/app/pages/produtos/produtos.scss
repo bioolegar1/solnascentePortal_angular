@@ -7,6 +7,16 @@
 .public-catalog-wrapper {
   background-color: $gray-50;
   min-height: 100vh;
+  -webkit-overflow-scrolling: touch; // Melhora o scroll em iOS
+}
+
+// Correção para o bug de travamento de scroll
+:host-context(body) {
+  &.modal-open {
+    overflow: hidden !important;
+    touch-action: none !important;
+    -ms-touch-action: none !important;
+  }
 }
 
 .container {

@@ -151,6 +151,7 @@ export default class Produtos implements OnInit {
 
   closeProduct(): void {
     document.body.style.overflow = '';
+    document.body.style.touchAction = '';
     this.selectedProduct.set(null);
   }
 
