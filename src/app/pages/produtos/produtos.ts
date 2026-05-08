@@ -29,6 +29,7 @@ export default class Produtos implements OnInit {
   search = signal('');
   selectedProduct = signal<Product | null>(null);
   activeImage = signal('');
+  isZoomed = signal(false);
 
   // VARIÁVEL DE ESTADO DE RECOLHIMENTO
   collapsedCategories = signal<Set<string>>(new Set());

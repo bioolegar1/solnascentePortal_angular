@@ -20,21 +20,31 @@
           type="text"
           [ngModel]="search()"
           (ngModelChange)="search.set($event)"
-          placeholder="Buscar produto..."
+          placeholder="O que você procura hoje?"
           class="input-control"
         />
       </div>
 
-      <select
-        #catSelect
-        (change)="scrollToCategory(catSelect.value); catSelect.value = ''"
-        class="select-control"
-      >
-        <option value="">Ir para a categoria...</option>
-        @for (cat of categories(); track cat) {
-          <option [value]="cat">{{ cat }}</option>
-        }
-      </select>
+      <nav class="categories-nav">
+        <div class="categories-scroll">
+          <button 
+            type="button" 
+            class="category-pill" 
+            (click)="window.scrollTo({top: 0, behavior: 'smooth'})"
+          >
+            Todos
+          </button>
+          @for (cat of categories(); track cat) {
+            <button 
+              type="button" 
+              class="category-pill" 
+              (click)="scrollToCategory(cat)"
+            >
+              {{ cat }}
+            </button>
+          }
+        </div>
+      </nav>
 
     </div>
   </div>
@@ -127,7 +137,18 @@
         <div class="modal-grid">
 
           <div class="modal-gallery">
-            <img [src]="activeImage()" [alt]="product.name" class="main-modal-image" />
+            <div class="main-image-container" (click)="isZoomed.set(true)">
+              <img [src]="activeImage()" [alt]="product.name" class="main-modal-image" />
+              <div class="zoom-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                Toque para ampliar
+              </div>
+            </div>
 
             @if (product.images && product.images.length > 1) {
               <div class="gallery-thumbs">
@@ -209,6 +230,21 @@
           </div>
         }
 
+      </div>
+    </div>
+  }
+
+  <!-- ZOOM OVERLAY -->
+  @if (isZoomed()) {
+    <div class="zoom-fullscreen-overlay" (click)="isZoomed.set(false)">
+      <div class="zoom-content animate-zoom-in">
+        <img [src]="activeImage()" alt="Zoom do produto" />
+        <button class="btn-close-zoom" (click)="isZoomed.set(false)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
   }

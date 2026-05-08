@@ -88,12 +88,67 @@
 
 .filters-bar {
   display: flex;
-  gap: 0.875rem;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+}
 
-  // INPUT DE BUSCA
-  .search-input-group {
+// NAVEGAÇÃO DE CATEGORIAS (PILLS)
+.categories-nav {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .categories-scroll {
+    display: flex;
+    gap: 0.625rem;
+    overflow-x: auto;
+    padding: 0.25rem 0 0.5rem;
+    scrollbar-width: none; // Firefox
+    &::-webkit-scrollbar { display: none; } // Chrome/Safari
+
+    // Efeito de máscara para indicar que tem mais itens pro lado
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.9));
+      pointer-events: none;
+    }
+  }
+
+  .category-pill {
+    white-space: nowrap;
+    padding: 0.6rem 1.25rem;
+    background-color: white;
+    border: 1.5px solid $gray-200;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $gray-600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+      border-color: $green-400;
+      color: $green-600;
+      background-color: $green-50;
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+    
+    // Podemos adicionar uma classe .active-pill futuramente se quisermos destacar a atual
+  }
+}
+
+// INPUT DE BUSCA
+.search-input-group {
     flex: 1;
     min-width: 220px;
     position: relative;
@@ -290,10 +345,10 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
 
-  @media (min-width: 480px)  { grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 640px)  { gap: 1.25rem; }
   @media (min-width: 900px)  { grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
   @media (min-width: 1200px) { grid-template-columns: repeat(4, 1fr); }
 }
@@ -519,15 +574,55 @@
     border-bottom: 1px solid $gray-100;
   }
 
+  .main-image-container {
+    position: relative;
+    width: 100%;
+    cursor: zoom-in;
+    border-radius: $radius-xl;
+    overflow: hidden;
+    box-shadow: $shadow-md;
+    background-color: white;
+
+    &:hover .zoom-hint {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .main-modal-image {
     width: 100%;
     height: 320px;
-    object-fit: contain; // Garante a exibição completa sem cortes
-    background-color: white; // Fundo preenchido para sobras de proporção
-    border-radius: $radius-xl;
-    box-shadow: $shadow-md;
+    object-fit: contain;
+    display: block;
 
     @media (min-width: 860px) { height: 420px; }
+  }
+
+  .zoom-hint {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+
+    svg { width: 14px; height: 14px; }
+
+    @media (max-width: 768px) {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
   }
 
   .gallery-thumbs {
@@ -818,4 +913,69 @@
 
 .animate-fade-in-up {
   animation: fadeInUp 0.35s ease-out forwards;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ZOOM FULLSCREEN OVERLAY
+// ─────────────────────────────────────────────────────────────────────────────
+
+.zoom-fullscreen-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  padding: 1rem;
+}
+
+.zoom-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: $radius-lg;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  }
+}
+
+.btn-close-zoom {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: $gray-900;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+
+  svg { width: 24px; height: 24px; }
+
+  &:hover { transform: scale(1.1); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.animate-zoom-in {
+  animation: zoomIn 0.25s ease-out forwards;
 }
