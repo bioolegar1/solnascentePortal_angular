@@ -160,6 +160,13 @@ export default class Produtos implements OnInit {
     this.closeProduct();
   }
 
+  shareProduct(product: Product): void {
+    const url = window.location.href; // No futuro podemos passar um link profundo
+    const message = `Veja este produto da Sol Nascente: *${product.name}* (${this.formatMeasure(product)})\n\nConfira no catálogo:\n${url}`;
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  }
+
   requestQuote(item: Product): void {
     const msg = `Olá! Gostaria de orçamento: *${item.name}* (Cód: ${item.barcode || 'N/A'}).`;
     window.open(`https://wa.me/5562991122981?text=${encodeURIComponent(msg)}`, '_blank');

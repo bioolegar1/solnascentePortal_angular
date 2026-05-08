@@ -383,8 +383,53 @@
 }
 
 .modal-details { padding: 2.5rem 1.75rem; display: flex; flex-direction: column; gap: 1.5rem;
-  .modal-category { background-color: $green-50; color: $green-700; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; align-self: flex-start; }
+  .modal-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.875rem;
+  }
+
+  .modal-category {
+    background-color: $green-50;
+    color: $green-700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .btn-share {
+    background-color: $gray-100;
+    color: $gray-700;
+    border: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    svg { 
+      width: 14px; 
+      height: 14px; 
+      stroke-width: 2.5px;
+    }
+
+    &:hover {
+      background-color: $green-100;
+      color: $green-700;
+    }
+
+    &:active { transform: scale(0.95); }
+  }
+
   .modal-title { font-size: 1.75rem; font-weight: 800; color: $gray-900; margin: 0; line-height: 1.2; }
+
 }
 
 .modal-badges-grid {
