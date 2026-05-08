@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Product, ALLERGEN_LABELS } from '../../shared/interfaces/product.interface';
 import { ProductsService } from '../../core/services/products.service';
+import { CartService } from '../../core/services/cart.service';
 
 @Component({
   selector: 'app-produtos',
@@ -20,6 +21,7 @@ import { ProductsService } from '../../core/services/products.service';
 })
 export default class Produtos implements OnInit {
   private productsService = inject(ProductsService);
+  private cartService = inject(CartService);
   private destroyRef = inject(DestroyRef);
 
   readonly allergenLabels = ALLERGEN_LABELS;
@@ -30,6 +32,8 @@ export default class Produtos implements OnInit {
   selectedProduct = signal<Product | null>(null);
   activeImage = signal('');
   isZoomed = signal(false);
+  quantity = signal(1);
+  showAddedFeedback = signal(false);
 
   // VARIÁVEL DE ESTADO DE RECOLHIMENTO
   collapsedCategories = signal<Set<string>>(new Set());
@@ -99,6 +103,13 @@ export default class Produtos implements OnInit {
     return 'cat-' + category.toLowerCase().replace(/\s+/g, '-');
   }
 
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
   scrollToCategory(category: string): void {
     if (!category) return;
 
@@ -122,6 +133,20 @@ export default class Produtos implements OnInit {
     document.body.style.overflow = 'hidden';
     this.selectedProduct.set(item);
     this.activeImage.set(item.images?.[0] ?? '');
+    this.quantity.set(1); // Reseta quantidade ao abrir
+  }
+
+  addToCart(product: Product): void {
+    this.cartService.addToCart(product, this.quantity());
+    
+    // Feedback visual
+    this.showAddedFeedback.set(true);
+    setTimeout(() => this.showAddedFeedback.set(false), 2000);
+  }
+
+  updateModalQuantity(val: number): void {
+    const next = this.quantity() + val;
+    if (next >= 1) this.quantity.set(next);
   }
 
   closeProduct(): void {

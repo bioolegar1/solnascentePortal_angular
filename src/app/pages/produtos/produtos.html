@@ -4,7 +4,8 @@
     <img src="assets/imagem02.jpg" alt="Nossos Produtos" class="banner-bg" />
     <div class="banner-overlay"></div>
     <div class="banner-content">
-      <h1>Nossos Produtos</h1>
+      <h1>Faça seu Pedido</h1>
+      <p>Monte sua lista de produtos e finalize a cotação direto pelo nosso WhatsApp. Rápido, prático e personalizado!</p>
     </div>
   </header>
 
@@ -26,11 +27,18 @@
       </div>
 
       <nav class="categories-nav">
+        <div class="nav-header-hint">
+          <span>Explore as categorias</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-swipe">
+            <path d="M18 8L22 12L18 16"></path>
+            <path d="M2 12H22"></path>
+          </svg>
+        </div>
         <div class="categories-scroll">
           <button 
             type="button" 
             class="category-pill" 
-            (click)="window.scrollTo({top: 0, behavior: 'smooth'})"
+            (click)="scrollToTop()"
           >
             Todos
           </button>
@@ -134,102 +142,124 @@
           </svg>
         </button>
 
-        <div class="modal-grid">
+        <div class="modal-main-content">
+          <div class="modal-grid">
 
-          <div class="modal-gallery">
-            <div class="main-image-container" (click)="isZoomed.set(true)">
-              <img [src]="activeImage()" [alt]="product.name" class="main-modal-image" />
-              <div class="zoom-hint">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                  <line x1="11" y1="8" x2="11" y2="14"></line>
-                  <line x1="8" y1="11" x2="14" y2="11"></line>
-                </svg>
-                Toque para ampliar
-              </div>
-            </div>
-
-            @if (product.images && product.images.length > 1) {
-              <div class="gallery-thumbs">
-                @for (imgUrl of product.images; track imgUrl) {
-                  <button
-                    type="button"
-                    class="thumb-btn"
-                    [class.active-thumb]="activeImage() === imgUrl"
-                    (click)="activeImage.set(imgUrl)"
-                  >
-                    <img [src]="imgUrl" alt="Imagem do produto" />
-                  </button>
-                }
-              </div>
-            }
-          </div>
-
-          <div class="modal-details">
-            <span class="modal-category">{{ product.category }}</span>
-            <h2 class="modal-title">{{ product.name }}</h2>
-
-            @if (product.barcode) {
-              <span class="modal-barcode">Cód: {{ product.barcode }}</span>
-            }
-
-            <div class="modal-badges-grid">
-              <div class="spec-badge">
-                <span class="spec-label">{{ product.measure.unit === 'g' ? 'Peso' : 'Volume' }}</span>
-                <span class="spec-value">{{ formatMeasure(product) }}</span>
-              </div>
-              <div class="spec-badge">
-                <span class="spec-label">Na Caixa</span>
-                <span class="spec-value">{{ product.package_qty }} un</span>
-              </div>
-            </div>
-
-            @if (product.allergens && product.allergens.length > 0) {
-              <div class="allergens-area">
-                <span class="allergens-label">⚠️ Contém:</span>
-                <div class="allergens-tags">
-                  @for (al of product.allergens; track al) {
-                    <span class="allergen-tag">{{ allergenLabels[al] }}</span>
-                  }
+            <div class="modal-gallery">
+              <div class="main-image-container" (click)="isZoomed.set(true)">
+                <img [src]="activeImage()" [alt]="product.name" class="main-modal-image" />
+                <div class="zoom-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  Toque para ampliar
                 </div>
               </div>
-            }
 
-            <div class="modal-description-area">
-              <h3>Sobre o Produto</h3>
-              <p>{{ product.description }}</p>
-            </div>
-
-            <button class="btn-whatsapp-quote" (click)="requestQuote(product)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-whatsapp">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              Solicitar Orçamento no WhatsApp
-            </button>
-          </div>
-        </div>
-
-        @if (relatedProducts().length > 0) {
-          <div class="related-products-section">
-            <div class="section-title-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-              <h3>Veja também</h3>
-            </div>
-
-            <div class="related-grid">
-              @for (rel of relatedProducts(); track rel.id) {
-                <div class="related-card" (click)="openProduct(rel)">
-                  <img [src]="getMainImage(rel)" [alt]="rel.name" />
-                  <h4>{{ rel.name }}</h4>
+              @if (product.images && product.images.length > 1) {
+                <div class="gallery-thumbs">
+                  @for (imgUrl of product.images; track imgUrl) {
+                    <button
+                      type="button"
+                      class="thumb-btn"
+                      [class.active-thumb]="activeImage() === imgUrl"
+                      (click)="activeImage.set(imgUrl)"
+                    >
+                      <img [src]="imgUrl" alt="Imagem do produto" />
+                    </button>
+                  }
                 </div>
               }
             </div>
-          </div>
-        }
 
+            <div class="modal-details">
+              <span class="modal-category">{{ product.category }}</span>
+              <h2 class="modal-title">{{ product.name }}</h2>
+
+              @if (product.barcode) {
+                <span class="modal-barcode">Cód: {{ product.barcode }}</span>
+              }
+
+              <div class="modal-badges-grid">
+                <div class="spec-badge">
+                  <span class="spec-label">{{ product.measure.unit === 'g' ? 'Peso' : 'Volume' }}</span>
+                  <span class="spec-value">{{ formatMeasure(product) }}</span>
+                </div>
+                <div class="spec-badge">
+                  <span class="spec-label">Na Caixa</span>
+                  <span class="spec-value">{{ product.package_qty }} un</span>
+                </div>
+              </div>
+
+              @if (product.allergens && product.allergens.length > 0) {
+                <div class="allergens-area">
+                  <span class="allergens-label">⚠️ Contém:</span>
+                  <div class="allergens-tags">
+                    @for (al of product.allergens; track al) {
+                      <span class="allergen-tag">{{ allergenLabels[al] }}</span>
+                    }
+                  </div>
+                </div>
+              }
+
+              <div class="modal-description-area">
+                <h3>Sobre o Produto</h3>
+                <p>{{ product.description }}</p>
+              </div>
+            </div>
+          </div>
+
+          @if (relatedProducts().length > 0) {
+            <div class="related-products-section">
+              <div class="section-title-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <h3>Veja também</h3>
+              </div>
+
+              <div class="related-grid">
+                @for (rel of relatedProducts(); track rel.id) {
+                  <div class="related-card" (click)="openProduct(rel)">
+                    <img [src]="getMainImage(rel)" [alt]="rel.name" />
+                    <h4>{{ rel.name }}</h4>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+        </div>
+
+        <footer class="modal-fixed-footer">
+          <div class="cart-actions-area">
+            <div class="quantity-selector">
+              <button type="button" (click)="updateModalQuantity(-1)">-</button>
+              <span class="qty-display">{{ quantity() }}</span>
+              <button type="button" (click)="updateModalQuantity(1)">+</button>
+            </div>
+
+            <button class="btn-add-to-cart" (click)="addToCart(product)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              Adicionar ao Pedido
+            </button>
+          </div>
+
+          @if (showAddedFeedback()) {
+            <div class="added-feedback animate-fade-in">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Item adicionado com sucesso!
+            </div>
+          }
+        </footer>
       </div>
     </div>
   }

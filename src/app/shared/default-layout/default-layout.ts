@@ -3,9 +3,11 @@ import { RouterOutlet, RouterLink, RouterLinkActive, Router, NavigationEnd } fro
 import { filter } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
+import { CartSidebarComponent } from '../components/cart-sidebar/cart-sidebar';
+
 @Component({
   selector: 'app-default-layout',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, CartSidebarComponent],
   templateUrl: './default-layout.html',
   styleUrl: './default-layout.scss',
 })

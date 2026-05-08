@@ -1,0 +1,91 @@
+<!-- BOTÃO FLUTUANTE (FAB) -->
+@if (cartService.totalItems() > 0) {
+  <button 
+    class="cart-fab animate-pop-in" 
+    [class.has-items]="cartService.totalItems() > 0"
+    (click)="toggleSidebar()"
+  >
+    <div class="icon-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <span class="badge">{{ cartService.totalItems() }}</span>
+    </div>
+  </button>
+}
+
+<!-- SIDEBAR OVERLAY -->
+@if (isOpen()) {
+  <div class="cart-overlay" (click)="toggleSidebar()"></div>
+}
+
+<!-- SIDEBAR CONTAINER -->
+<aside class="cart-sidebar" [class.open]="isOpen()">
+  <header class="cart-header">
+    <h2>Seu Pedido</h2>
+    <button class="btn-close" (click)="toggleSidebar()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </header>
+
+  <div class="cart-content">
+    @if (cartService.isEmpty()) {
+      <div class="empty-cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+          <line x1="9" y1="9" x2="9.01" y2="9"></line>
+          <line x1="15" y1="9" x2="15.01" y2="9"></line>
+        </svg>
+        <p>Sua sacola está vazia.</p>
+        <button class="btn-continue" (click)="toggleSidebar()">Continuar Comprando</button>
+      </div>
+    } @else {
+      <ul class="cart-list">
+        @for (item of cartService.items(); track item.product.id) {
+          <li class="cart-item">
+            <img [src]="item.product.images[0]" [alt]="item.product.name" class="item-img" />
+            <div class="item-info">
+              <h3>{{ item.product.name }}</h3>
+              <span class="item-spec">{{ item.product.measure.value }}{{ item.product.measure.unit }}</span>
+              
+              <div class="quantity-controls">
+                <button (click)="cartService.updateQuantity(item.product.id, item.quantity - 1)">-</button>
+                <span class="qty">{{ item.quantity }}</span>
+                <button (click)="cartService.updateQuantity(item.product.id, item.quantity + 1)">+</button>
+              </div>
+            </div>
+            <button class="btn-remove" (click)="cartService.removeFromCart(item.product.id)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+            </button>
+          </li>
+        }
+      </ul>
+    }
+  </div>
+
+  @if (!cartService.isEmpty()) {
+    <footer class="cart-footer">
+      <div class="ux-notice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span>Nenhuma cobrança é feita agora. Nosso vendedor retornará com o orçamento final.</span>
+      </div>
+      
+      <button class="btn-checkout" (click)="sendToWhatsApp()">
+        Finalizar Pedido pelo WhatsApp
+      </button>
+    </footer>
+  }
+</aside>
