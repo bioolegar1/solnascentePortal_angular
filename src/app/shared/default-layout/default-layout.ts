@@ -11,7 +11,7 @@ import { CartService } from '../../core/services/cart.service';
   templateUrl: './default-layout.html',
   styleUrl: './default-layout.scss',
 })
-export class DefaultLayoutComponent {
+export default class DefaultLayoutComponent {
   isMenuOpen = signal(false);
   cartService = inject(CartService);
 
