@@ -7,10 +7,9 @@
 .public-catalog-wrapper {
   background-color: $gray-50;
   min-height: 100vh;
-  -webkit-overflow-scrolling: touch; // Melhora o scroll em iOS
+  -webkit-overflow-scrolling: touch;
 }
 
-// Correção para o bug de travamento de scroll
 :host-context(body) {
   &.modal-open {
     overflow: hidden !important;
@@ -67,7 +66,6 @@
       margin: 0 0 0.5rem;
       letter-spacing: -0.02em;
       text-shadow: 0 2px 12px rgba(0,0,0,0.3);
-
       @media (min-width: 768px) { font-size: 3rem; }
     }
 
@@ -75,7 +73,6 @@
       margin: 0;
       font-size: 1rem;
       color: rgba(255,255,255,0.8);
-
       @media (min-width: 768px) { font-size: 1.125rem; }
     }
   }
@@ -93,7 +90,8 @@
   backdrop-filter: blur(10px);
   border-bottom: 1px solid $gray-200;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 0.875rem 0;
+  padding: 0.75rem 0;
+  transition: all 0.3s ease;
 }
 
 .filters-bar {
@@ -368,7 +366,13 @@
 
 .main-image-container {
   position: relative; width: 100%; cursor: zoom-in; border-radius: $radius-xl; overflow: hidden; box-shadow: $shadow-md; background-color: white;
-  .main-modal-image { width: 100%; height: 320px; object-fit: contain; display: block; @media (min-width: 860px) { height: 420px; } }
+  
+  .main-modal-image { 
+    width: 100%; height: 320px; object-fit: contain; display: block; 
+    transition: opacity 0.3s ease; // Fade na troca de imagem
+    @media (min-width: 860px) { height: 420px; } 
+  }
+
   .zoom-hint {
     position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6);
     color: white; padding: 0.35rem 0.75rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 600;
@@ -384,87 +388,30 @@
 
 .modal-details { padding: 2.5rem 1.75rem; display: flex; flex-direction: column; gap: 1.5rem;
   .modal-actions-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid $gray-100;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid $gray-100;
   }
-
   .btn-share-whatsapp {
-    background-color: #25d366;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
-
-    .icon-whatsapp-small { 
-      width: 16px; 
-      height: 16px;
-    }
-
-    &:hover {
-      background-color: #1db954;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 14px rgba(37, 211, 102, 0.3);
-    }
-
-    &:active { transform: scale(0.96); }
+    background-color: #25d366; color: white; border: none; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+    .icon-whatsapp-small { width: 16px; height: 16px; }
+    &:hover { background-color: #1db954; transform: translateY(-1px); box-shadow: 0 6px 14px rgba(37, 211, 102, 0.3); }
   }
-
-  .modal-barcode {
-    font-family: monospace;
-    color: $gray-400;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-  }
-
   .modal-title { font-size: 1.75rem; font-weight: 800; color: $gray-900; margin: 0; line-height: 1.2; }
-
-}
-
-.modal-badges-grid {
-  display: flex; gap: 1rem;
-  .spec-badge {
-    background-color: $gray-50; border: 1px solid $gray-200; padding: 1rem; border-radius: $radius-xl; flex: 1; display: flex; flex-direction: column; gap: 0.25rem;
-    .spec-label { font-size: 0.65rem; color: $gray-400; font-weight: 700; text-transform: uppercase; }
-    .spec-value { font-size: 1.1rem; font-weight: 800; color: $gray-900; }
-  }
-}
-
-.modal-description-area {
-  h3 { font-size: 0.85rem; font-weight: 700; color: $gray-400; text-transform: uppercase; margin-bottom: 0.75rem; }
-  p { color: $gray-600; line-height: 1.6; font-size: 0.95rem; margin: 0; }
-}
-
-.related-products-section {
-  padding: 2rem 1.75rem; background-color: $gray-50; border-top: 1px solid $gray-100;
-  .section-title-wrapper { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; svg { width: 18px !important; height: 18px !important; color: $green-600; } h3 { margin: 0; font-size: 1.1rem; font-weight: 700; } }
-}
-
-.related-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; @media (min-width: 640px) { grid-template-columns: repeat(4, 1fr); }
-  .related-card { background: white; border-radius: 0.75rem; padding: 0.75rem; text-align: center; cursor: pointer; img { width: 100%; height: 80px; object-fit: contain; margin-bottom: 0.5rem; } h4 { font-size: 0.8rem; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } }
 }
 
 .cart-actions-area { display: flex; gap: 1rem; align-items: center; }
 
 .quantity-selector {
   display: flex; align-items: center; background-color: $gray-50; border: 1.5px solid $gray-200; border-radius: $radius-xl; height: 52px;
-  button { width: 44px; height: 100%; border: none; background: none; font-size: 1.25rem; cursor: pointer; color: $gray-600; }
-  .qty-display { min-width: 40px; text-align: center; font-weight: 800; font-size: 1.1rem; color: $gray-900; }
+  button { width: 44px; height: 100%; border: none; background: none; font-size: 1.25rem; cursor: pointer; color: $gray-600; transition: all 0.2s; &:active { color: $green-600; scale: 1.2; } }
+  
+  .qty-display { 
+    min-width: 40px; text-align: center; font-weight: 800; font-size: 1.1rem; color: $gray-900; 
+    display: inline-block; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &.animate-pop { animation: pop-qty 0.2s forwards; color: $green-600; }
+  }
 }
+
+@keyframes pop-qty { 0% { transform: scale(1); } 50% { transform: scale(1.4); } 100% { transform: scale(1); } }
 
 .btn-add-to-cart {
   flex: 1; background-color: $green-600; color: white; border: none; height: 52px; border-radius: $radius-xl; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 0.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba($green-600, 0.2); transition: all 0.2s;
@@ -476,6 +423,10 @@
   position: absolute; bottom: 6rem; left: 50%; transform: translateX(-50%); background-color: $gray-900; color: white; padding: 0.6rem 1.25rem; border-radius: 9999px; font-weight: 600; font-size: 0.8rem; display: flex; align-items: center; gap: 0.5rem; z-index: 1010; box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   svg { width: 16px !important; height: 16px !important; color: $green-400; stroke-width: 3px; }
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ANIMAÇÕES E EXTRAS
+// ─────────────────────────────────────────────────────────────────────────────
 
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes slideUp { from { transform: translateY(100%); } to { opacity: 1; transform: translateY(0); } }

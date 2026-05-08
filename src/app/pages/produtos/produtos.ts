@@ -141,12 +141,27 @@ export default class Produtos implements OnInit {
     
     // Feedback visual
     this.showAddedFeedback.set(true);
-    setTimeout(() => this.showAddedFeedback.set(false), 2000);
+    
+    // One-Click Close: Fecha o modal automaticamente após 1.5s
+    setTimeout(() => {
+      this.showAddedFeedback.set(false);
+      this.closeProduct();
+    }, 1500);
   }
 
   updateModalQuantity(val: number): void {
     const next = this.quantity() + val;
-    if (next >= 1) this.quantity.set(next);
+    if (next >= 1) {
+      this.quantity.set(next);
+      // Trigger para animação de pulo no template
+      this.animateQty();
+    }
+  }
+
+  isQtyAnimating = signal(false);
+  animateQty() {
+    this.isQtyAnimating.set(true);
+    setTimeout(() => this.isQtyAnimating.set(false), 200);
   }
 
   closeProduct(): void {
