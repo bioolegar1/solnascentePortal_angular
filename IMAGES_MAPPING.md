@@ -1,0 +1,360 @@
+# 📂 Mapeamento de Imagens e Categorias — Sol Nascente
+
+Este arquivo contém a estrutura completa de pastas e arquivos de imagem, organizada para refletir as categorias do catálogo. Use esta lista para atualizar o `products.json`.
+
+## 📁 Estrutura de Pastas (Categorias)
+
+### 1. ALHO PICADO (`src/assets/images/products/ALHO PICADO/`)
+- `alho-e-sal-em-pasta-300-g-1.jpg`
+- `alho-e-sal-em-pasta-300-g-2.jpg`
+- `alho-e-sal-em-pasta-300-g-3.jpg`
+- `alho-esal-em-pasta-800-g-1.jpg`
+- `alho-esal-em-pasta-800-g-2.jpg`
+- `alho-esal-em-pasta-800-g-3.jpg`
+
+### 2. ALHOS ENCARTELADOS (`src/assets/images/products/ALHOS ENCARTELADOS/`)
+- `Alho encartelado 90 g.jpg`
+- `Alho-encartelado-180g.jpg`
+- `Alho-encartelado-450g.jpg`
+- `Alho-encartelado-por-do-sol-150g.jpg`
+- `Alho-encartelado-Por-do-sol-400g.jpg`
+- `Alho-encartelado-por-do-sol-80g.jpg`
+
+### 3. CONDIMENTO E ESPECIARIAS (`src/assets/images/products/CONDIMENTO E ESPECIARIAS/`)
+- `acafrao-da-terra-1.jpg`
+- `acafrao-da-terra-2.jpg`
+- `acafrao-da-terra-50-g-1.jpg`
+- `acafrao-da-terra-50-g-2.jpg`
+- `alecrim-10-g-1.jpg`
+- `alecrim-10-g-2.jpg`
+- `anilina-azul-08-g-1.jpg`
+- `anilina-azul-08-g-2.jpg`
+- `anilina-rosa-08-g-1.jpg`
+- `anilina-rosa-08-g-2.jpg`
+- `anilina-verde-08-g-1.jpg`
+- `anilina-verde-08-g-2.jpg`
+- `bicarbonato-de-sodio-15-g-1.jpg`
+- `bicarbonato-de-sodio-15-g-2.jpg`
+- `canela-casca-07-g-1.jpg`
+- `canela-casca-07-g-2.jpg`
+- `canela-em-casca-50-g-1.jpg`
+- `canela-em-casca-50-g-2.jpg`
+- `canela-em-po-10g-1.jpg`
+- `canela-em-po-10g-2.jpg`
+- `cha-de-camomila-05-g-1.jpg`
+- `cha-de-camomila-05-g-2.jpg`
+- `coentro-em-graos-05-g-1.jpg`
+- `coentro-em-graos-05-g-2.jpg`
+- `cominho-em-po-08-g-1.jpg`
+- `cominho-em-po-08-g-2.jpg`
+- `confeito-chocolate-15-g-1.jpg`
+- `confeito-chocolate-15-g-2.jpg`
+- `confeito-chocolate-50-g-1.jpg`
+- `confeito-chocolate-50-g-2.jpg`
+- `confeito-colorido-50g-1.jpg`
+- `confeito-colorido-50g-2.jpg`
+- `cravo-da-india-05-g-1.jpg`
+- `cravo-da-india-05-g-2.jpg`
+- `erva-doce-06-g-1.jpg`
+- `erva-doce-06-g-2.jpg`
+- `folha-de-louro-5g-1.jpg`
+- `folha-de-louro-5g-2.jpg`
+- `gengibre-moido-10-g-1.jpg`
+- `gengibre-moido-10-g-2.jpg`
+- `lemon-pepper-10-g-1.jpg`
+- `lemon-pepper-10-g-2.jpg`
+- `lemon-pepper-defumado-10-g-1.jpg`
+- `lemon-pepper-defumado-10-g-2.jpg`
+- `manjericao-05-g-1.jpg`
+- `manjericao-05-g-2.jpg`
+- `noz-moscada-01-und-1.jpg`
+- `noz-moscada-01-und-2.jpg`
+- `noz-moscada-moida-10g-1.jpg`
+- `noz-moscada-moida-10g-2.jpg`
+- `oregano-05-g-1.jpg`
+- `oregano-05-g-2.jpg`
+- `pimenta-calabresa-05-g-1.jpg`
+- `pimenta-calabresa-05-g-2.jpg`
+- `pimenta-do-reino-em-grao-07-g-1.jpg`
+- `pimenta-do-reino-em-grao-07-g-2.jpg`
+- `pimenta-do-reino-moida-10g-1.jpg`
+- `pimenta-do-reino-moida-10g-2.jpg`
+- `sal-amoniaco-15-g-1.jpg`
+- `sal-amoniaco-15-g-2.jpg`
+- `salsa-10-g-1.jpg`
+- `salsa-10-g-2.jpg`
+- `tempero-chimichurri-05-g-1.jpg`
+- `tempero-chimichurri-05-g-2.jpg`
+- `tempero-colorau-15-g-1.jpg`
+- `tempero-colorau-15-g-2.jpg`
+- `tempero-do-chef-10-g-1.jpg`
+- `tempero-do-chef-10-g-2.jpg`
+- `tempero-do-edu-10-g-1.jpg`
+- `tempero-do-edu-10-g-2.jpg`
+- `tempero-ervas-finas-10-g-1.jpg`
+- `tempero-ervas-finas-10-g-2.jpg`
+- `tempero-paprica-defumada-10-g-1.jpg`
+- `tempero-paprica-defumada-10-g-2.jpg`
+- `tempero-paprica-picante-10-g-1.jpg`
+- `tempero-paprica-picante-10-g-2.jpg`
+- `tempero-tipo-baiano-10-g-1.jpg`
+- `tempero-tipo-baiano-10-g-2.jpg`
+
+### 4. FAROFAS (`src/assets/images/products/FAROFAS/`)
+- `Fafofa Pronta sabor Bacon 350g (1).jpg`
+- `Fafofa Pronta sabor Bacon 350g (2).jpg`
+- `Farofa pronta Sabor Carne seca 350g (1).jpg`
+- `Farofa pronta Sabor Carne seca 350g (2).jpg`
+- `Farofa pronta sabor Tradicional Picante (1).jpg`
+- `Farofa pronta sabor Tradicional Picante (2).jpg`
+- `Farofa-Pronta-sabor-Churrasco-350g (1).jpg`
+- `Farofa-Pronta-sabor-Churrasco-350g (2).jpg`
+
+### 5. KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS (`src/assets/images/products/KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS/`)
+- `Ketchup 370g (1).jpg`
+- `Ketchup 370g (2).jpg`
+- `Ketchup Picante 200g (1).jpg`
+- `Ketchup Picante 200g (2).jpg`
+- `Ketchup Picante 400g (1).jpg`
+- `Ketchup Picante 400g (2).jpg`
+- `Ketchup sol nascente 400g (1).jpg`
+- `Ketchup sol nascente 400g (2).jpg`
+- `Maionese com Ervas Finas 200g (1).jpg`
+- `Maionese com Ervas Finas 200g (2).jpg`
+- `Maionese Picante 200g (1).jpg`
+- `Maionese Picante 200g (2).jpg`
+- `Maionese tradicional 350g (1).jpg`
+- `Maionese tradicional 350g (2).jpg`
+- `Molho 3 em 1, Maionese, mostarde e jketchup (1).jpg`
+- `Molho 3 em 1, Maionese, mostarde e jketchup (2).jpg`
+- `Molho de Mostarda 200g (1).jpg`
+- `Molho de Mostarda 200g (2).jpg`
+- `Molho para carnes Barbecue (1).jpg`
+- `Molho para carnes Barbecue (2).jpg`
+
+### 6. MOLHOS E CREMES DE PIMENTA (`src/assets/images/products/MOLHOS E CREMES DE PIMENTA/`)
+- `Molho de Alho 150ml (1).jpg`
+- `Molho de Alho 150ml (2).jpg`
+- `Molho de Alho 150ml (3).jpg`
+- `Molho de alho 900ml (1).jpg`
+- `Molho de alho 900ml (2).jpg`
+- `Molho de alho 900ml (3).jpg`
+- `Molho de alho 900ml (4).jpg`
+- `Molho de pimenta 900ml (1).jpg`
+- `Molho de pimenta 900ml (2).jpg`
+- `Molho de pimenta 900ml (3).jpg`
+- `Molho de Pimenta Calabresa  150ml (1).jpg`
+- `Molho de Pimenta Calabresa  150ml (2).jpg`
+- `Molho de Pimenta Calabresa  150ml (3).jpg`
+- `Molho de Pimenta Chipotle 250g (1).jpg`
+- `Molho de Pimenta Chipotle 250g (2).jpg`
+- `Molho de Pimenta Chipotle 250g (3).jpg`
+- `Molho de Pimenta Cremoso 250g (1).jpg`
+- `Molho de Pimenta Cremoso 250g (2).jpg`
+- `Molho de Pimenta Gota Caseira 150ml (1).jpg`
+- `Molho de Pimenta Gota Caseira 150ml (2).jpg`
+- `Molho de Pimenta Gota Caseira 150ml (3).jpg`
+- `Molho de Pimenta Malagueta 150ml (1).jpg`
+- `Molho de Pimenta Malagueta 150ml (2).jpg`
+- `Molho de Pimenta Malagueta 150ml (3).jpg`
+- `Molho Inglës 150ml (1).jpg`
+- `Molho Inglës 150ml (2).jpg`
+- `Molho Inglës 150ml (3).jpg`
+- `Molho Shoyu 150ml (1).jpg`
+- `Molho Shoyu 150ml (2).jpg`
+- `Molho Shoyu 150ml (3).jpg`
+- `Molho Shoyu 900ml (1).jpg`
+- `Molho Shoyu 900ml (2).jpg`
+- `Molho Shoyu 900ml (3).jpg`
+- `Molho-de-alho-900ml-(1).jpg`
+- `Molho-de-alho-900ml-(3).jpg`
+- `Molho-de-alho-900ml-(4).jpg`
+- `Molho-de-pimenta-900ml-(1).jpg`
+- `Molho-de-pimenta-900ml-(2).jpg`
+- `Molho-de-pimenta-900ml-(3).jpg`
+- `Molho-Shoyu-900ml-(1).jpg`
+- `Molho-Shoyu-900ml-(2).jpg`
+
+### 7. POTES DE CONDIMENTOS DELICIA (`src/assets/images/products/POTES DE CONDIMENTOS DELICIA/`)
+- `decicia-oregano-15g-1.jpg`
+- `decicia-oregano-15g-2.jpg`
+- `decicia-oregano-15g-3.jpg`
+- `delicia-alho-frito-60-g-1.jpg`
+- `delicia-alho-frito-60-g-2.jpg`
+- `delicia-alho-frito-60-g-3.jpg`
+- `delicia-canela-em-po-60-g-3.jpg`
+- `delicia-canela-em-po-60-g-4.jpg`
+- `delicia-canela-em-po-60-g-5.jpg`
+- `delicia-colorau-60-g-1.jpg`
+- `delicia-colorau-60-g-2.jpg`
+- `delicia-colorau-60-g-3.jpg`
+- `delicia-pimenta-calabresa-50-g-1.jpg`
+- `delicia-pimenta-calabresa-50-g-2.jpg`
+- `delicia-pimenta-do-reino-80-g-1.jpg`
+- `delicia-pimenta-do-reino-80-g-2.jpg`
+- `delicia-pimenta-do-reino-80-g-3.jpg`
+- `delicia-tempero-coentro-moido-60-g-1.jpg`
+- `delicia-tempero-coentro-moido-60-g-2.jpg`
+- `delicia-tempero-coentro-moido-60-g-3.jpg`
+- `delicia-tempero-de-acafrao-60-g-1.jpg`
+- `delicia-tempero-de-acafrao-60-g-2.jpg`
+- `delicia-tempero-de-acafrao-60-g-3.jpg`
+- `delicia-tempero-de-cominho-80-g-1.jpg`
+- `delicia-tempero-de-cominho-80-g-2.jpg`
+- `delicia-tempero-de-cominho-80-g-3.jpg`
+- `delicia-tempero-ervas-finas-20-g-1.jpg`
+- `delicia-tempero-ervas-finas-20-g-2.jpg`
+- `delicia-tempero-ervas-finas-20-g-3.jpg`
+- `delicia-tempero-mix-do-chef-50-g-1.jpg`
+- `delicia-tempero-mix-do-chef-50-g-2.jpg`
+- `delicia-tempero-mix-do-chef-50-g-3.jpg`
+- `delicia-tempero-paprica-defumada-60-g-1.jpg`
+- `delicia-tempero-paprica-defumada-60-g-2.jpg`
+- `delicia-tempero-paprica-defumada-60-g-3.jpg`
+- `delicia-tempero-paprica-doce-60-g-1.jpg`
+- `delicia-tempero-paprica-doce-60-g-2.jpg`
+- `delicia-tempero-paprica-doce-60-g-3.jpg`
+- `delicia-tempero-paprica-picante-60-g-1.jpg`
+- `delicia-tempero-paprica-picante-60-g-2.jpg`
+- `delicia-tempero-paprica-picante-60-g-3.jpg`
+- `delicia-tempero-tipo-baiano-70-g-1.jpg`
+- `delicia-tempero-tipo-baiano-70-g-2.jpg`
+- `delicia-tempero-tipo-baiano-70-g-3.jpg`
+
+### 8. POTES DE CONDIMENTOS SOL NASCENTE (`src/assets/images/products/POTES DE CONDIMENTOS SOL NASCENTE/`)
+- `acafrao-da-tera-60-g-3.jpg`
+- `acafrao-da-tera-60-g-4.jpg`
+- `acafrao-da-tera-60-g-5.jpg`
+- `alho-frito-60-g-1.jpg`
+- `alho-frito-60-g-2.jpg`
+- `alho-frito-60-g-3.jpg`
+- `bicarbonato-140-g-1.jpg`
+- `bicarbonato-140-g-2.jpg`
+- `bicarbonato-140-g-3.jpg`
+- `canela-60-g-1.jpg`
+- `canela-60-g-2.jpg`
+- `canela-60-g-3.jpg`
+- `cebola-ranulada-1.jpg`
+- `cebola-ranulada-2.jpg`
+- `cebola-ranulada-3.jpg`
+- `chimichurri-40g-1.jpg`
+- `chimichurri-40g-2.jpg`
+- `chimichurri-40g-3.jpg`
+- `chimichurri-defumado-1.jpg`
+- `chimichurri-defumado-2.jpg`
+- `chimichurri-defumado-3.jpg`
+- `cominho-60-g-1.jpg`
+- `cominho-60-g-2.jpg`
+- `cominho-60-g-3.jpg`
+- `cravo-da-india-40g-1.jpg`
+- `cravo-da-india-40g-2.jpg`
+- `cravo-da-india-40g-3.jpg`
+- `lemon-pepper-40-g-1.jpg`
+- `lemon-pepper-40-g-2.jpg`
+- `lemon-pepper-40-g-3.jpg`
+- `lemon-pepper-defumado-60-g-1.jpg`
+- `lemon-pepper-defumado-60-g-2.jpg`
+- `lemon-pepper-defumado-60-g-3.jpg`
+- `mostarda-com-especiarias-1.jpg`
+- `mostarda-com-especiarias-2.jpg`
+- `mostarda-com-especiarias-3.jpg`
+- `oregano-15-g-1.jpg`
+- `oregano-15-g-2.jpg`
+- `oregano-15-g-3.jpg`
+- `paprica-defumada-60-g-1.jpg`
+- `paprica-defumada-60-g-2.jpg`
+- `paprica-defumada-60-g-3.jpg`
+- `paprica-doce-60g-1.jpg`
+- `paprica-doce-60g-2.jpg`
+- `paprica-doce-60g-3.jpg`
+- `paprica-picante-60-g-1.jpg`
+- `paprica-picante-60-g-2.jpg`
+- `paprica-picante-60-g-3.jpg`
+- `pimenta-calabresa-50-g-1.jpg`
+- `pimenta-calabresa-50-g-2.jpg`
+- `pimenta-calabresa-50-g-3.jpg`
+- `pimenta-do-reino-60-g-1.jpg`
+- `pimenta-do-reino-60-g-2.jpg`
+- `pimenta-do-reino-60-g-3.jpg`
+- `tempero-colorau-60-g-1.jpg`
+- `tempero-colorau-60-g-2.jpg`
+- `tempero-colorau-60-g-3.jpg`
+- `tempero-do-chef-60g-1.jpg`
+- `tempero-do-chef-60g-2.jpg`
+- `tempero-do-chef-60g-3.jpg`
+- `tempero-do-edu-60g-1.jpg`
+- `tempero-do-edu-60g-2.jpg`
+- `tempero-do-edu-60g-3.jpg`
+- `tempero-tipo-baiano-50-g-1.jpg`
+- `tempero-tipo-baiano-50-g-3.jpg`
+- `tempero-tipo-baiano-50-g-4.jpg`
+
+### 9. PRODUTOS GRAMATURAS MAIORES (`src/assets/images/products/PRODUTOS GRAMATURAS MAIORES/`)
+- `acafrao-da-terra-500-g-1.jpg`
+- `acafrao-da-terra-500-g-2.jpg`
+- `bicarbonato-de-sodio-500-g-1.jpg`
+- `bicarbonato-de-sodio-500-g-2.jpg`
+- `oregano-200g-1.jpg`
+- `oregano-200g-2.jpg`
+- `pimenta-do-reino-500-g-1.jpg`
+- `pimenta-do-reino-500-g-2.jpg`
+- `tempero-alho-sal-em-pasta-e-ervas-3.jpg`
+- `tempero-chimichurri-300-g-1.jpg`
+- `tempero-chimichurri-300-g-2.jpg`
+- `tempero-colorau-500-g-1.jpg`
+- `tempero-colorau-500-g-2.jpg`
+
+### 10. SAL PARA CHURRASCO (`src/assets/images/products/SAL PARA CHURRASCO/`)
+- `sal-com-limao-140-g-1.jpg`
+- `sal-com-limao-140-g-2.jpg`
+- `sal-com-limao-140-g-3.jpg`
+- `sal-com-limao-140-g-4.jpg`
+- `sal-grosso-com-chimichurri-1.jpg`
+- `sal-grosso-com-chimichurri-2.jpg`
+- `sal-grosso-completo-1.jpg`
+- `sal-grosso-completo-2.jpg`
+- `sal-grosso-iodado-1.jpg`
+- `sal-grosso-iodado-2.jpg`
+- `sal-parrila-com-alho-frito-1.jpg`
+- `sal-parrila-com-alho-frito-2.jpg`
+- `sal-parrila-com-alho-frito-3.jpg`
+- `sal-parrila-com-alho-frito-4.jpg`
+- `sal-parrila-com-alho-frito-5.jpg`
+- `sal-parrila-com-alho-frito-6.jpg`
+- `sal-parrila-com-alho-frito-7.jpg`
+- `sal-parrila-com-alho-frito-8.jpg`
+- `sal-parrila-com-pimenta-calabresa-1.jpg`
+- `sal-parrila-com-pimenta-calabresa-2.jpg`
+- `sal-parrila-com-pimenta-calabresa-3.jpg`
+- `sal-parrila-com-pimenta-calabresa-4.jpg`
+- `sal-parrila-iodado-1.jpg`
+- `sal-parrila-iodado-2.jpg`
+- `sal-parrila-iodado-3.jpg`
+- `sal-parrila-iodado-4.jpg`
+- `sal-rosa-fino-1.jpg`
+- `sal-rosa-fino-2.jpg`
+
+### 11. TEMPEROS E PASTAS (`src/assets/images/products/TEMPEROS E PASTAS/`)
+- `alho-e-sal-com-chero-verde-1.jpg`
+- `alho-e-sal-com-chero-verde-2.jpg`
+- `alho-e-sal-com-chero-verde-3.jpg`
+- `alho-e-sal-com-ervas-em-pasta-800-g-1.jpg`
+- `alho-e-sal-com-ervas-em-pasta-800-g-2.jpg`
+- `alho-e-sal-com-ervas-em-pasta-800-g-3.jpg`
+- `tempero-alho-e-sal-1.jpg`
+- `tempero-alho-e-sal-2.jpg`
+- `tempero-alho-e-sal-3.jpg`
+- `tempero-alho-sal-com-pimenta-em-pasta-1.jpg`
+- `tempero-alho-sal-com-pimenta-em-pasta-2.jpg`
+- `tempero-alho-sal-com-pimenta-em-pasta-3.jpg`
+- `tempero-alho-sal-em-pasta-e-ervas-1.jpg`
+- `tempero-alho-sal-em-pasta-e-ervas-2.jpg`
+- `tempero-completo-800-g-3.jpg`
+- `tempero-completo-800-g-4.jpg`
+- `tempero-completo-800-g-5.jpg`
+- `tempero-completo-com-pimenta-1.jpg`
+- `tempero-completo-com-pimenta-2.jpg`
+- `tempero-completo-com-pimenta-3.jpg`
+
+---
+*Mapeamento gerado automaticamente para fins de reorganização do catálogo.*

@@ -1,16 +1,15 @@
 [
-  { "id": "1", "name": "CONDIMENTOS E ESPECIARIAS", "slug": "condimentos-e-especiarias" },
+  { "id": "1", "name": "CONDIMENTO E ESPECIARIAS", "slug": "condimento-e-especiarias" },
   { "id": "2", "name": "ALHOS ENCARTELADOS", "slug": "alhos-encartelados" },
   { "id": "3", "name": "POTES DE CONDIMENTOS SOL NASCENTE", "slug": "potes-de-condimentos-sol-nascente" },
-  { "id": "4", "name": "ALHO PICADO E EM PASTA", "slug": "alho-picado-e-em-pasta" },
+  { "id": "4", "name": "ALHO PICADO", "slug": "alho-picado" },
   { "id": "5", "name": "MOLHOS E CREMES DE PIMENTA", "slug": "molhos-e-cremes-de-pimenta" },
   { "id": "6", "name": "PIMENTAS EM CONSERVA", "slug": "pimentas-em-conserva" },
   { "id": "7", "name": "SAL PARA CHURRASCO", "slug": "sal-para-churrasco" },
   { "id": "8", "name": "TEMPEROS E PASTAS", "slug": "temperos-e-pastas" },
   { "id": "9", "name": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS", "slug": "ketchup-maionese-mostarda-e-cremes-especiais" },
   { "id": "10", "name": "FAROFAS", "slug": "farofas" },
-  { "id": "11", "name": "PRODUTOS GRANATURA MAIOR", "slug": "produtos-granatura-maior" },
+  { "id": "11", "name": "PRODUTOS GRAMATURAS MAIORES", "slug": "produtos-gramaturas-maiores" },
   { "id": "12", "name": "POTES DE CONDIMENTOS DELICIA", "slug": "potes-de-condimentos-delicia" },
-  { "id": "13", "name": "CAIXAS DE ALHO 10KG", "slug": "caixas-de-alho-10kg" },
-  { "id": "14", "name": "CONFEITOS", "slug": "confeitos" }
+  { "id": "13", "name": "CAIXAS DE ALHO 10KG", "slug": "caixas-de-alho-10kg" }
 ]
