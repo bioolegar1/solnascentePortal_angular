@@ -1,91 +1,777 @@
 [
   {
-    "id": "1",
+    "id": "43",
+    "name": "Alecrim",
+    "barcode": "",
+    "description": "Alecrim desidratado com aroma intenso. Ideal para temperar carnes, aves e batatas assadas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/alecrim-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/alecrim-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "44",
+    "name": "Anilina Azul",
+    "barcode": "",
+    "description": "Corante alimentício em pó, ideal para dar um toque de cor azul vibrante a doces e preparações diversas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 8,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-azul-08-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-azul-08-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "45",
+    "name": "Anilina Rosa",
+    "barcode": "",
+    "description": "Corante alimentício em pó para dar cor rosa aos seus doces e sobremesas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 8,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-rosa-08-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-rosa-08-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "46",
+    "name": "Anilina Verde",
+    "barcode": "",
+    "description": "Corante alimentício em pó para adicionar a cor verde às suas receitas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 8,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-verde-08-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-verde-08-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "42",
     "name": "Açafrão da Terra",
     "barcode": "",
-    "description": "Açafrão da Terra 100% puro, rico em curcumina e sem aditivos. Aroma terroso e cor vibrante que garantem saúde e sabor às suas receitas. O poderoso anti-inflamatório natural que seu corpo merece.",
-    "category": "POTES DE CONDIMENTOS SOL NASCENTE",
-    "package_qty": 24,
+    "description": "Açafrão da Terra em embalagem prática de 50g. Essencial para colorir e dar sabor aos seus pratos.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 12,
     "measure": {
-      "value": 60,
+      "value": 50,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/acafrao-da-tera-60-g-3.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/acafrao-da-tera-60-g-4.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/acafrao-da-tera-60-g-5.jpg"
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-50-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-50-g-2.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "2",
-    "name": "Alho e Sal Com Cheiro Verde",
+    "id": "41",
+    "name": "Açafrão da Terra (Variante)",
     "barcode": "",
-    "description": "Combinação clássica enriquecida com o frescor do cheiro verde. Ideal para refogados, carnes e arroz, garantindo sabor caseiro e praticidade no seu dia a dia.",
-    "category": "TEMPEROS E PASTAS",
+    "description": "Açafrão da Terra de alta qualidade. Perfeito para diversas preparações culinárias.",
+    "category": "CONDIMENTO E ESPECIARIAS",
     "package_qty": 12,
     "measure": {
-      "value": 300,
-      "unit": "g"
+      "value": 0,
+      "unit": ""
     },
     "images": [
-      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-chero-verde-1.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-chero-verde-2.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-chero-verde-3.jpg"
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-2.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "3",
-    "name": "Alho e Sal Com Ervas em Pasta",
+    "id": "48",
+    "name": "Bicarbonato de Sódio",
     "barcode": "",
-    "description": "Pasta prática que une alho, sal e um mix de ervas aromáticas. Rende muito e é perfeita para marinar carnes e aves, entregando sabor profundo e textura ideal.",
-    "category": "TEMPEROS E PASTAS",
-    "package_qty": 12,
+    "description": "Bicarbonato de sódio em embalagem prática de 15g, ideal para uso pontual na cozinha.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
     "measure": {
-      "value": 800,
+      "value": 15,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-ervas-em-pasta-800-g-1.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-ervas-em-pasta-800-g-2.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-ervas-em-pasta-800-g-3.jpg"
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/bicarbonato-de-sodio-15-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/bicarbonato-de-sodio-15-g-2.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "4",
-    "name": "Alho e Sal em Pasta",
+    "id": "49",
+    "name": "Canela Casca",
     "barcode": "",
-    "description": "A base perfeita para qualquer receita. Pasta no tamanho ideal para o dia a dia. Facilita o preparo de arroz e feijão, economizando seu tempo na cozinha.",
-    "category": "ALHO PICADO",
-    "package_qty": 12,
+    "description": "Canela em casca inteira com aroma rico. Ideal para aromatizar chás, doces e sobremesas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
     "measure": {
-      "value": 300,
+      "value": 7,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-1.jpg",
-      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-2.jpg",
-      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-3.jpg"
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-casca-07-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-casca-07-g-2.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "5",
-    "name": "Alho e Sal em Pasta",
+    "id": "50",
+    "name": "Canela em Casca",
     "barcode": "",
-    "description": "Economia e sabor na medida certa. Base tradicional e indispensável para cozinhar em maior volume, garantindo o tempero caseiro sem nenhum esforço.",
-    "category": "ALHO PICADO",
+    "description": "Canela em casca em embalagem de 50g para maior rendimento. Traz calor e sabor às suas receitas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
     "package_qty": 12,
     "measure": {
-      "value": 800,
+      "value": 50,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-1.jpg",
-      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-2.jpg",
-      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-3.jpg"
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-casca-50-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-casca-50-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "51",
+    "name": "Canela em Pó",
+    "barcode": "",
+    "description": "Canela em pó com aroma quente e doce. Perfeita para finalizar sobremesas e cafés.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-po-10g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-po-10g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "52",
+    "name": "Chá de Camomila",
+    "barcode": "",
+    "description": "Chá de camomila desidratado, ideal para preparar uma bebida relaxante e reconfortante.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cha-de-camomila-05-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cha-de-camomila-05-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "53",
+    "name": "Coentro em Grãos",
+    "barcode": "",
+    "description": "Coentro em grãos inteiros com sabor característico e ligeiramente cítrico.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/coentro-em-graos-05-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/coentro-em-graos-05-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "54",
+    "name": "Cominho em Pó",
+    "barcode": "",
+    "description": "Cominho em pó com aroma terroso e sabor marcante. Essencial para culinária regional.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 8,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cominho-em-po-08-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cominho-em-po-08-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "55",
+    "name": "Confeito Chocolate",
+    "barcode": "",
+    "description": "Deliciosos confeitos de chocolate, perfeitos para decorar bolos, doces e sobremesas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 15,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-15-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-15-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "56",
+    "name": "Confeito Chocolate",
+    "barcode": "",
+    "description": "Confeitos de chocolate em embalagem de 50g para decorar suas criações doces.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 6,
+    "measure": {
+      "value": 50,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-50-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-50-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "57",
+    "name": "Confeito Colorido",
+    "barcode": "",
+    "description": "Confeitos coloridos para alegrar e decorar seus bolos, doces e sobremesas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 6,
+    "measure": {
+      "value": 50,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-colorido-50g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-colorido-50g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "58",
+    "name": "Cravo-da-índia",
+    "barcode": "",
+    "description": "Cravo-da-índia com aroma intenso e propriedades digestivas. Essencial para doces e chás.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cravo-da-india-05-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cravo-da-india-05-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "74",
+    "name": "Erva Doce",
+    "barcode": "",
+    "description": "Erva doce desidratada com aroma suave e adocicado. Ideal para chás e receitas de bolos.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 6,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/erva-doce-06-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/erva-doce-06-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "75",
+    "name": "Folha de Louro",
+    "barcode": "",
+    "description": "Folhas de louro desidratadas com aroma marcante. Essenciais para temperar feijão e carnes de panela.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/folha-de-louro-5g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/folha-de-louro-5g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "76",
+    "name": "Gengibre Moído",
+    "barcode": "",
+    "description": "Gengibre em pó com sabor picante e refrescante. Ideal para receitas doces, salgadas e chás.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/gengibre-moido-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/gengibre-moido-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "77",
+    "name": "Lemon Pepper",
+    "barcode": "",
+    "description": "Lemon pepper em embalagem de 10g. Traz o frescor cítrico e picante para peixes, aves e saladas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "78",
+    "name": "Lemon Pepper Defumado",
+    "barcode": "",
+    "description": "Lemon pepper defumado em embalagem de 10g. Sabor cítrico e picante com um toque de fumaça.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-defumado-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-defumado-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "79",
+    "name": "Manjericão",
+    "barcode": "",
+    "description": "Manjericão desidratado com aroma fresco e doce. Essencial para molhos de tomate, pizzas e massas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/manjericao-05-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/manjericao-05-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "80",
+    "name": "Noz Moscada (Unidade)",
+    "barcode": "",
+    "description": "Noz moscada inteira, vendida por unidade. Ideal para ralar na hora e aromatizar pratos.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 1,
+      "unit": "und"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-01-und-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-01-und-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "81",
+    "name": "Noz Moscada Moída",
+    "barcode": "",
+    "description": "Noz moscada moída com aroma intenso e quente. Prática para finalizar diversos pratos.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-moida-10g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-moida-10g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "83",
+    "name": "Orégano",
+    "barcode": "",
+    "description": "Orégano desidratado em embalagem prática de 5g. O aroma clássico para molhos, massas e pizzas.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/oregano-05-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/oregano-05-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "84",
+    "name": "Pimenta Calabresa",
+    "barcode": "",
+    "description": "Pimenta calabresa em flocos com ardência marcante, em embalagem de 5g.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-calabresa-05-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-calabresa-05-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "86",
+    "name": "Pimenta do Reino em Grãos",
+    "barcode": "",
+    "description": "Pimenta do reino em grãos inteiros com aroma intenso. Para quem aprecia moer na hora.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 7,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-em-grao-07-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-em-grao-07-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "87",
+    "name": "Pimenta do Reino Moída",
+    "barcode": "",
+    "description": "Pimenta do reino moída com calor e sabor marcante. Essencial para ralar na hora.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-moida-10g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-moida-10g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "88",
+    "name": "Sal Amoníaco",
+    "barcode": "",
+    "description": "Sal amoníaco em pó, utilizado como agente de fermentação em pães, bolos e biscoitos.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 15,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/sal-amoniaco-15-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/sal-amoniaco-15-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "89",
+    "name": "Salsa",
+    "barcode": "",
+    "description": "Salsa desidratada com sabor fresco e ligeiramente amargo. Ideal para finalizar diversos pratos.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/salsa-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/salsa-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "90",
+    "name": "Tempero Chimichurri",
+    "barcode": "",
+    "description": "Tempero chimichurri clássico em embalagem de 5g. Mix de ervas e especiarias para grelhados.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 5,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-05-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-05-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "139",
+    "name": "Tempero Chimichurri Defumado",
+    "barcode": "",
+    "description": "Tempero Chimichurri Defumado. Qualidade Sol Nascente para sua mesa.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-defumado-10g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-defumado-10g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "93",
+    "name": "Tempero Coentro Moído",
+    "barcode": "",
+    "description": "Tempero de coentro moído com sabor característico e prático para o dia a dia.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-coentro-moido-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-coentro-moido-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "94",
+    "name": "Tempero Colorau",
+    "barcode": "",
+    "description": "Tempero colorau em embalagem de 10g. Dá um tom avermelhado apetitoso aos pratos.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-colorau-10g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-colorau-10g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "96",
+    "name": "Tempero Curry",
+    "barcode": "",
+    "description": "Tempero curry em embalagem de 10g. Mix de especiarias indianas com sabor complexo e picante.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-curry-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-curry-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "97",
+    "name": "Tempero Ervas Finas",
+    "barcode": "",
+    "description": "Mix de ervas finas em embalagem de 10g. Traz um aroma sofisticado a molhos e assados.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-ervas-finas-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-ervas-finas-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "98",
+    "name": "Tempero Páprica Defumada",
+    "barcode": "",
+    "description": "Páprica defumada em embalagem de 10g. Cor vibrante e sabor de defumação autêntico.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-defumada-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-defumada-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "99",
+    "name": "Tempero Páprica Picante",
+    "barcode": "",
+    "description": "Páprica picante em embalagem de 10g. Cor vermelha viva com um toque ardente.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-picante-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-picante-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "100",
+    "name": "Tempero Tipo Baiano",
+    "barcode": "",
+    "description": "Tempero tipo baiano em embalagem de 10g. Mistura intensa de especiarias do Nordeste.",
+    "category": "CONDIMENTO E ESPECIARIAS",
+    "package_qty": 10,
+    "measure": {
+      "value": 10,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-tipo-baiano-10-g-1.jpg",
+      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-tipo-baiano-10-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "126",
+    "name": "Alho Encartelado 180g",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado 180g.",
+    "category": "ALHOS ENCARTELADOS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-180g.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "127",
+    "name": "Alho Encartelado 450g",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado 450g.",
+    "category": "ALHOS ENCARTELADOS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-450g.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "125",
+    "name": "Alho Encartelado 90 G",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado 90 G.",
+    "category": "ALHOS ENCARTELADOS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/ALHOS_ENCARTELADOS/Alho encartelado 90 g.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "128",
+    "name": "Alho Encartelado Por Do Sol 150g",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado Por Do Sol 150g.",
+    "category": "ALHOS ENCARTELADOS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-por-do-sol-150g.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "129",
+    "name": "Alho Encartelado Por Do Sol 400g",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado Por Do Sol 400g.",
+    "category": "ALHOS ENCARTELADOS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-Por-do-sol-400g.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "130",
+    "name": "Alho Encartelado Por Do Sol 80g",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado Por Do Sol 80g.",
+    "category": "ALHOS ENCARTELADOS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-por-do-sol-80g.jpg"
     ],
     "allergens": []
   },
@@ -104,6 +790,24 @@
       "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/alho-frito-60-g-1.jpg",
       "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/alho-frito-60-g-2.jpg",
       "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/alho-frito-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "1",
+    "name": "Açafrão da Terra",
+    "barcode": "",
+    "description": "Açafrão da Terra 100% puro, rico em curcumina e sem aditivos. Aroma terroso e cor vibrante que garantem saúde e sabor às suas receitas. O poderoso anti-inflamatório natural que seu corpo merece.",
+    "category": "POTES DE CONDIMENTOS SOL NASCENTE",
+    "package_qty": 24,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/acafrao-da-tera-60-g-3.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/acafrao-da-tera-60-g-4.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/acafrao-da-tera-60-g-5.jpg"
     ],
     "allergens": []
   },
@@ -306,6 +1010,42 @@
     "allergens": []
   },
   {
+    "id": "21",
+    "name": "Pimenta Calabresa",
+    "barcode": "",
+    "description": "Flocos desidratados com ardência marcante. Eleva o sabor de pizzas, caldos, carnes e molhos. Um toque rústico e picante para quem aprecia intensidade.",
+    "category": "POTES DE CONDIMENTOS SOL NASCENTE",
+    "package_qty": 12,
+    "measure": {
+      "value": 50,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-calabresa-50-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-calabresa-50-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-calabresa-50-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "22",
+    "name": "Pimenta do Reino",
+    "barcode": "",
+    "description": "A rainha das especiarias. Moída na textura ideal para liberar seus óleos essenciais, traz calor e realça o sabor de qualquer prato salgado. Pura e sem misturas.",
+    "category": "POTES DE CONDIMENTOS SOL NASCENTE",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-do-reino-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-do-reino-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-do-reino-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
     "id": "18",
     "name": "Páprica Defumada",
     "barcode": "",
@@ -360,243 +1100,6 @@
     "allergens": []
   },
   {
-    "id": "21",
-    "name": "Pimenta Calabresa",
-    "barcode": "",
-    "description": "Flocos desidratados com ardência marcante. Eleva o sabor de pizzas, caldos, carnes e molhos. Um toque rústico e picante para quem aprecia intensidade.",
-    "category": "POTES DE CONDIMENTOS SOL NASCENTE",
-    "package_qty": 12,
-    "measure": {
-      "value": 50,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-calabresa-50-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-calabresa-50-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-calabresa-50-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "22",
-    "name": "Pimenta do Reino",
-    "barcode": "",
-    "description": "A rainha das especiarias. Moída na textura ideal para liberar seus óleos essenciais, traz calor e realça o sabor de qualquer prato salgado. Pura e sem misturas.",
-    "category": "POTES DE CONDIMENTOS SOL NASCENTE",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-do-reino-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-do-reino-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/pimenta-do-reino-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "23",
-    "name": "Sal Com Limao",
-    "barcode": "",
-    "description": "Praticidade cítrica. Sal enriquecido com o toque ácido do limão, perfeito para temperar peixes, frutos do mar e saladas de forma rápida. Refrescância garantida.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 140,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-2.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-3.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-4.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "24",
-    "name": "Sal Grosso Com Chimichurri",
-    "barcode": "",
-    "description": "O sal perfeito para o churrasco. Cristais misturados ao frescor do chimichurri, garantindo que a carne asse absorvendo os aromas das ervas e especiarias.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 500,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-com-chimichurri-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-com-chimichurri-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "25",
-    "name": "Sal Grosso Completo",
-    "barcode": "",
-    "description": "A solução definitiva para grelhados. Sal grosso enriquecido com alho e especiarias. Dispensa outros temperos, criando uma crosta de sabor irresistível.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-completo-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-completo-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "26",
-    "name": "Sal Grosso Iodado",
-    "barcode": "",
-    "description": "O clássico puro e cristalino. Cristais de tamanho ideal para salgar carnes de churrasco de forma uniforme. Pureza máxima para preservar o sabor dos cortes.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-iodado-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-iodado-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "27",
-    "name": "Sal de Parrilla Com Alho Frito",
-    "barcode": "",
-    "description": "Granulometria uniforme que salga por igual, enriquecida com alho frito crocante. Penetra facilmente nas fibras da carne, entregando sabor profundo.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-2.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-3.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-4.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-5.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-6.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-7.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-8.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "28",
-    "name": "Sal de Parrilla Com Pimenta Calabresa",
-    "barcode": "",
-    "description": "A união da salga uniforme do sal entrefino com a ardência marcante da calabresa. Perfeito para cortes mais grossos, garantindo uma crosta picante no churrasco.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-2.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-3.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-4.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "29",
-    "name": "Sal de Parrilla Iodado",
-    "barcode": "",
-    "description": "O sal entrefino ideal para grelhados. Salga a carne rapidamente e de forma homogênea, sem reter líquidos excessivos. A escolha dos mestres churrasqueiros.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-2.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-3.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-4.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "30",
-    "name": "Sal Rosa Fino",
-    "barcode": "",
-    "description": "Sal colhido no Himalaia, rico em minerais e com menor teor de sódio. Textura fina ideal para o dia a dia, trazendo saúde e um leve toque crocante para as refeições.",
-    "category": "SAL PARA CHURRASCO",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-rosa-fino-1.jpg",
-      "assets/images/products/SAL_PARA_CHURRASCO/sal-rosa-fino-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "31",
-    "name": "Tempero Alho e Sal",
-    "barcode": "",
-    "description": "A base tradicional da cozinha brasileira na proporção exata. Pronto para o uso diário em refogados e carnes, otimizando seu tempo sem perder o sabor caseiro.",
-    "category": "TEMPEROS E PASTAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 300,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-e-sal-1.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-e-sal-2.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-e-sal-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "32",
-    "name": "Tempero Alho Sal Com Pimenta em Pasta",
-    "barcode": "",
-    "description": "Uma pasta versátil com o toque extra de pimenta. Ideal para quem busca praticidade com um perfil levemente picante. Perfeita para marinar aves e suínos.",
-    "category": "TEMPEROS E PASTAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-com-pimenta-em-pasta-1.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-com-pimenta-em-pasta-2.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-com-pimenta-em-pasta-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "33",
-    "name": "Tempero Alho Sal em Pasta e Ervas",
-    "barcode": "",
-    "description": "Praticidade cremosa. A base clássica enriquecida com ervas finas que trazem um aroma sofisticado a molhos e assados. Pronto para facilitar sua vida.",
-    "category": "TEMPEROS E PASTAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-em-pasta-e-ervas-1.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-em-pasta-e-ervas-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
     "id": "34",
     "name": "Tempero Colorau",
     "barcode": "",
@@ -611,42 +1114,6 @@
       "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/tempero-colorau-60-g-1.jpg",
       "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/tempero-colorau-60-g-2.jpg",
       "assets/images/products/POTES_DE_CONDIMENTOS_SOL_NASCENTE/tempero-colorau-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "35",
-    "name": "Tempero Completo",
-    "barcode": "",
-    "description": "A solução tudo-em-um para famílias grandes. Uma base rica e equilibrada de sal, alho e especiarias. Rende muito e serve para absolutamente qualquer receita.",
-    "category": "TEMPEROS E PASTAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 800,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-800-g-3.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-800-g-4.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-800-g-5.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "36",
-    "name": "Tempero Completo Com Pimenta",
-    "barcode": "",
-    "description": "Versão potente do tempero tradicional, acrescida de pimentas selecionadas. Entrega uma base pronta para cozinhar pratos que pedem mais calor no paladar.",
-    "category": "TEMPEROS E PASTAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-com-pimenta-1.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-com-pimenta-2.jpg",
-      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-com-pimenta-3.jpg"
     ],
     "allergens": []
   },
@@ -705,1223 +1172,74 @@
     "allergens": []
   },
   {
-    "id": "40",
-    "name": "Açafrão da Terra (Granel)",
+    "id": "4",
+    "name": "Alho e Sal em Pasta",
     "barcode": "",
-    "description": "Açafrão da Terra puro, em embalagem econômica de 500g para maior rendimento. Ideal para quem usa com frequência na cozinha.",
-    "category": "PRODUTOS GRAMATURAS MAIORES",
-    "package_qty": 12,
-    "measure": {
-      "value": 500,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/acafrao-da-terra-500-g-1.jpg",
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/acafrao-da-terra-500-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "41",
-    "name": "Açafrão da Terra (Variante)",
-    "barcode": "",
-    "description": "Açafrão da Terra de alta qualidade. Perfeito para diversas preparações culinárias.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "42",
-    "name": "Açafrão da Terra",
-    "barcode": "",
-    "description": "Açafrão da Terra em embalagem prática de 50g. Essencial para colorir e dar sabor aos seus pratos.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 50,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-50-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/acafrao-da-terra-50-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "43",
-    "name": "Alecrim",
-    "barcode": "",
-    "description": "Alecrim desidratado com aroma intenso. Ideal para temperar carnes, aves e batatas assadas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/alecrim-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/alecrim-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "44",
-    "name": "Anilina Azul",
-    "barcode": "",
-    "description": "Corante alimentício em pó, ideal para dar um toque de cor azul vibrante a doces e preparações diversas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 8,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-azul-08-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-azul-08-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "45",
-    "name": "Anilina Rosa",
-    "barcode": "",
-    "description": "Corante alimentício em pó para dar cor rosa aos seus doces e sobremesas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 8,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-rosa-08-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-rosa-08-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "46",
-    "name": "Anilina Verde",
-    "barcode": "",
-    "description": "Corante alimentício em pó para adicionar a cor verde às suas receitas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 8,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-verde-08-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/anilina-verde-08-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "47",
-    "name": "Bicarbonato de Sódio",
-    "barcode": "",
-    "description": "Bicarbonato de sódio em embalagem econômica de 500g. Versátil para uso culinário e limpeza.",
-    "category": "PRODUTOS GRAMATURAS MAIORES",
-    "package_qty": 12,
-    "measure": {
-      "value": 500,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/bicarbonato-de-sodio-500-g-1.jpg",
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/bicarbonato-de-sodio-500-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "48",
-    "name": "Bicarbonato de Sódio",
-    "barcode": "",
-    "description": "Bicarbonato de sódio em embalagem prática de 15g, ideal para uso pontual na cozinha.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 15,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/bicarbonato-de-sodio-15-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/bicarbonato-de-sodio-15-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "49",
-    "name": "Canela Casca",
-    "barcode": "",
-    "description": "Canela em casca inteira com aroma rico. Ideal para aromatizar chás, doces e sobremesas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 7,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-casca-07-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-casca-07-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "50",
-    "name": "Canela em Casca",
-    "barcode": "",
-    "description": "Canela em casca em embalagem de 50g para maior rendimento. Traz calor e sabor às suas receitas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 50,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-casca-50-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-casca-50-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "51",
-    "name": "Canela em Pó",
-    "barcode": "",
-    "description": "Canela em pó com aroma quente e doce. Perfeita para finalizar sobremesas e cafés.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-po-10g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/canela-em-po-10g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "52",
-    "name": "Chá de Camomila",
-    "barcode": "",
-    "description": "Chá de camomila desidratado, ideal para preparar uma bebida relaxante e reconfortante.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cha-de-camomila-05-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cha-de-camomila-05-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "53",
-    "name": "Coentro em Grãos",
-    "barcode": "",
-    "description": "Coentro em grãos inteiros com sabor característico e ligeiramente cítrico.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/coentro-em-graos-05-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/coentro-em-graos-05-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "54",
-    "name": "Cominho em Pó",
-    "barcode": "",
-    "description": "Cominho em pó com aroma terroso e sabor marcante. Essencial para culinária regional.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 8,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cominho-em-po-08-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cominho-em-po-08-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "55",
-    "name": "Confeito Chocolate",
-    "barcode": "",
-    "description": "Deliciosos confeitos de chocolate, perfeitos para decorar bolos, doces e sobremesas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 15,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-15-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-15-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "56",
-    "name": "Confeito Chocolate",
-    "barcode": "",
-    "description": "Confeitos de chocolate em embalagem de 50g para decorar suas criações doces.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 50,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-50-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-chocolate-50-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "57",
-    "name": "Confeito Colorido",
-    "barcode": "",
-    "description": "Confeitos coloridos para alegrar e decorar seus bolos, doces e sobremesas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 50,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-colorido-50g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/confeito-colorido-50g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "58",
-    "name": "Cravo-da-índia",
-    "barcode": "",
-    "description": "Cravo-da-índia com aroma intenso e propriedades digestivas. Essencial para doces e chás.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cravo-da-india-05-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/cravo-da-india-05-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "59",
-    "name": "Orégano (Delícia)",
-    "barcode": "",
-    "description": "Orégano de alta qualidade da linha Delícia, perfeito para pizzas, molhos e muito mais.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 15,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/decicia-oregano-15g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/decicia-oregano-15g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/decicia-oregano-15g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "60",
-    "name": "Canela em Pó (Delícia)",
-    "barcode": "",
-    "description": "Canela em pó com aroma rico e doce da linha Delícia. Perfeita para sobremesas e cafés.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-canela-em-po-60-g-3.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-canela-em-po-60-g-4.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-canela-em-po-60-g-5.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "61",
-    "name": "Colorau (Delícia)",
-    "barcode": "",
-    "description": "Corante natural extraído do urucum da linha Delícia. Dá um tom avermelhado apetitoso aos pratos.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-colorau-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-colorau-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-colorau-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "62",
-    "name": "Alho Frito (Delícia)",
-    "barcode": "",
-    "description": "Crocância e sabor intenso em cada pitada com o alho frito da linha Delícia.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-alho-frito-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-alho-frito-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-alho-frito-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "63",
-    "name": "Pimenta Calabresa (Delícia)",
-    "barcode": "",
-    "description": "Flocos desidratados com ardência marcante da linha Delícia. Eleva o sabor dos seus pratos.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 50,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-calabresa-50-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-calabresa-50-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "64",
-    "name": "Pimenta do Reino (Delícia)",
-    "barcode": "",
-    "description": "Pimenta do reino moída na textura ideal da linha Delícia, realçando o sabor dos seus pratos.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 80,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-do-reino-80-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-do-reino-80-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-do-reino-80-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "65",
-    "name": "Tempero Coentro Moído (Delícia)",
-    "barcode": "",
-    "description": "Tempero à base de coentro moído da linha Delícia, prático e saboroso para suas receitas.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-coentro-moido-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-coentro-moido-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-coentro-moido-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "66",
-    "name": "Tempero de Açafrão (Delícia)",
-    "barcode": "",
-    "description": "Tempero à base de açafrão da terra da linha Delícia, trazendo saúde e sabor às suas receitas.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-acafrao-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-acafrao-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-acafrao-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "67",
-    "name": "Tempero de Cominho (Delícia)",
-    "barcode": "",
-    "description": "Tempero à base de cominho da linha Delícia, essencial para culinária regional.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 80,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-cominho-80-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-cominho-80-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-cominho-80-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "68",
-    "name": "Tempero Ervas Finas (Delícia)",
-    "barcode": "",
-    "description": "Mix de ervas finas da linha Delícia, trazendo um aroma sofisticado a molhos e assados.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 20,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-ervas-finas-20-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-ervas-finas-20-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-ervas-finas-20-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "69",
-    "name": "Tempero Mix do Chef (Delícia)",
-    "barcode": "",
-    "description": "Blend sofisticado de ervas e especiarias da linha Delícia para alta gastronomia em casa.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 50,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-mix-do-chef-50-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-mix-do-chef-50-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-mix-do-chef-50-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "70",
-    "name": "Tempero Páprica Defumada (Delícia)",
-    "barcode": "",
-    "description": "Páprica defumada da linha Delícia, transformando carnes e batatas com sabor de defumação.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-defumada-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-defumada-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-defumada-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "71",
-    "name": "Tempero Páprica Doce (Delícia)",
-    "barcode": "",
-    "description": "Páprica doce da linha Delícia, perfeita para colorir e dar sabor frutado a ensopados e aves.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-doce-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-doce-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-doce-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "72",
-    "name": "Tempero Páprica Picante (Delícia)",
-    "barcode": "",
-    "description": "Páprica picante da linha Delícia com um toque ardente para pratos com carnes e caldos.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-picante-60-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-picante-60-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-picante-60-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "73",
-    "name": "Tempero Tipo Baiano (Delícia)",
-    "barcode": "",
-    "description": "Mistura intensa de especiarias do Nordeste da linha Delícia, trazendo calor e sabor às receitas.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 70,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-tipo-baiano-70-g-1.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-tipo-baiano-70-g-2.jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-tipo-baiano-70-g-3.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "74",
-    "name": "Erva Doce",
-    "barcode": "",
-    "description": "Erva doce desidratada com aroma suave e adocicado. Ideal para chás e receitas de bolos.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 6,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/erva-doce-06-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/erva-doce-06-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "75",
-    "name": "Folha de Louro",
-    "barcode": "",
-    "description": "Folhas de louro desidratadas com aroma marcante. Essenciais para temperar feijão e carnes de panela.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/folha-de-louro-5g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/folha-de-louro-5g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "76",
-    "name": "Gengibre Moído",
-    "barcode": "",
-    "description": "Gengibre em pó com sabor picante e refrescante. Ideal para receitas doces, salgadas e chás.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/gengibre-moido-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/gengibre-moido-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "77",
-    "name": "Lemon Pepper",
-    "barcode": "",
-    "description": "Lemon pepper em embalagem de 10g. Traz o frescor cítrico e picante para peixes, aves e saladas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "78",
-    "name": "Lemon Pepper Defumado",
-    "barcode": "",
-    "description": "Lemon pepper defumado em embalagem de 10g. Sabor cítrico e picante com um toque de fumaça.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-defumado-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/lemon-pepper-defumado-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "79",
-    "name": "Manjericão",
-    "barcode": "",
-    "description": "Manjericão desidratado com aroma fresco e doce. Essencial para molhos de tomate, pizzas e massas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/manjericao-05-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/manjericao-05-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "80",
-    "name": "Noz Moscada (Unidade)",
-    "barcode": "",
-    "description": "Noz moscada inteira, vendida por unidade. Ideal para ralar na hora e aromatizar pratos.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 12,
-    "measure": {
-      "value": 1,
-      "unit": "und"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-01-und-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-01-und-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "81",
-    "name": "Noz Moscada Moída",
-    "barcode": "",
-    "description": "Noz moscada moída com aroma intenso e quente. Prática para finalizar diversos pratos.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-moida-10g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/noz-moscada-moida-10g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "82",
-    "name": "Orégano (Granel)",
-    "barcode": "",
-    "description": "Orégano desidratado em embalagem econômica de 200g. Sabor clássico mediterrâneo para suas receitas.",
-    "category": "PRODUTOS GRAMATURAS MAIORES",
-    "package_qty": 12,
-    "measure": {
-      "value": 200,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/oregano-200g-1.jpg",
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/oregano-200g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "83",
-    "name": "Orégano",
-    "barcode": "",
-    "description": "Orégano desidratado em embalagem prática de 5g. O aroma clássico para molhos, massas e pizzas.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/oregano-05-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/oregano-05-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "84",
-    "name": "Pimenta Calabresa",
-    "barcode": "",
-    "description": "Pimenta calabresa em flocos com ardência marcante, em embalagem de 5g.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-calabresa-05-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-calabresa-05-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "85",
-    "name": "Pimenta do Reino (Granel)",
-    "barcode": "",
-    "description": "Pimenta do reino moída em embalagem econômica de 500g. A rainha das especiarias para ralar na hora.",
-    "category": "PRODUTOS GRAMATURAS MAIORES",
-    "package_qty": 12,
-    "measure": {
-      "value": 500,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/pimenta-do-reino-500-g-1.jpg",
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/pimenta-do-reino-500-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "86",
-    "name": "Pimenta do Reino em Grãos",
-    "barcode": "",
-    "description": "Pimenta do reino em grãos inteiros com aroma intenso. Para quem aprecia moer na hora.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 7,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-em-grao-07-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-em-grao-07-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "87",
-    "name": "Pimenta do Reino Moída",
-    "barcode": "",
-    "description": "Pimenta do reino moída com calor e sabor marcante. Essencial para ralar na hora.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-moida-10g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/pimenta-do-reino-moida-10g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "88",
-    "name": "Sal Amoníaco",
-    "barcode": "",
-    "description": "Sal amoníaco em pó, utilizado como agente de fermentação em pães, bolos e biscoitos.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 15,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/sal-amoniaco-15-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/sal-amoniaco-15-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "89",
-    "name": "Salsa",
-    "barcode": "",
-    "description": "Salsa desidratada com sabor fresco e ligeiramente amargo. Ideal para finalizar diversos pratos.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/salsa-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/salsa-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "90",
-    "name": "Tempero Chimichurri",
-    "barcode": "",
-    "description": "Tempero chimichurri clássico em embalagem de 5g. Mix de ervas e especiarias para grelhados.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 5,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-05-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-05-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "91",
-    "name": "Tempero Chimichurri (Granel)",
-    "barcode": "",
-    "description": "Tempero chimichurri em embalagem econômica de 300g. O mix clássico para carnes grelhadas.",
-    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "description": "A base perfeita para qualquer receita. Pasta no tamanho ideal para o dia a dia. Facilita o preparo de arroz e feijão, economizando seu tempo na cozinha.",
+    "category": "ALHO PICADO",
     "package_qty": 12,
     "measure": {
       "value": 300,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-chimichurri-300-g-1.jpg",
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-chimichurri-300-g-2.jpg"
+      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-1.jpg",
+      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-2.jpg",
+      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-3.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "93",
-    "name": "Tempero Coentro Moído",
+    "id": "5",
+    "name": "Alho e Sal em Pasta",
     "barcode": "",
-    "description": "Tempero de coentro moído com sabor característico e prático para o dia a dia.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-coentro-moido-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-coentro-moido-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "94",
-    "name": "Tempero Colorau",
-    "barcode": "",
-    "description": "Tempero colorau em embalagem de 10g. Dá um tom avermelhado apetitoso aos pratos.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-colorau-10g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-colorau-10g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "95",
-    "name": "Tempero Colorau (Granel)",
-    "barcode": "",
-    "description": "Tempero colorau em embalagem econômica de 500g. Corante natural para ralar na hora.",
-    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "description": "Economia e sabor na medida certa. Base tradicional e indispensável para cozinhar em maior volume, garantindo o tempero caseiro sem nenhum esforço.",
+    "category": "ALHO PICADO",
     "package_qty": 12,
     "measure": {
-      "value": 500,
+      "value": 800,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-colorau-500-g-1.jpg",
-      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-colorau-500-g-2.jpg"
+      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-1.jpg",
+      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-2.jpg",
+      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-3.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "96",
-    "name": "Tempero Curry",
+    "id": "137",
+    "name": "Alho Picado",
     "barcode": "",
-    "description": "Tempero curry em embalagem de 10g. Mix de especiarias indianas com sabor complexo e picante.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-curry-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-curry-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "97",
-    "name": "Tempero Ervas Finas",
-    "barcode": "",
-    "description": "Mix de ervas finas em embalagem de 10g. Traz um aroma sofisticado a molhos e assados.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-ervas-finas-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-ervas-finas-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "98",
-    "name": "Tempero Páprica Defumada",
-    "barcode": "",
-    "description": "Páprica defumada em embalagem de 10g. Cor vibrante e sabor de defumação autêntico.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-defumada-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-defumada-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "99",
-    "name": "Tempero Páprica Picante",
-    "barcode": "",
-    "description": "Páprica picante em embalagem de 10g. Cor vermelha viva com um toque ardente.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-picante-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-paprica-picante-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "100",
-    "name": "Tempero Tipo Baiano",
-    "barcode": "",
-    "description": "Tempero tipo baiano em embalagem de 10g. Mistura intensa de especiarias do Nordeste.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
-    "measure": {
-      "value": 10,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-tipo-baiano-10-g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-tipo-baiano-10-g-2.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "101",
-    "name": "Farofa Pronta Sabor Bacon",
-    "barcode": "",
-    "description": "Farofa pronta crocante com o sabor irresistível e defumado do bacon. O acompanhamento perfeito para seu churrasco ou feijoada.",
-    "category": "FAROFAS",
-    "package_qty": 20,
-    "measure": {
-      "value": 350,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/FAROFAS/Fafofa Pronta sabor Bacon 350g (1).jpg",
-      "assets/images/products/FAROFAS/Fafofa Pronta sabor Bacon 350g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "102",
-    "name": "Farofa Pronta Sabor Carne Seca",
-    "barcode": "",
-    "description": "Tradição e sabor em cada colherada. Farofa pronta com pedaços selecionados de carne seca, trazendo o verdadeiro gosto caseiro.",
-    "category": "FAROFAS",
-    "package_qty": 20,
-    "measure": {
-      "value": 350,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/FAROFAS/Farofa pronta Sabor Carne seca 350g (1).jpg",
-      "assets/images/products/FAROFAS/Farofa pronta Sabor Carne seca 350g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "103",
-    "name": "Farofa Pronta Tradicional Picante",
-    "barcode": "",
-    "description": "Para quem busca um toque de calor. Farofa tradicional com ardência equilibrada, ideal para realçar o sabor de carnes grelhadas.",
-    "category": "FAROFAS",
-    "package_qty": 20,
-    "measure": {
-      "value": 350,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/FAROFAS/Farofa pronta sabor Tradicional Picante (1).jpg",
-      "assets/images/products/FAROFAS/Farofa pronta sabor Tradicional Picante (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "104",
-    "name": "Ketchup Tradicional",
-    "barcode": "",
-    "description": "Ketchup produzido com tomates selecionados, garantindo o equilíbrio perfeito entre doçura e acidez. Ideal para lanches e porções.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
-    "package_qty": 12,
-    "measure": {
-      "value": 370,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup 370g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup 370g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "105",
-    "name": "Ketchup Picante",
-    "barcode": "",
-    "description": "A versão intensa do nosso ketchup. Com um toque de pimenta que desperta o paladar, perfeito para quem ama sabores picantes.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "description": "Alho Picado. Qualidade Sol Nascente para sua mesa.",
+    "category": "ALHO PICADO",
     "package_qty": 12,
     "measure": {
       "value": 200,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 200g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 200g (2).jpg"
+      "assets/images/products/ALHO_PICADO/Alho picado - 200g (1).jpg",
+      "assets/images/products/ALHO_PICADO/Alho picado - 200g (2).jpg",
+      "assets/images/products/ALHO_PICADO/Alho picado - 200g (3).jpg"
     ],
     "allergens": []
   },
   {
-    "id": "106",
-    "name": "Ketchup Picante (Família)",
+    "id": "138",
+    "name": "Alho Picado",
     "barcode": "",
-    "description": "O sabor picante que você já conhece em embalagem econômica de 400g. Perfeito para reunir os amigos em volta da mesa.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "description": "Alho Picado. Qualidade Sol Nascente para sua mesa.",
+    "category": "ALHO PICADO",
     "package_qty": 12,
     "measure": {
       "value": 400,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 400g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 400g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "107",
-    "name": "Ketchup Sol Nascente",
-    "barcode": "",
-    "description": "Nosso ketchup clássico em embalagem de 400g. Sabor autêntico e qualidade superior para seus momentos mais saborosos.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
-    "package_qty": 12,
-    "measure": {
-      "value": 400,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup sol nascente 400g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup sol nascente 400g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "108",
-    "name": "Maionese com Ervas Finas",
-    "barcode": "",
-    "description": "Cremosidade incomparável com o aroma sofisticado de ervas finas selecionadas. Eleve o nível dos seus sanduíches.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
-    "package_qty": 12,
-    "measure": {
-      "value": 200,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese com Ervas Finas 200g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese com Ervas Finas 200g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "109",
-    "name": "Maionese Picante",
-    "barcode": "",
-    "description": "O equilíbrio entre a textura aveludada da maionese e o calor da pimenta. Ideal para dar personalidade a qualquer prato.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
-    "package_qty": 12,
-    "measure": {
-      "value": 200,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese Picante 200g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese Picante 200g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "110",
-    "name": "Maionese Tradicional",
-    "barcode": "",
-    "description": "Maionese cremosa e saborosa, feita com ingredientes de qualidade. Versátil para saladas, molhos e lanches.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
-    "package_qty": 12,
-    "measure": {
-      "value": 350,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese tradicional 350g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese tradicional 350g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "111",
-    "name": "Molho 3 em 1 (Maionese, Mostarda e Ketchup)",
-    "barcode": "",
-    "description": "A união perfeita! Maionese, mostarda e ketchup em um só molho, proporcionando uma explosão de sabores em cada mordida.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
-    "package_qty": 12,
-    "measure": {
-      "value": 200,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho 3 em 1, Maionese, mostarde e jketchup (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho 3 em 1, Maionese, mostarde e jketchup (2).jpg"
+      "assets/images/products/ALHO_PICADO/Alho picado - 400g (1).jpg",
+      "assets/images/products/ALHO_PICADO/Alho picado - 400g (2).jpg",
+      "assets/images/products/ALHO_PICADO/Alho picado - 400g (3).jpg"
     ],
     "allergens": []
   },
@@ -1963,19 +1281,20 @@
     "allergens": []
   },
   {
-    "id": "114",
-    "name": "Molho de Mostarda",
+    "id": "134",
+    "name": "Molho De Alho 900ml",
     "barcode": "",
-    "description": "Mostarda cremosa com o toque exato de acidez. Perfeita para cachorros-quentes, hambúrgueres e preparo de molhos para saladas.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "description": "Produto Sol Nascente de alta qualidade: Molho De Alho 900ml.",
+    "category": "MOLHOS E CREMES DE PIMENTA",
     "package_qty": 12,
     "measure": {
-      "value": 200,
-      "unit": "g"
+      "value": 0,
+      "unit": ""
     },
     "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho de Mostarda 200g (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho de Mostarda 200g (2).jpg"
+      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-alho-900ml-(1).jpg",
+      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-alho-900ml-(3).jpg",
+      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-alho-900ml-(4).jpg"
     ],
     "allergens": []
   },
@@ -1994,6 +1313,24 @@
       "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho de pimenta 900ml (1).jpg",
       "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho de pimenta 900ml (2).jpg",
       "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho de pimenta 900ml (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "135",
+    "name": "Molho De Pimenta 900ml",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Molho De Pimenta 900ml.",
+    "category": "MOLHOS E CREMES DE PIMENTA",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-pimenta-900ml-(1).jpg",
+      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-pimenta-900ml-(2).jpg",
+      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-pimenta-900ml-(3).jpg"
     ],
     "allergens": []
   },
@@ -2105,23 +1442,6 @@
     "allergens": []
   },
   {
-    "id": "122",
-    "name": "Molho Barbecue",
-    "barcode": "",
-    "description": "O sabor do churrasco americano. Molho barbecue encorpado, com notas defumadas e adocicadas, ideal para costelinhas e hambúrgueres.",
-    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
-    "package_qty": 12,
-    "measure": {
-      "value": 250,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho para carnes Barbecue (1).jpg",
-      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho para carnes Barbecue (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
     "id": "123",
     "name": "Molho Shoyu",
     "barcode": "",
@@ -2158,155 +1478,6 @@
     "allergens": []
   },
   {
-    "id": "125",
-    "name": "Alho Encartelado 90 G",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado 90 G.",
-    "category": "ALHOS ENCARTELADOS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/ALHOS_ENCARTELADOS/Alho encartelado 90 g.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "126",
-    "name": "Alho Encartelado 180g",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado 180g.",
-    "category": "ALHOS ENCARTELADOS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-180g.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "127",
-    "name": "Alho Encartelado 450g",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado 450g.",
-    "category": "ALHOS ENCARTELADOS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-450g.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "128",
-    "name": "Alho Encartelado Por Do Sol 150g",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado Por Do Sol 150g.",
-    "category": "ALHOS ENCARTELADOS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-por-do-sol-150g.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "129",
-    "name": "Alho Encartelado Por Do Sol 400g",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado Por Do Sol 400g.",
-    "category": "ALHOS ENCARTELADOS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-Por-do-sol-400g.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "130",
-    "name": "Alho Encartelado Por Do Sol 80g",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Alho Encartelado Por Do Sol 80g.",
-    "category": "ALHOS ENCARTELADOS",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/ALHOS_ENCARTELADOS/Alho-encartelado-por-do-sol-80g.jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "133",
-    "name": "Farofa Pronta Sabor Churrasco 350g",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Farofa Pronta Sabor Churrasco 350g.",
-    "category": "FAROFAS",
-    "package_qty": 20,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/FAROFAS/Farofa-Pronta-sabor-Churrasco-350g (1).jpg",
-      "assets/images/products/FAROFAS/Farofa-Pronta-sabor-Churrasco-350g (2).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "134",
-    "name": "Molho De Alho 900ml",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Molho De Alho 900ml.",
-    "category": "MOLHOS E CREMES DE PIMENTA",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-alho-900ml-(1).jpg",
-      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-alho-900ml-(3).jpg",
-      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-alho-900ml-(4).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "135",
-    "name": "Molho De Pimenta 900ml",
-    "barcode": "",
-    "description": "Produto Sol Nascente de alta qualidade: Molho De Pimenta 900ml.",
-    "category": "MOLHOS E CREMES DE PIMENTA",
-    "package_qty": 12,
-    "measure": {
-      "value": 0,
-      "unit": ""
-    },
-    "images": [
-      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-pimenta-900ml-(1).jpg",
-      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-pimenta-900ml-(2).jpg",
-      "assets/images/products/MOLHOS_E_CREMES_DE_PIMENTA/Molho-de-pimenta-900ml-(3).jpg"
-    ],
-    "allergens": []
-  },
-  {
     "id": "136",
     "name": "Molho Shoyu 900ml",
     "barcode": "",
@@ -2324,109 +1495,99 @@
     "allergens": []
   },
   {
-    "id": "137",
-    "name": "Alho Picado",
+    "id": "23",
+    "name": "Sal Com Limao",
     "barcode": "",
-    "description": "Alho Picado. Qualidade Sol Nascente para sua mesa.",
-    "category": "ALHO PICADO",
+    "description": "Praticidade cítrica. Sal enriquecido com o toque ácido do limão, perfeito para temperar peixes, frutos do mar e saladas de forma rápida. Refrescância garantida.",
+    "category": "SAL PARA CHURRASCO",
     "package_qty": 12,
     "measure": {
-      "value": 200,
+      "value": 140,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/ALHO_PICADO/Alho picado - 200g (1).jpg",
-      "assets/images/products/ALHO_PICADO/Alho picado - 200g (2).jpg",
-      "assets/images/products/ALHO_PICADO/Alho picado - 200g (3).jpg"
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-2.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-3.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-com-limao-140-g-4.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "138",
-    "name": "Alho Picado",
+    "id": "27",
+    "name": "Sal de Parrilla Com Alho Frito",
     "barcode": "",
-    "description": "Alho Picado. Qualidade Sol Nascente para sua mesa.",
-    "category": "ALHO PICADO",
+    "description": "Granulometria uniforme que salga por igual, enriquecida com alho frito crocante. Penetra facilmente nas fibras da carne, entregando sabor profundo.",
+    "category": "SAL PARA CHURRASCO",
     "package_qty": 12,
     "measure": {
-      "value": 400,
-      "unit": "g"
+      "value": 0,
+      "unit": ""
     },
     "images": [
-      "assets/images/products/ALHO_PICADO/Alho picado - 400g (1).jpg",
-      "assets/images/products/ALHO_PICADO/Alho picado - 400g (2).jpg",
-      "assets/images/products/ALHO_PICADO/Alho picado - 400g (3).jpg"
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-2.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-3.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-4.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-5.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-6.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-7.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-alho-frito-8.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "139",
-    "name": "Tempero Chimichurri Defumado",
+    "id": "28",
+    "name": "Sal de Parrilla Com Pimenta Calabresa",
     "barcode": "",
-    "description": "Tempero Chimichurri Defumado. Qualidade Sol Nascente para sua mesa.",
-    "category": "CONDIMENTO E ESPECIARIAS",
-    "package_qty": 10,
+    "description": "A união da salga uniforme do sal entrefino com a ardência marcante da calabresa. Perfeito para cortes mais grossos, garantindo uma crosta picante no churrasco.",
+    "category": "SAL PARA CHURRASCO",
+    "package_qty": 12,
     "measure": {
-      "value": 10,
-      "unit": "g"
+      "value": 0,
+      "unit": ""
     },
     "images": [
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-defumado-10g-1.jpg",
-      "assets/images/products/CONDIMENTO_E_ESPECIARIAS/tempero-chimichurri-defumado-10g-2.jpg"
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-2.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-3.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-com-pimenta-calabresa-4.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "140",
-    "name": "Bicarbonato De Sódio (Delícia)",
+    "id": "29",
+    "name": "Sal de Parrilla Iodado",
     "barcode": "",
-    "description": "Bicarbonato De Sódio (Delícia). Qualidade Sol Nascente para sua mesa.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
+    "description": "O sal entrefino ideal para grelhados. Salga a carne rapidamente e de forma homogênea, sem reter líquidos excessivos. A escolha dos mestres churrasqueiros.",
+    "category": "SAL PARA CHURRASCO",
     "package_qty": 12,
     "measure": {
-      "value": 130,
-      "unit": "g"
+      "value": 0,
+      "unit": ""
     },
     "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Bicarbonato de sódio  delicia  - 130g (1).jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Bicarbonato de sódio  delicia  - 130g (2).jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Bicarbonato de sódio  delicia  - 130g (3).jpg"
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-2.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-3.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-parrila-iodado-4.jpg"
     ],
     "allergens": []
   },
   {
-    "id": "141",
-    "name": "Tempero Chimichurri",
+    "id": "24",
+    "name": "Sal Grosso Com Chimichurri",
     "barcode": "",
-    "description": "Tempero Chimichurri. Qualidade Sol Nascente para sua mesa.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
+    "description": "O sal perfeito para o churrasco. Cristais misturados ao frescor do chimichurri, garantindo que a carne asse absorvendo os aromas das ervas e especiarias.",
+    "category": "SAL PARA CHURRASCO",
     "package_qty": 12,
     "measure": {
-      "value": 40,
+      "value": 500,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Chimichurri 40g (1).jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Chimichurri 40g (2).jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Chimichurri 40g (3).jpg"
-    ],
-    "allergens": []
-  },
-  {
-    "id": "142",
-    "name": "Tempero Lemon Pepper",
-    "barcode": "",
-    "description": "Tempero Lemon Pepper. Qualidade Sol Nascente para sua mesa.",
-    "category": "POTES DE CONDIMENTOS DELICIA",
-    "package_qty": 12,
-    "measure": {
-      "value": 60,
-      "unit": "g"
-    },
-    "images": [
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Lemon Pepper 60g (1).jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Lemon Pepper 60g (2).jpg",
-      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Lemon Pepper 60g (3).jpg"
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-com-chimichurri-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-com-chimichurri-2.jpg"
     ],
     "allergens": []
   },
@@ -2444,6 +1605,40 @@
     "images": [
       "assets/images/products/SAL_PARA_CHURRASCO/Sal-grosso com ervas finas (1).jpg",
       "assets/images/products/SAL_PARA_CHURRASCO/Sal-grosso com ervas finas (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "25",
+    "name": "Sal Grosso Completo",
+    "barcode": "",
+    "description": "A solução definitiva para grelhados. Sal grosso enriquecido com alho e especiarias. Dispensa outros temperos, criando uma crosta de sabor irresistível.",
+    "category": "SAL PARA CHURRASCO",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-completo-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-completo-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "26",
+    "name": "Sal Grosso Iodado",
+    "barcode": "",
+    "description": "O clássico puro e cristalino. Cristais de tamanho ideal para salgar carnes de churrasco de forma uniforme. Pureza máxima para preservar o sabor dos cortes.",
+    "category": "SAL PARA CHURRASCO",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-iodado-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-grosso-iodado-2.jpg"
     ],
     "allergens": []
   },
@@ -2466,6 +1661,199 @@
     "allergens": []
   },
   {
+    "id": "30",
+    "name": "Sal Rosa Fino",
+    "barcode": "",
+    "description": "Sal colhido no Himalaia, rico em minerais e com menor teor de sódio. Textura fina ideal para o dia a dia, trazendo saúde e um leve toque crocante para as refeições.",
+    "category": "SAL PARA CHURRASCO",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-rosa-fino-1.jpg",
+      "assets/images/products/SAL_PARA_CHURRASCO/sal-rosa-fino-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "2",
+    "name": "Alho e Sal Com Cheiro Verde",
+    "barcode": "",
+    "description": "Combinação clássica enriquecida com o frescor do cheiro verde. Ideal para refogados, carnes e arroz, garantindo sabor caseiro e praticidade no seu dia a dia.",
+    "category": "TEMPEROS E PASTAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 300,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-chero-verde-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-chero-verde-2.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-chero-verde-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "3",
+    "name": "Alho e Sal Com Ervas em Pasta",
+    "barcode": "",
+    "description": "Pasta prática que une alho, sal e um mix de ervas aromáticas. Rende muito e é perfeita para marinar carnes e aves, entregando sabor profundo e textura ideal.",
+    "category": "TEMPEROS E PASTAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 800,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-ervas-em-pasta-800-g-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-ervas-em-pasta-800-g-2.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-com-ervas-em-pasta-800-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "31",
+    "name": "Tempero Alho e Sal",
+    "barcode": "",
+    "description": "A base tradicional da cozinha brasileira na proporção exata. Pronto para o uso diário em refogados e carnes, otimizando seu tempo sem perder o sabor caseiro.",
+    "category": "TEMPEROS E PASTAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 300,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-e-sal-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-e-sal-2.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-e-sal-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "32",
+    "name": "Tempero Alho Sal Com Pimenta em Pasta",
+    "barcode": "",
+    "description": "Uma pasta versátil com o toque extra de pimenta. Ideal para quem busca praticidade com um perfil levemente picante. Perfeita para marinar aves e suínos.",
+    "category": "TEMPEROS E PASTAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-com-pimenta-em-pasta-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-com-pimenta-em-pasta-2.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-com-pimenta-em-pasta-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "33",
+    "name": "Tempero Alho Sal em Pasta e Ervas",
+    "barcode": "",
+    "description": "Praticidade cremosa. A base clássica enriquecida com ervas finas que trazem um aroma sofisticado a molhos e assados. Pronto para facilitar sua vida.",
+    "category": "TEMPEROS E PASTAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-em-pasta-e-ervas-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-alho-sal-em-pasta-e-ervas-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "35",
+    "name": "Tempero Completo",
+    "barcode": "",
+    "description": "A solução tudo-em-um para famílias grandes. Uma base rica e equilibrada de sal, alho e especiarias. Rende muito e serve para absolutamente qualquer receita.",
+    "category": "TEMPEROS E PASTAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 800,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-800-g-3.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-800-g-4.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-800-g-5.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "36",
+    "name": "Tempero Completo Com Pimenta",
+    "barcode": "",
+    "description": "Versão potente do tempero tradicional, acrescida de pimentas selecionadas. Entrega uma base pronta para cozinhar pratos que pedem mais calor no paladar.",
+    "category": "TEMPEROS E PASTAS",
+    "package_qty": 12,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-com-pimenta-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-com-pimenta-2.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/tempero-completo-com-pimenta-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "105",
+    "name": "Ketchup Picante",
+    "barcode": "",
+    "description": "A versão intensa do nosso ketchup. Com um toque de pimenta que desperta o paladar, perfeito para quem ama sabores picantes.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 200,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 200g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 200g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "106",
+    "name": "Ketchup Picante (Família)",
+    "barcode": "",
+    "description": "O sabor picante que você já conhece em embalagem econômica de 400g. Perfeito para reunir os amigos em volta da mesa.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 400,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 400g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup Picante 400g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "107",
+    "name": "Ketchup Sol Nascente",
+    "barcode": "",
+    "description": "Nosso ketchup clássico em embalagem de 400g. Sabor autêntico e qualidade superior para seus momentos mais saborosos.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 400,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup sol nascente 400g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup sol nascente 400g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
     "id": "145",
     "name": "Ketchup Sol Nascente 200g",
     "barcode": "",
@@ -2483,6 +1871,23 @@
     "allergens": []
   },
   {
+    "id": "104",
+    "name": "Ketchup Tradicional",
+    "barcode": "",
+    "description": "Ketchup produzido com tomates selecionados, garantindo o equilíbrio perfeito entre doçura e acidez. Ideal para lanches e porções.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 370,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup 370g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Ketchup 370g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
     "id": "146",
     "name": "Maionese 200g",
     "barcode": "",
@@ -2496,6 +1901,601 @@
     "images": [
       "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese 200g (1).jpg",
       "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese 200g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "108",
+    "name": "Maionese com Ervas Finas",
+    "barcode": "",
+    "description": "Cremosidade incomparável com o aroma sofisticado de ervas finas selecionadas. Eleve o nível dos seus sanduíches.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 200,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese com Ervas Finas 200g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese com Ervas Finas 200g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "109",
+    "name": "Maionese Picante",
+    "barcode": "",
+    "description": "O equilíbrio entre a textura aveludada da maionese e o calor da pimenta. Ideal para dar personalidade a qualquer prato.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 200,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese Picante 200g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese Picante 200g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "110",
+    "name": "Maionese Tradicional",
+    "barcode": "",
+    "description": "Maionese cremosa e saborosa, feita com ingredientes de qualidade. Versátil para saladas, molhos e lanches.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 350,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese tradicional 350g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Maionese tradicional 350g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "111",
+    "name": "Molho 3 em 1 (Maionese, Mostarda e Ketchup)",
+    "barcode": "",
+    "description": "A união perfeita! Maionese, mostarda e ketchup em um só molho, proporcionando uma explosão de sabores em cada mordida.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 200,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho 3 em 1, Maionese, mostarde e jketchup (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho 3 em 1, Maionese, mostarde e jketchup (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "122",
+    "name": "Molho Barbecue",
+    "barcode": "",
+    "description": "O sabor do churrasco americano. Molho barbecue encorpado, com notas defumadas e adocicadas, ideal para costelinhas e hambúrgueres.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 250,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho para carnes Barbecue (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho para carnes Barbecue (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "114",
+    "name": "Molho de Mostarda",
+    "barcode": "",
+    "description": "Mostarda cremosa com o toque exato de acidez. Perfeita para cachorros-quentes, hambúrgueres e preparo de molhos para saladas.",
+    "category": "KETCHUP, MAIONESE, MOSTARDA E CREMES ESPECIAIS",
+    "package_qty": 12,
+    "measure": {
+      "value": 200,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho de Mostarda 200g (1).jpg",
+      "assets/images/products/KETCHUP_MAIONESE_MOSTARDA_E_CREMES_ESPECIAIS/Molho de Mostarda 200g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "101",
+    "name": "Farofa Pronta Sabor Bacon",
+    "barcode": "",
+    "description": "Farofa pronta crocante com o sabor irresistível e defumado do bacon. O acompanhamento perfeito para seu churrasco ou feijoada.",
+    "category": "FAROFAS",
+    "package_qty": 20,
+    "measure": {
+      "value": 350,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/FAROFAS/Fafofa Pronta sabor Bacon 350g (1).jpg",
+      "assets/images/products/FAROFAS/Fafofa Pronta sabor Bacon 350g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "102",
+    "name": "Farofa Pronta Sabor Carne Seca",
+    "barcode": "",
+    "description": "Tradição e sabor em cada colherada. Farofa pronta com pedaços selecionados de carne seca, trazendo o verdadeiro gosto caseiro.",
+    "category": "FAROFAS",
+    "package_qty": 20,
+    "measure": {
+      "value": 350,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/FAROFAS/Farofa pronta Sabor Carne seca 350g (1).jpg",
+      "assets/images/products/FAROFAS/Farofa pronta Sabor Carne seca 350g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "133",
+    "name": "Farofa Pronta Sabor Churrasco 350g",
+    "barcode": "",
+    "description": "Produto Sol Nascente de alta qualidade: Farofa Pronta Sabor Churrasco 350g.",
+    "category": "FAROFAS",
+    "package_qty": 20,
+    "measure": {
+      "value": 0,
+      "unit": ""
+    },
+    "images": [
+      "assets/images/products/FAROFAS/Farofa-Pronta-sabor-Churrasco-350g (1).jpg",
+      "assets/images/products/FAROFAS/Farofa-Pronta-sabor-Churrasco-350g (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "103",
+    "name": "Farofa Pronta Tradicional Picante",
+    "barcode": "",
+    "description": "Para quem busca um toque de calor. Farofa tradicional com ardência equilibrada, ideal para realçar o sabor de carnes grelhadas.",
+    "category": "FAROFAS",
+    "package_qty": 20,
+    "measure": {
+      "value": 350,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/FAROFAS/Farofa pronta sabor Tradicional Picante (1).jpg",
+      "assets/images/products/FAROFAS/Farofa pronta sabor Tradicional Picante (2).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "40",
+    "name": "Açafrão da Terra (Granel)",
+    "barcode": "",
+    "description": "Açafrão da Terra puro, em embalagem econômica de 500g para maior rendimento. Ideal para quem usa com frequência na cozinha.",
+    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "package_qty": 12,
+    "measure": {
+      "value": 500,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/acafrao-da-terra-500-g-1.jpg",
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/acafrao-da-terra-500-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "47",
+    "name": "Bicarbonato de Sódio",
+    "barcode": "",
+    "description": "Bicarbonato de sódio em embalagem econômica de 500g. Versátil para uso culinário e limpeza.",
+    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "package_qty": 12,
+    "measure": {
+      "value": 500,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/bicarbonato-de-sodio-500-g-1.jpg",
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/bicarbonato-de-sodio-500-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "82",
+    "name": "Orégano (Granel)",
+    "barcode": "",
+    "description": "Orégano desidratado em embalagem econômica de 200g. Sabor clássico mediterrâneo para suas receitas.",
+    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "package_qty": 12,
+    "measure": {
+      "value": 200,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/oregano-200g-1.jpg",
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/oregano-200g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "85",
+    "name": "Pimenta do Reino (Granel)",
+    "barcode": "",
+    "description": "Pimenta do reino moída em embalagem econômica de 500g. A rainha das especiarias para ralar na hora.",
+    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "package_qty": 12,
+    "measure": {
+      "value": 500,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/pimenta-do-reino-500-g-1.jpg",
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/pimenta-do-reino-500-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "91",
+    "name": "Tempero Chimichurri (Granel)",
+    "barcode": "",
+    "description": "Tempero chimichurri em embalagem econômica de 300g. O mix clássico para carnes grelhadas.",
+    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "package_qty": 12,
+    "measure": {
+      "value": 300,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-chimichurri-300-g-1.jpg",
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-chimichurri-300-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "95",
+    "name": "Tempero Colorau (Granel)",
+    "barcode": "",
+    "description": "Tempero colorau em embalagem econômica de 500g. Corante natural para ralar na hora.",
+    "category": "PRODUTOS GRAMATURAS MAIORES",
+    "package_qty": 12,
+    "measure": {
+      "value": 500,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-colorau-500-g-1.jpg",
+      "assets/images/products/PRODUTOS_GRAMATURAS_MAIORES/tempero-colorau-500-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "62",
+    "name": "Alho Frito (Delícia)",
+    "barcode": "",
+    "description": "Crocância e sabor intenso em cada pitada com o alho frito da linha Delícia.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-alho-frito-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-alho-frito-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-alho-frito-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "140",
+    "name": "Bicarbonato De Sódio (Delícia)",
+    "barcode": "",
+    "description": "Bicarbonato De Sódio (Delícia). Qualidade Sol Nascente para sua mesa.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 130,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Bicarbonato de sódio  delicia  - 130g (1).jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Bicarbonato de sódio  delicia  - 130g (2).jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Bicarbonato de sódio  delicia  - 130g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "60",
+    "name": "Canela em Pó (Delícia)",
+    "barcode": "",
+    "description": "Canela em pó com aroma rico e doce da linha Delícia. Perfeita para sobremesas e cafés.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-canela-em-po-60-g-3.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-canela-em-po-60-g-4.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-canela-em-po-60-g-5.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "61",
+    "name": "Colorau (Delícia)",
+    "barcode": "",
+    "description": "Corante natural extraído do urucum da linha Delícia. Dá um tom avermelhado apetitoso aos pratos.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-colorau-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-colorau-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-colorau-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "59",
+    "name": "Orégano (Delícia)",
+    "barcode": "",
+    "description": "Orégano de alta qualidade da linha Delícia, perfeito para pizzas, molhos e muito mais.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 15,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/decicia-oregano-15g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/decicia-oregano-15g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/decicia-oregano-15g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "63",
+    "name": "Pimenta Calabresa (Delícia)",
+    "barcode": "",
+    "description": "Flocos desidratados com ardência marcante da linha Delícia. Eleva o sabor dos seus pratos.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 50,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-calabresa-50-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-calabresa-50-g-2.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "64",
+    "name": "Pimenta do Reino (Delícia)",
+    "barcode": "",
+    "description": "Pimenta do reino moída na textura ideal da linha Delícia, realçando o sabor dos seus pratos.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 80,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-do-reino-80-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-do-reino-80-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-pimenta-do-reino-80-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "141",
+    "name": "Tempero Chimichurri",
+    "barcode": "",
+    "description": "Tempero Chimichurri. Qualidade Sol Nascente para sua mesa.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 40,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Chimichurri 40g (1).jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Chimichurri 40g (2).jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Chimichurri 40g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "65",
+    "name": "Tempero Coentro Moído (Delícia)",
+    "barcode": "",
+    "description": "Tempero à base de coentro moído da linha Delícia, prático e saboroso para suas receitas.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-coentro-moido-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-coentro-moido-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-coentro-moido-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "66",
+    "name": "Tempero de Açafrão (Delícia)",
+    "barcode": "",
+    "description": "Tempero à base de açafrão da terra da linha Delícia, trazendo saúde e sabor às suas receitas.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-acafrao-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-acafrao-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-acafrao-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "67",
+    "name": "Tempero de Cominho (Delícia)",
+    "barcode": "",
+    "description": "Tempero à base de cominho da linha Delícia, essencial para culinária regional.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 80,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-cominho-80-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-cominho-80-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-de-cominho-80-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "68",
+    "name": "Tempero Ervas Finas (Delícia)",
+    "barcode": "",
+    "description": "Mix de ervas finas da linha Delícia, trazendo um aroma sofisticado a molhos e assados.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 20,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-ervas-finas-20-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-ervas-finas-20-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-ervas-finas-20-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "142",
+    "name": "Tempero Lemon Pepper",
+    "barcode": "",
+    "description": "Tempero Lemon Pepper. Qualidade Sol Nascente para sua mesa.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Lemon Pepper 60g (1).jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Lemon Pepper 60g (2).jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/Tempero Lemon Pepper 60g (3).jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "69",
+    "name": "Tempero Mix do Chef (Delícia)",
+    "barcode": "",
+    "description": "Blend sofisticado de ervas e especiarias da linha Delícia para alta gastronomia em casa.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 50,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-mix-do-chef-50-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-mix-do-chef-50-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-mix-do-chef-50-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "70",
+    "name": "Tempero Páprica Defumada (Delícia)",
+    "barcode": "",
+    "description": "Páprica defumada da linha Delícia, transformando carnes e batatas com sabor de defumação.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-defumada-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-defumada-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-defumada-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "71",
+    "name": "Tempero Páprica Doce (Delícia)",
+    "barcode": "",
+    "description": "Páprica doce da linha Delícia, perfeita para colorir e dar sabor frutado a ensopados e aves.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-doce-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-doce-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-doce-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "72",
+    "name": "Tempero Páprica Picante (Delícia)",
+    "barcode": "",
+    "description": "Páprica picante da linha Delícia com um toque ardente para pratos com carnes e caldos.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 60,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-picante-60-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-picante-60-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-paprica-picante-60-g-3.jpg"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "73",
+    "name": "Tempero Tipo Baiano (Delícia)",
+    "barcode": "",
+    "description": "Mistura intensa de especiarias do Nordeste da linha Delícia, trazendo calor e sabor às receitas.",
+    "category": "POTES DE CONDIMENTOS DELICIA",
+    "package_qty": 12,
+    "measure": {
+      "value": 70,
+      "unit": "g"
+    },
+    "images": [
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-tipo-baiano-70-g-1.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-tipo-baiano-70-g-2.jpg",
+      "assets/images/products/POTES_DE_CONDIMENTOS_DELICIA/delicia-tempero-tipo-baiano-70-g-3.jpg"
     ],
     "allergens": []
   }
