@@ -1176,16 +1176,16 @@
     "name": "Alho e Sal em Pasta",
     "barcode": "",
     "description": "A base perfeita para qualquer receita. Pasta no tamanho ideal para o dia a dia. Facilita o preparo de arroz e feijão, economizando seu tempo na cozinha.",
-    "category": "ALHO PICADO",
+    "category": "TEMPEROS E PASTAS",
     "package_qty": 12,
     "measure": {
       "value": 300,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-1.jpg",
-      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-2.jpg",
-      "assets/images/products/ALHO_PICADO/alho-e-sal-em-pasta-300-g-3.jpg"
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-em-pasta-300-g-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-em-pasta-300-g-2.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-e-sal-em-pasta-300-g-3.jpg"
     ],
     "allergens": []
   },
@@ -1194,16 +1194,16 @@
     "name": "Alho e Sal em Pasta",
     "barcode": "",
     "description": "Economia e sabor na medida certa. Base tradicional e indispensável para cozinhar em maior volume, garantindo o tempero caseiro sem nenhum esforço.",
-    "category": "ALHO PICADO",
+    "category": "TEMPEROS E PASTAS",
     "package_qty": 12,
     "measure": {
       "value": 800,
       "unit": "g"
     },
     "images": [
-      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-1.jpg",
-      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-2.jpg",
-      "assets/images/products/ALHO_PICADO/alho-esal-em-pasta-800-g-3.jpg"
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-esal-em-pasta-800-g-1.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-esal-em-pasta-800-g-2.jpg",
+      "assets/images/products/TEMPEROS_E_PASTAS/alho-esal-em-pasta-800-g-3.jpg"
     ],
     "allergens": []
   },
